@@ -60,6 +60,7 @@ namespace Nails1_Master
                     }
                     else
                     {
+
                         rreader.Close();
                         com = new SqlCommand("insert into Users values(@Login, @Password, @First_Name, @Last_Name, @Id_Role)", db.GetSqlConnection());
                         com.Parameters.AddWithValue("Login", rlog.Text);
