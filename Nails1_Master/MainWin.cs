@@ -121,6 +121,7 @@ namespace Nails1_Master
             {
                 MessageBox.Show("Enter the letters!!!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            db.closeConnection();
         }
 
         private void CreateBut_Click(object sender, EventArgs e)

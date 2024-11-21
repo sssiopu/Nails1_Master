@@ -85,5 +85,10 @@ namespace Nails1_Master
             MainWin r2 = new MainWin();
             r2.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

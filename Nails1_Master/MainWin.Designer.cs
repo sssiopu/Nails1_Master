@@ -32,13 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.LogBut = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.closebut = new System.Windows.Forms.Button();
             this.CreateBut = new System.Windows.Forms.Button();
             this.login = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.Label();
             this.textlog = new System.Windows.Forms.TextBox();
             this.textpas = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +90,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2072, 213);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Nails1_Master.Properties.Resources.Group_1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(169, 162);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // closebut
             // 
@@ -152,35 +165,44 @@
             // textlog
             // 
             this.textlog.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.textlog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textlog.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
-            this.textlog.Location = new System.Drawing.Point(821, 489);
+            this.textlog.Location = new System.Drawing.Point(820, 481);
             this.textlog.Name = "textlog";
-            this.textlog.Size = new System.Drawing.Size(621, 56);
+            this.textlog.Size = new System.Drawing.Size(621, 49);
             this.textlog.TabIndex = 6;
             // 
             // textpas
             // 
             this.textpas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textpas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.textpas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textpas.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textpas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
-            this.textpas.Location = new System.Drawing.Point(821, 628);
+            this.textpas.Location = new System.Drawing.Point(820, 616);
             this.textpas.Name = "textpas";
-            this.textpas.Size = new System.Drawing.Size(621, 56);
+            this.textpas.Size = new System.Drawing.Size(621, 49);
             this.textpas.TabIndex = 7;
             this.textpas.UseSystemPasswordChar = true;
             this.textpas.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::Nails1_Master.Properties.Resources.Group_1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 162);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel2.Location = new System.Drawing.Point(820, 528);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(622, 5);
+            this.panel2.TabIndex = 20;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel3.Location = new System.Drawing.Point(820, 665);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(622, 5);
+            this.panel3.TabIndex = 20;
             // 
             // MainWin
             // 
@@ -188,6 +210,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(2072, 1027);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.textpas);
             this.Controls.Add(this.textlog);
             this.Controls.Add(this.password);
@@ -222,5 +246,7 @@
         private System.Windows.Forms.TextBox textpas;
         private System.Windows.Forms.Button closebut;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

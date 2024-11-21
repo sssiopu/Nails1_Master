@@ -43,6 +43,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.closebut = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -86,32 +91,38 @@
             // rlog
             // 
             this.rlog.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.rlog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rlog.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
             this.rlog.Location = new System.Drawing.Point(798, 496);
             this.rlog.Name = "rlog";
-            this.rlog.Size = new System.Drawing.Size(621, 56);
+            this.rlog.Size = new System.Drawing.Size(621, 49);
             this.rlog.TabIndex = 8;
             this.rlog.TextChanged += new System.EventHandler(this.textlog_TextChanged);
             // 
             // rlastname
             // 
             this.rlastname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rlastname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.rlastname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rlastname.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rlastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
             this.rlastname.Location = new System.Drawing.Point(798, 403);
             this.rlastname.Name = "rlastname";
-            this.rlastname.Size = new System.Drawing.Size(621, 56);
+            this.rlastname.Size = new System.Drawing.Size(621, 49);
             this.rlastname.TabIndex = 9;
             // 
             // rname
             // 
             this.rname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.rname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rname.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
             this.rname.Location = new System.Drawing.Point(798, 299);
             this.rname.Name = "rname";
-            this.rname.Size = new System.Drawing.Size(621, 56);
+            this.rname.Size = new System.Drawing.Size(621, 49);
             this.rname.TabIndex = 10;
             // 
             // label1
@@ -141,22 +152,28 @@
             // rpas
             // 
             this.rpas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rpas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.rpas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rpas.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rpas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
             this.rpas.Location = new System.Drawing.Point(798, 585);
             this.rpas.Name = "rpas";
-            this.rpas.Size = new System.Drawing.Size(621, 56);
+            this.rpas.Size = new System.Drawing.Size(621, 49);
             this.rpas.TabIndex = 14;
+            this.rpas.UseSystemPasswordChar = true;
             // 
             // rrpas
             // 
             this.rrpas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rrpas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.rrpas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rrpas.Font = new System.Drawing.Font("Algerian", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rrpas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(178)))), ((int)(((byte)(191)))));
             this.rrpas.Location = new System.Drawing.Point(798, 693);
             this.rrpas.Name = "rrpas";
-            this.rrpas.Size = new System.Drawing.Size(621, 56);
+            this.rrpas.Size = new System.Drawing.Size(621, 49);
             this.rrpas.TabIndex = 15;
+            this.rrpas.UseSystemPasswordChar = true;
             // 
             // regbut
             // 
@@ -201,6 +218,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2010, 243);
             this.panel1.TabIndex = 18;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // closebut
             // 
@@ -229,12 +247,57 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel2.Location = new System.Drawing.Point(797, 350);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(622, 5);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel3.Location = new System.Drawing.Point(798, 454);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(622, 5);
+            this.panel3.TabIndex = 20;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel4.Location = new System.Drawing.Point(798, 547);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(622, 5);
+            this.panel4.TabIndex = 21;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel5.Location = new System.Drawing.Point(797, 636);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(622, 5);
+            this.panel5.TabIndex = 21;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
+            this.panel6.Location = new System.Drawing.Point(798, 744);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(622, 5);
+            this.panel6.TabIndex = 21;
+            // 
             // Regi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(2001, 960);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.regbut);
             this.Controls.Add(this.rrpas);
@@ -275,5 +338,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button closebut;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
