@@ -12,12 +12,13 @@ using System.Windows.Forms;
 namespace Nails1_Master
 {
     enum RowState
-    {
-        Extend,
+    { 
+        Execute,
         New,
         Modified,
         ModifiedNew,
-        Deleted
+        Deleted,
+        Existed
 
     }
 
@@ -85,6 +86,87 @@ namespace Nails1_Master
         {
             Add_design addfrm = new Add_design();
             addfrm.Show();
+        }
+
+        private void updatebut_Click(object sender, EventArgs e)
+        {
+            RefrestDatarid(dataGridView1);
+        }
+
+        private void Search1(DataGridView dgw)
+        {
+            dgw.Rows.Clear();
+            string searchString = $"select * from Design  where concat (Id_Design, complexity) like '%" + searchtext.Text + "%'";
+
+
+            SqlCommand com = new SqlCommand(searchString, db.GetSqlConnection());
+            db.openConnection();
+            SqlDataReader read = com.ExecuteReader();
+            while (read.Read())    
+            {
+                ReadSingleRow(dgw, read);
+
+            }
+            read.Close();
+
+        }
+        private void searchtext_TextChanged(object sender, EventArgs e)
+        {
+            Search1(dataGridView1);
+        }
+
+        
+
+        private void deleteRow()
+        {
+            int index = dataGridView1.CurrentCell.RowIndex;
+            dataGridView1.Rows[index].Visible = false;
+
+            if (dataGridView1.Rows[index].Cells[0].Value.ToString() == string.Empty)
+            {
+                dataGridView1.Rows[index].Cells[2].Value = RowState.Deleted;
+                return;
+            }
+            dataGridView1.Rows[index].Cells[2].Value = RowState.Deleted;
+        }
+
+        private void Update1()
+        {
+            db.openConnection();
+            for(int index = 0; index < dataGridView1.Rows.Count; index++)
+            {
+                var rowState = (RowState)dataGridView1.Rows[index].Cells[2].Value;
+
+                if (rowState == RowState.Existed)
+                {
+                    continue;
+                }
+                  
+
+
+                if(rowState == RowState.Deleted)
+                {
+                    var id = Convert.ToInt32(dataGridView1.Rows[index].Cells[0].Value);
+                    var deleteQuery = $"delete from Design where Id_Design = {id}";
+
+                    var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
+                    command.ExecuteNonQuery();
+
+                }
+            }
+            db.closeConnection();
+        }
+
+        
+
+        private void deletebut_Click(object sender, EventArgs e)
+        {
+            deleteRow();
+        }
+
+        private void savebut_Click(object sender, EventArgs e)
+        {
+            Update1();
         }
     }
 }
