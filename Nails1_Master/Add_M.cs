@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Nails1_Master
 {
-    public partial class Builiding_Up : Form
+    public partial class Add_M : Form
     {
-        public Builiding_Up()
+        public Add_M()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Admin2 r1 = new Admin2();
-            r1.Show();
         }
     }
 }

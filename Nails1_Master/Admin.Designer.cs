@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
-            this.label1 = new System.Windows.Forms.Label();
             this.sortdescd = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.savebut = new System.Windows.Forms.Button();
@@ -50,27 +49,10 @@
             this.login = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.deletebut = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.backbutdes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Algerian", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label1.Location = new System.Drawing.Point(396, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(669, 106);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Admin panel";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // sortdescd
             // 
@@ -83,7 +65,7 @@
             this.sortdescd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortdescd.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortdescd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortdescd.Location = new System.Drawing.Point(111, 389);
+            this.sortdescd.Location = new System.Drawing.Point(160, 314);
             this.sortdescd.Name = "sortdescd";
             this.sortdescd.Size = new System.Drawing.Size(170, 85);
             this.sortdescd.TabIndex = 2;
@@ -102,7 +84,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button1.Location = new System.Drawing.Point(1125, 455);
+            this.button1.Location = new System.Drawing.Point(1125, 305);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 94);
             this.button1.TabIndex = 3;
@@ -121,7 +103,7 @@
             this.savebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.savebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.savebut.Location = new System.Drawing.Point(1125, 389);
+            this.savebut.Location = new System.Drawing.Point(1125, 222);
             this.savebut.Name = "savebut";
             this.savebut.Size = new System.Drawing.Size(198, 47);
             this.savebut.TabIndex = 4;
@@ -140,7 +122,7 @@
             this.sortascd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortascd.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortascd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascd.Location = new System.Drawing.Point(111, 293);
+            this.sortascd.Location = new System.Drawing.Point(160, 191);
             this.sortascd.Name = "sortascd";
             this.sortascd.Size = new System.Drawing.Size(170, 89);
             this.sortascd.TabIndex = 6;
@@ -150,16 +132,16 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(392, 171);
+            this.dataGridView1.Location = new System.Drawing.Point(386, 21);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(691, 378);
             this.dataGridView1.TabIndex = 7;
@@ -172,7 +154,7 @@
             this.searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchtext.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchtext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtext.Location = new System.Drawing.Point(94, 194);
+            this.searchtext.Location = new System.Drawing.Point(82, 52);
             this.searchtext.Name = "searchtext";
             this.searchtext.Size = new System.Drawing.Size(248, 26);
             this.searchtext.TabIndex = 8;
@@ -185,7 +167,7 @@
             this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.Search.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.Search.Location = new System.Drawing.Point(23, 153);
+            this.Search.Location = new System.Drawing.Point(11, 11);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(129, 32);
             this.Search.TabIndex = 9;
@@ -195,7 +177,7 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel1.Location = new System.Drawing.Point(94, 218);
+            this.panel1.Location = new System.Drawing.Point(82, 76);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 5);
             this.panel1.TabIndex = 10;
@@ -211,13 +193,12 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button6.Location = new System.Drawing.Point(1125, 243);
+            this.button6.Location = new System.Drawing.Point(1125, 87);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(198, 45);
             this.button6.TabIndex = 14;
             this.button6.Text = "Clear";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // updatebut
             // 
@@ -230,7 +211,7 @@
             this.updatebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.updatebut.Location = new System.Drawing.Point(1125, 171);
+            this.updatebut.Location = new System.Drawing.Point(1125, 21);
             this.updatebut.Name = "updatebut";
             this.updatebut.Size = new System.Drawing.Size(198, 49);
             this.updatebut.TabIndex = 15;
@@ -249,7 +230,7 @@
             this.groupBox1.Controls.Add(this.login);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.groupBox1.Location = new System.Drawing.Point(475, 571);
+            this.groupBox1.Location = new System.Drawing.Point(463, 429);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(528, 215);
             this.groupBox1.TabIndex = 21;
@@ -266,7 +247,6 @@
             this.label4.Size = new System.Drawing.Size(142, 24);
             this.label4.TabIndex = 24;
             this.label4.Text = "complexity";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel4
             // 
@@ -349,7 +329,7 @@
             this.deletebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.deletebut.Location = new System.Drawing.Point(1125, 317);
+            this.deletebut.Location = new System.Drawing.Point(1125, 153);
             this.deletebut.Name = "deletebut";
             this.deletebut.Size = new System.Drawing.Size(198, 43);
             this.deletebut.TabIndex = 23;
@@ -357,45 +337,34 @@
             this.deletebut.UseVisualStyleBackColor = false;
             this.deletebut.Click += new System.EventHandler(this.deletebut_Click);
             // 
-            // pictureBox2
+            // backbutdes
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::Nails1_Master.Properties.Resources.Group_1__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(291, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(109, 91);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button2.Location = new System.Drawing.Point(1311, 769);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 31);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "back";
-            this.button2.UseVisualStyleBackColor = false;
+            this.backbutdes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.backbutdes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backbutdes.FlatAppearance.BorderSize = 2;
+            this.backbutdes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.backbutdes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.backbutdes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbutdes.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbutdes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.backbutdes.Location = new System.Drawing.Point(1311, 613);
+            this.backbutdes.Name = "backbutdes";
+            this.backbutdes.Size = new System.Drawing.Size(69, 31);
+            this.backbutdes.TabIndex = 31;
+            this.backbutdes.Text = "back";
+            this.backbutdes.UseVisualStyleBackColor = false;
+            this.backbutdes.Click += new System.EventHandler(this.backbutdes_Click);
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1392, 812);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.Controls.Add(this.backbutdes);
             this.Controls.Add(this.deletebut);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.updatebut);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.panel1);
@@ -406,7 +375,6 @@
             this.Controls.Add(this.savebut);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.sortdescd);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
             this.Text = "Admin";
@@ -414,15 +382,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button sortdescd;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button savebut;
@@ -433,7 +398,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button updatebut;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label login;
         private System.Windows.Forms.Panel panel4;
@@ -443,6 +407,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button deletebut;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button backbutdes;
     }
 }

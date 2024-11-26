@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nails1_Master
 {
-    public partial class Builiding_Up : Form
+    public partial class Get_Polish_Coating : Form
     {
-        public Builiding_Up()
+        public Get_Polish_Coating()
         {
             InitializeComponent();
         }

@@ -10,7 +10,7 @@ namespace Nails1_Master
 {
     internal class DB
     {
-        SqlConnection SqlConnection = new SqlConnection(@"Data source=(localdb)\MSSQLLocalDB;Initial Catalog=Nail_Master; Integrated Security=True");
+        SqlConnection SqlConnection = new SqlConnection(@"Data source=(localdb)\MSSQLLocalDB;Initial Catalog=Nails_Master; Integrated Security=True");
         public void openConnection()
         {
             if (SqlConnection.State == System.Data.ConnectionState.Closed)

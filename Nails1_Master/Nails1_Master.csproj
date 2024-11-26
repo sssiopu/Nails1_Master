@@ -52,6 +52,12 @@
     <Compile Include="Add_design.Designer.cs">
       <DependentUpon>Add_design.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_M.Designer.cs">
+      <DependentUpon>Add_M.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,29 @@
       <DependentUpon>Builiding_Up.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="Gender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gender.Designer.cs">
+      <DependentUpon>Gender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Polish_Coating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get_Polish_Coating.Designer.cs">
+      <DependentUpon>Get_Polish_Coating.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainWin.Designer.cs">
       <DependentUpon>MainWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medical_Manicure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medical_Manicure.Designer.cs">
+      <DependentUpon>Medical_Manicure.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,8 +127,17 @@
     <EmbeddedResource Include="Builiding_Up.resx">
       <DependentUpon>Builiding_Up.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gender.resx">
+      <DependentUpon>Gender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get_Polish_Coating.resx">
+      <DependentUpon>Get_Polish_Coating.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medical_Manicure.resx">
+      <DependentUpon>Medical_Manicure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

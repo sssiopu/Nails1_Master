@@ -16,5 +16,40 @@ namespace Nails1_Master
         {
             InitializeComponent();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin r1 = new Admin();
+            r1.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Builiding_Up r1 = new Builiding_Up();
+            r1.Show();
+        }
+
+        private void getpbut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Get_Polish_Coating r1 = new Get_Polish_Coating();
+            r1.Show();
+        }
+
+        private void medadbut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Medical_Manicure r1 = new Medical_Manicure();
+            r1.Show();
+        }
+
+        private void genadbut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Gender r1 = new Gender();
+            r1.Show();
+        }
     }
 }

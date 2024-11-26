@@ -11,8 +11,8 @@ using System.Windows.Forms;
 
 namespace Nails1_Master
 {
-    enum RowState
-    { 
+    enum RowState1
+    {
         Execute,
         New,
         Modified,
@@ -22,36 +22,40 @@ namespace Nails1_Master
 
     }
 
-    public partial class Admin : Form
 
+    public partial class Medical_Manicure : Form
     {
-        
-
         DB db = new DB();
         int SelectedRow;
 
-        public Admin()
+        public Medical_Manicure()
         {
             InitializeComponent();
         }
+
+        private void medbut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin2 r1 = new Admin2();
+            r1.Show();
+        }
         private void CreateColums()
         {
-            dataGridView1.Columns.Add("Id_Design", "id");
-            dataGridView1.Columns.Add("complexity", "complexity");
-            dataGridView1.Columns.Add("IsNew", String.Empty);
+            dataGridView2.Columns.Add("Id_Medical_Manicure", "id");
+            dataGridView2.Columns.Add("problem", "problem");
+            dataGridView2.Columns.Add("IsNew", String.Empty);
         }
-
-        private void ReadSingleRow (DataGridView pip, IDataRecord record)
+        private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
-            pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew); 
+            pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
         }
         private void RefrestDatarid(DataGridView pip)
         {
             db.openConnection();
             pip.Rows.Clear();
-            string qwertyString = $"select * from Design";
+            string qwertyString = $"select * from Medical_Manicure";
             SqlCommand command = new SqlCommand(qwertyString, db.GetSqlConnection());
-            
+
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -64,46 +68,41 @@ namespace Nails1_Master
         private void Admin_Load(object sender, EventArgs e)
         {
             CreateColums();
-            RefrestDatarid(dataGridView1);
-            dataGridView1.Columns[2].Visible = false;
+            RefrestDatarid(dataGridView2);
+            dataGridView2.Columns[2].Visible = false;
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SelectedRow = e.RowIndex;
 
-            if(e.RowIndex >= 0)
+            if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = dataGridView1.Rows[SelectedRow];
+                DataGridViewRow row = dataGridView2.Rows[SelectedRow];
 
-                textid.Text = row.Cells[0].Value?.ToString();
-                textcomp.Text = row.Cells[1].Value?.ToString();
+                textidm.Text = row.Cells[0].Value?.ToString();
+                textcompm.Text = row.Cells[1].Value?.ToString();
 
             }
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Add_design addfrm = new Add_design();
-            addfrm.Show();
-        }
 
-        private void updatebut_Click(object sender, EventArgs e)
+        private void updatebutm_Click(object sender, EventArgs e)
         {
-            RefrestDatarid(dataGridView1);
+            RefrestDatarid(dataGridView2);
         }
 
         private void Search1(DataGridView dgw)
         {
             dgw.Rows.Clear();
-            string searchString = $"select * from Design  where concat (Id_Design, complexity) like '%" + searchtext.Text + "%'";
+            string searchString = $"select * from Medical_Manicure where concat (Id_Medical_Manicure, problem) like '%" + searchtextm.Text + "%'";
 
 
             SqlCommand com = new SqlCommand(searchString, db.GetSqlConnection());
             db.openConnection();
             SqlDataReader read = com.ExecuteReader();
-            while (read.Read())    
+            while (read.Read())
             {
                 ReadSingleRow(dgw, read);
 
@@ -111,38 +110,38 @@ namespace Nails1_Master
             read.Close();
 
         }
-        private void searchtext_TextChanged(object sender, EventArgs e)
+        private void searchtextm_TextChanged(object sender, EventArgs e)
         {
-            Search1(dataGridView1);
+            Search1(dataGridView2);
         }
 
-        
+
 
         private void deleteRow()
         {
-            int index = dataGridView1.CurrentCell.RowIndex;
-            dataGridView1.Rows[index].Visible = false;
+            int index = dataGridView2.CurrentCell.RowIndex;
+            dataGridView2.Rows[index].Visible = false;
 
-            if (dataGridView1.Rows[index].Cells[0].Value.ToString() == string.Empty)
+            if (dataGridView2.Rows[index].Cells[0].Value.ToString() == string.Empty)
             {
-                dataGridView1.Rows[index].Cells[2].Value = RowState.Deleted;
+                dataGridView2.Rows[index].Cells[2].Value = RowState.Deleted;
                 return;
             }
-            dataGridView1.Rows[index].Cells[2].Value = RowState.Deleted;
+            dataGridView2.Rows[index].Cells[2].Value = RowState.Deleted;
         }
 
-      
+
 
         private void Update1()
         {
             db.openConnection();
-            for (int index = 0; index < dataGridView1.Rows.Count; index++)
+            for (int index = 0; index < dataGridView2.Rows.Count; index++)
             {
                 // Проверяем, что значение не null
-                if (dataGridView1.Rows[index].Cells[2].Value == null)
+                if (dataGridView2.Rows[index].Cells[2].Value == null)
                     continue;
 
-                var rowState = (RowState)dataGridView1.Rows[index].Cells[2].Value;
+                var rowState = (RowState)dataGridView2.Rows[index].Cells[2].Value;
 
                 if (rowState == RowState.Existed)
                 {
@@ -152,10 +151,10 @@ namespace Nails1_Master
                 if (rowState == RowState.Deleted)
                 {
                     // Проверяем, что значение не null
-                    if (dataGridView1.Rows[index].Cells[0].Value == null)
+                    if (dataGridView2.Rows[index].Cells[0].Value == null)
                         continue;
 
-                    var id = Convert.ToInt32(dataGridView1.Rows[index].Cells[0].Value);
+                    var id = Convert.ToInt32(dataGridView2.Rows[index].Cells[0].Value);
                     var deleteQuery = $"delete from Design where Id_Design = {id}";
 
                     var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
@@ -167,31 +166,32 @@ namespace Nails1_Master
 
 
 
-        private void deletebut_Click(object sender, EventArgs e)
+        private void deletebutm_Click(object sender, EventArgs e)
         {
             deleteRow();
         }
 
-        private void savebut_Click(object sender, EventArgs e)
+        private void savebutm_Click(object sender, EventArgs e)
         {
             Update1();
         }
 
         private void sortascd_Click(object sender, EventArgs e)
         {
-            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
+            dataGridView2.Sort(dataGridView2.Columns[1], ListSortDirection.Ascending);
         }
 
         private void sortdescd_Click(object sender, EventArgs e)
         {
-            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
+            dataGridView2.Sort(dataGridView2.Columns[1], ListSortDirection.Descending);
         }
 
-        private void backbutdes_Click(object sender, EventArgs e)
+        private void addbutm_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Admin2 r1 = new Admin2();
-            r1.Show();
+            Add_M addfrm = new Add_M();
+            addfrm.Show();
         }
+
+        
     }
 }

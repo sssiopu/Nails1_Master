@@ -99,7 +99,7 @@ namespace Nails1_Master
                 {
                     reader2.Close();
                     this.Hide();
-                    Admin ad = new Admin();
+                    Admin2 ad = new Admin2();
                     ad.ShowDialog();
 
                 }
@@ -132,6 +132,11 @@ namespace Nails1_Master
         }
 
         private void password_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
