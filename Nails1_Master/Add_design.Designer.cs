@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_design));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,11 +47,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Algerian", 99.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label1.Location = new System.Drawing.Point(201, 2);
+            this.label1.Location = new System.Drawing.Point(237, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(921, 148);
+            this.label1.Size = new System.Drawing.Size(251, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "Admin panel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,11 +61,11 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.textcomp1);
-            this.groupBox1.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.groupBox1.Location = new System.Drawing.Point(316, 306);
+            this.groupBox1.Location = new System.Drawing.Point(82, 164);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(682, 252);
+            this.groupBox1.Size = new System.Drawing.Size(600, 131);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Text";
@@ -73,17 +74,17 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 170);
+            this.label4.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(17, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 32);
+            this.label4.Size = new System.Drawing.Size(132, 21);
             this.label4.TabIndex = 24;
             this.label4.Text = "complexity";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel4.Location = new System.Drawing.Point(253, 192);
+            this.panel4.Location = new System.Drawing.Point(196, 97);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(337, 5);
             this.panel4.TabIndex = 13;
@@ -92,11 +93,11 @@
             // 
             this.textcomp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.textcomp1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textcomp1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcomp1.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcomp1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcomp1.Location = new System.Drawing.Point(253, 155);
+            this.textcomp1.Location = new System.Drawing.Point(197, 73);
             this.textcomp1.Name = "textcomp1";
-            this.textcomp1.Size = new System.Drawing.Size(336, 39);
+            this.textcomp1.Size = new System.Drawing.Size(336, 26);
             this.textcomp1.TabIndex = 23;
             // 
             // label2
@@ -105,11 +106,11 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Algerian", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label2.Location = new System.Drawing.Point(388, 201);
+            this.label2.Location = new System.Drawing.Point(247, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(540, 71);
+            this.label2.Size = new System.Drawing.Size(251, 32);
             this.label2.TabIndex = 23;
             this.label2.Text = "create record";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -118,9 +119,9 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Nails1_Master.Properties.Resources.Group_1__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(56, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(163, 17);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(139, 138);
+            this.pictureBox2.Size = new System.Drawing.Size(56, 51);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
@@ -134,11 +135,11 @@
             this.save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
             this.save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.save.Location = new System.Drawing.Point(458, 583);
+            this.save.Location = new System.Drawing.Point(309, 328);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(386, 67);
+            this.save.Size = new System.Drawing.Size(111, 47);
             this.save.TabIndex = 25;
             this.save.Text = "save";
             this.save.UseVisualStyleBackColor = false;
@@ -149,12 +150,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1187, 680);
+            this.ClientSize = new System.Drawing.Size(762, 402);
             this.Controls.Add(this.save);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Add_design";
             this.Text = "Add_design";
             this.groupBox1.ResumeLayout(false);

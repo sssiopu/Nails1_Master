@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin2));
             this.label1 = new System.Windows.Forms.Label();
             this.LogBut = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,15 +44,15 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Algerian", 99.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label1.Location = new System.Drawing.Point(564, 9);
+            this.label1.Location = new System.Drawing.Point(449, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(921, 148);
+            this.label1.Size = new System.Drawing.Size(209, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Admin panel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -67,7 +68,7 @@
             this.LogBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogBut.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogBut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.LogBut.Location = new System.Drawing.Point(778, 669);
+            this.LogBut.Location = new System.Drawing.Point(323, 305);
             this.LogBut.Name = "LogBut";
             this.LogBut.Size = new System.Drawing.Size(543, 67);
             this.LogBut.TabIndex = 3;
@@ -85,9 +86,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button1.Location = new System.Drawing.Point(778, 456);
+            this.button1.Location = new System.Drawing.Point(21, 221);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(543, 78);
+            this.button1.Size = new System.Drawing.Size(530, 68);
             this.button1.TabIndex = 4;
             this.button1.Text = "Get Polish coating";
             this.button1.UseVisualStyleBackColor = false;
@@ -103,9 +104,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button2.Location = new System.Drawing.Point(818, 565);
+            this.button2.Location = new System.Drawing.Point(21, 305);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(462, 67);
+            this.button2.Size = new System.Drawing.Size(277, 67);
             this.button2.TabIndex = 5;
             this.button2.Text = "gender";
             this.button2.UseVisualStyleBackColor = false;
@@ -121,9 +122,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button3.Location = new System.Drawing.Point(534, 193);
+            this.button3.Location = new System.Drawing.Point(21, 63);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(462, 67);
+            this.button3.Size = new System.Drawing.Size(355, 61);
             this.button3.TabIndex = 6;
             this.button3.Text = "Builiding up";
             this.button3.UseVisualStyleBackColor = false;
@@ -139,9 +140,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button4.Location = new System.Drawing.Point(818, 348);
+            this.button4.Location = new System.Drawing.Point(21, 145);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(462, 67);
+            this.button4.Size = new System.Drawing.Size(287, 59);
             this.button4.TabIndex = 7;
             this.button4.Text = "Decign";
             this.button4.UseVisualStyleBackColor = false;
@@ -157,7 +158,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button5.Location = new System.Drawing.Point(818, 858);
+            this.button5.Location = new System.Drawing.Point(755, 141);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(462, 67);
             this.button5.TabIndex = 8;
@@ -175,7 +176,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button6.Location = new System.Drawing.Point(818, 756);
+            this.button6.Location = new System.Drawing.Point(755, 63);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(462, 67);
             this.button6.TabIndex = 9;
@@ -193,9 +194,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button7.Location = new System.Drawing.Point(1358, 500);
+            this.button7.Location = new System.Drawing.Point(489, 145);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(462, 67);
+            this.button7.Size = new System.Drawing.Size(247, 74);
             this.button7.TabIndex = 10;
             this.button7.Text = "Decign";
             this.button7.UseVisualStyleBackColor = false;
@@ -211,9 +212,9 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button8.Location = new System.Drawing.Point(1336, 372);
+            this.button8.Location = new System.Drawing.Point(489, 63);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(462, 67);
+            this.button8.Size = new System.Drawing.Size(260, 66);
             this.button8.TabIndex = 11;
             this.button8.Text = "Decign";
             this.button8.UseVisualStyleBackColor = false;
@@ -229,9 +230,9 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button9.Location = new System.Drawing.Point(1358, 609);
+            this.button9.Location = new System.Drawing.Point(593, 220);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(543, 67);
+            this.button9.Size = new System.Drawing.Size(524, 71);
             this.button9.TabIndex = 12;
             this.button9.Text = "Medical Manicure";
             this.button9.UseVisualStyleBackColor = false;
@@ -241,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(2099, 988);
+            this.ClientSize = new System.Drawing.Size(1150, 449);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -253,6 +254,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LogBut);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin2";
             this.Text = "Admin2";
             this.ResumeLayout(false);

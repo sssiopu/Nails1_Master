@@ -90,5 +90,20 @@ namespace Nails1_Master
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rpassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rrpas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
