@@ -65,6 +65,7 @@ namespace Nails1_Master
         {
             CreateColums();
             RefrestDatarid(dataGridView1);
+            dataGridView1.Columns[2].Visible = false;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -75,8 +76,8 @@ namespace Nails1_Master
             {
                 DataGridViewRow row = dataGridView1.Rows[SelectedRow];
 
-                textid.Text = row.Cells[0].Value.ToString();
-                textcomp.Text = row.Cells[1].Value.ToString();
+                textid.Text = row.Cells[0].Value?.ToString();
+                textcomp.Text = row.Cells[1].Value?.ToString();
 
             }
 
@@ -130,34 +131,41 @@ namespace Nails1_Master
             dataGridView1.Rows[index].Cells[2].Value = RowState.Deleted;
         }
 
+      
+
         private void Update1()
         {
             db.openConnection();
-            for(int index = 0; index < dataGridView1.Rows.Count; index++)
+            for (int index = 0; index < dataGridView1.Rows.Count; index++)
             {
+                // Проверяем, что значение не null
+                if (dataGridView1.Rows[index].Cells[2].Value == null)
+                    continue;
+
                 var rowState = (RowState)dataGridView1.Rows[index].Cells[2].Value;
 
                 if (rowState == RowState.Existed)
                 {
                     continue;
                 }
-                  
 
-
-                if(rowState == RowState.Deleted)
+                if (rowState == RowState.Deleted)
                 {
+                    // Проверяем, что значение не null
+                    if (dataGridView1.Rows[index].Cells[0].Value == null)
+                        continue;
+
                     var id = Convert.ToInt32(dataGridView1.Rows[index].Cells[0].Value);
                     var deleteQuery = $"delete from Design where Id_Design = {id}";
 
                     var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
-
                 }
             }
             db.closeConnection();
         }
 
-        
+
 
         private void deletebut_Click(object sender, EventArgs e)
         {
@@ -167,6 +175,26 @@ namespace Nails1_Master
         private void savebut_Click(object sender, EventArgs e)
         {
             Update1();
+        }
+
+        private void sortascd_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
+        }
+
+        private void sortdescd_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

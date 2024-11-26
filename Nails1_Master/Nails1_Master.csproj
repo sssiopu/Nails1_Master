@@ -64,6 +64,12 @@
     <Compile Include="Admin2.Designer.cs">
       <DependentUpon>Admin2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Builiding_Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Builiding_Up.Designer.cs">
+      <DependentUpon>Builiding_Up.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin2.resx">
       <DependentUpon>Admin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Builiding_Up.resx">
+      <DependentUpon>Builiding_Up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>

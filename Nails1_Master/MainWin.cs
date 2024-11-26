@@ -130,5 +130,10 @@ namespace Nails1_Master
             Regi r1 = new Regi();
             r1.Show();
         }
+
+        private void password_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
