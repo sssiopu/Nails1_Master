@@ -51,5 +51,19 @@ namespace Nails1_Master
             Gender r1 = new Gender();
             r1.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Repair r1 = new Repair();
+            r1.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Withdrawal r1 = new Withdrawal();
+            r1.Show();
+        }
     }
 }

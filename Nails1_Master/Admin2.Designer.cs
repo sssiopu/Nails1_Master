@@ -91,7 +91,7 @@
             this.getpbut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.getpbut.Location = new System.Drawing.Point(634, 339);
             this.getpbut.Name = "getpbut";
-            this.getpbut.Size = new System.Drawing.Size(177, 125);
+            this.getpbut.Size = new System.Drawing.Size(230, 125);
             this.getpbut.TabIndex = 4;
             this.getpbut.Text = "Get Polish coating";
             this.getpbut.UseVisualStyleBackColor = false;
@@ -148,7 +148,7 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.button4.Location = new System.Drawing.Point(634, 99);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 50);
+            this.button4.Size = new System.Drawing.Size(230, 50);
             this.button4.TabIndex = 7;
             this.button4.Text = "Decign";
             this.button4.UseVisualStyleBackColor = false;
@@ -164,7 +164,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button5.Location = new System.Drawing.Point(180, 395);
+            this.button5.Location = new System.Drawing.Point(404, 240);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(184, 80);
             this.button5.TabIndex = 8;
@@ -184,10 +184,11 @@
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.button6.Location = new System.Drawing.Point(634, 155);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(177, 79);
+            this.button6.Size = new System.Drawing.Size(230, 79);
             this.button6.TabIndex = 9;
-            this.button6.Text = "Check accounts";
+            this.button6.Text = "Repair";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -200,11 +201,11 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button7.Location = new System.Drawing.Point(422, 241);
+            this.button7.Location = new System.Drawing.Point(180, 395);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(148, 50);
+            this.button7.Size = new System.Drawing.Size(184, 50);
             this.button7.TabIndex = 10;
-            this.button7.Text = "Decign";
+            this.button7.Text = "Nails";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
@@ -239,10 +240,11 @@
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.button9.Location = new System.Drawing.Point(634, 240);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(177, 93);
+            this.button9.Size = new System.Drawing.Size(230, 93);
             this.button9.TabIndex = 12;
-            this.button9.Text = "Medical Manicure";
+            this.button9.Text = "Withdrawal";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // pictureBox1
             // 

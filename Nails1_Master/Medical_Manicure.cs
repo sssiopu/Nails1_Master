@@ -22,8 +22,7 @@ namespace Nails1_Master
 
     }
 
-
-    public partial class Medical_Manicure : Form
+ public partial class Medical_Manicure : Form
     {
         DB db = new DB();
         int SelectedRow;
@@ -39,54 +38,54 @@ namespace Nails1_Master
             Admin2 r1 = new Admin2();
             r1.Show();
         }
+
         private void CreateColums()
         {
             dataGridView2.Columns.Add("Id_Medical_Manicure", "id");
             dataGridView2.Columns.Add("problem", "problem");
             dataGridView2.Columns.Add("IsNew", String.Empty);
         }
+
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
             pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
         }
+
         private void RefrestDatarid(DataGridView pip)
         {
             db.openConnection();
             pip.Rows.Clear();
-            string qwertyString = $"select * from Medical_Manicure";
+            string qwertyString = "SELECT * FROM Medical_Manicure";
             SqlCommand command = new SqlCommand(qwertyString, db.GetSqlConnection());
 
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
+            using (SqlDataReader reader = command.ExecuteReader())
             {
-                ReadSingleRow(pip, reader);
+                while (reader.Read())
+                {
+                    ReadSingleRow(pip, reader);
+                }
             }
-            reader.Close();
             db.closeConnection();
         }
 
-        private void Admin_Load(object sender, EventArgs e)
+        private void Medical_Manicure_Load(object sender, EventArgs e)
         {
             CreateColums();
             RefrestDatarid(dataGridView2);
-            dataGridView2.Columns[2].Visible = false;
+            dataGridView2.Columns[2].Visible = false; 
         }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SelectedRow = e.RowIndex;
 
-            if (e.RowIndex >= 0)
+            if (SelectedRow >= 0)
             {
                 DataGridViewRow row = dataGridView2.Rows[SelectedRow];
-
                 textidm.Text = row.Cells[0].Value?.ToString();
                 textcompm.Text = row.Cells[1].Value?.ToString();
-
             }
-
         }
-
 
         private void updatebutm_Click(object sender, EventArgs e)
         {
@@ -96,48 +95,48 @@ namespace Nails1_Master
         private void Search1(DataGridView dgw)
         {
             dgw.Rows.Clear();
-            string searchString = $"select * from Medical_Manicure where concat (Id_Medical_Manicure, problem) like '%" + searchtextm.Text + "%'";
-
-
+            string searchString = $"SELECT * FROM Medical_Manicure WHERE CONCAT (Id_Medical_Manicure, problem) LIKE '%{searchtextm.Text}%'";
             SqlCommand com = new SqlCommand(searchString, db.GetSqlConnection());
             db.openConnection();
-            SqlDataReader read = com.ExecuteReader();
-            while (read.Read())
+
+            using (SqlDataReader read = com.ExecuteReader())
             {
-                ReadSingleRow(dgw, read);
-
+                while (read.Read())
+                {
+                    ReadSingleRow(dgw, read);
+                }
             }
-            read.Close();
-
         }
+
         private void searchtextm_TextChanged(object sender, EventArgs e)
         {
             Search1(dataGridView2);
         }
 
-
-
         private void deleteRow()
         {
-            int index = dataGridView2.CurrentCell.RowIndex;
-            dataGridView2.Rows[index].Visible = false;
-
-            if (dataGridView2.Rows[index].Cells[0].Value.ToString() == string.Empty)
+            if (dataGridView2.CurrentRow != null)
             {
-                dataGridView2.Rows[index].Cells[2].Value = RowState.Deleted;
-                return;
+                int index = dataGridView2.CurrentCell.RowIndex;
+                dataGridView2.Rows[index].Visible = false;
+
+                if (string.IsNullOrEmpty(dataGridView2.Rows[index].Cells[0].Value?.ToString()))
+                {
+                    dataGridView2.Rows[index].Cells[2].Value = RowState.Deleted;
+                }
+                else
+                {
+                    dataGridView2.Rows[index].Cells[2].Value = RowState.Deleted;
+                }
             }
-            dataGridView2.Rows[index].Cells[2].Value = RowState.Deleted;
         }
-
-
 
         private void Update1()
         {
             db.openConnection();
+
             for (int index = 0; index < dataGridView2.Rows.Count; index++)
             {
-                // Проверяем, что значение не null
                 if (dataGridView2.Rows[index].Cells[2].Value == null)
                     continue;
 
@@ -150,21 +149,17 @@ namespace Nails1_Master
 
                 if (rowState == RowState.Deleted)
                 {
-                    // Проверяем, что значение не null
-                    if (dataGridView2.Rows[index].Cells[0].Value == null)
-                        continue;
-
-                    var id = Convert.ToInt32(dataGridView2.Rows[index].Cells[0].Value);
-                    var deleteQuery = $"delete from Design where Id_Design = {id}";
-
-                    var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
-                    command.ExecuteNonQuery();
+                    if (dataGridView2.Rows[index].Cells[0].Value != null)
+                    {
+                        var id = Convert.ToInt32(dataGridView2.Rows[index].Cells[0].Value);
+                        var deleteQuery = $"DELETE FROM Medical_Manicure WHERE Id_Medical_Manicure = {id}";
+                        var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
             db.closeConnection();
         }
-
-
 
         private void deletebutm_Click(object sender, EventArgs e)
         {
@@ -188,10 +183,17 @@ namespace Nails1_Master
 
         private void addbutm_Click(object sender, EventArgs e)
         {
-            Add_M addfrm = new Add_M();
-            addfrm.Show();
+            // Реализовать добавление новой записи в базу данных
+            string problem = textcompm.Text;
+            db.openConnection();
+            SqlCommand command = new SqlCommand($"INSERT INTO Medical_Manicure (problem) VALUES (@problem)", db.GetSqlConnection());
+            command.Parameters.AddWithValue("@problem", problem);
+            command.ExecuteNonQuery();
+            db.closeConnection();
+            RefrestDatarid(dataGridView2);
         }
-
-        
     }
 }
+
+
+

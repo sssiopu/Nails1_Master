@@ -77,13 +77,11 @@
       <DependentUpon>Builiding_Up.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
-    <Compile Include="..\..\..\..\Desktop\99\Gender.cs">
+    <Compile Include="Gender.cs">
       <SubType>Form</SubType>
-      <Link>Gender.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\Desktop\99\Gender.Designer.cs">
+    <Compile Include="Gender.Designer.cs">
       <DependentUpon>Gender.cs</DependentUpon>
-      <Link>Gender.Designer.cs</Link>
     </Compile>
     <Compile Include="Get_Polish_Coating.cs">
       <SubType>Form</SubType>
@@ -111,14 +109,29 @@
     <Compile Include="Regi.Designer.cs">
       <DependentUpon>Regi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Repair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair.Designer.cs">
+      <DependentUpon>Repair.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Withdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Withdrawal.Designer.cs">
+      <DependentUpon>Withdrawal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_design.resx">
       <DependentUpon>Add_design.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_M.resx">
+      <DependentUpon>Add_M.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -129,9 +142,8 @@
     <EmbeddedResource Include="Builiding_Up.resx">
       <DependentUpon>Builiding_Up.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\Desktop\99\Gender.resx">
+    <EmbeddedResource Include="Gender.resx">
       <DependentUpon>Gender.cs</DependentUpon>
-      <Link>Gender.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Get_Polish_Coating.resx">
       <DependentUpon>Get_Polish_Coating.cs</DependentUpon>
@@ -155,8 +167,14 @@
     <EmbeddedResource Include="Regi.resx">
       <DependentUpon>Regi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Repair.resx">
+      <DependentUpon>Repair.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdrawal.resx">
+      <DependentUpon>Withdrawal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
