@@ -23,5 +23,12 @@ namespace Nails1_Master
             Admin2 r1 = new Admin2();
             r1.Show();
         }
+
+        private void addbutwi_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Add_Wi r1 = new Add_Wi();
+            r1.Show();
+        }
     }
 }

@@ -58,11 +58,29 @@
     <Compile Include="Add_gender.Designer.cs">
       <DependentUpon>Add_gender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_GPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_GPC.Designer.cs">
+      <DependentUpon>Add_GPC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_M.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_M.Designer.cs">
       <DependentUpon>Add_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Rep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Rep.Designer.cs">
+      <DependentUpon>Add_Rep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Wi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Wi.Designer.cs">
+      <DependentUpon>Add_Wi.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
@@ -138,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_M.resx">
       <DependentUpon>Add_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Rep.resx">
+      <DependentUpon>Add_Rep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Wi.resx">
+      <DependentUpon>Add_Wi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>

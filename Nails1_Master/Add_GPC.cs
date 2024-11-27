@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Nails1_Master
 {
-    public partial class Add_M : Form
+    public partial class Add_GPC : Form
     {
-        DB db = new DB();
-
-        public Add_M()
+        public Add_GPC()
         {
             InitializeComponent();
-            StartPosition = FormStartPosition.CenterScreen;
         }
-
     }
 }

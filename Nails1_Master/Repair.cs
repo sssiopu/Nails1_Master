@@ -23,5 +23,12 @@ namespace Nails1_Master
             Admin2 r1 = new Admin2();
             r1.Show();
         }
+
+        private void addbutrep_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Add_Rep r1 = new Add_Rep();
+            r1.Show();
+        }
     }
 }

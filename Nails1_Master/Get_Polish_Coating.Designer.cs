@@ -29,64 +29,64 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button2 = new System.Windows.Forms.Button();
-            this.deletebut = new System.Windows.Forms.Button();
+            this.backbutgpc = new System.Windows.Forms.Button();
+            this.deletebutgpc = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textcomp = new System.Windows.Forms.TextBox();
-            this.textid = new System.Windows.Forms.TextBox();
+            this.textcompgpc = new System.Windows.Forms.TextBox();
+            this.textidgpc = new System.Windows.Forms.TextBox();
             this.login = new System.Windows.Forms.Label();
-            this.updatebut = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.updatebutgpc = new System.Windows.Forms.Button();
+            this.cleargpc = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Search = new System.Windows.Forms.Label();
-            this.searchtext = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sortascd = new System.Windows.Forms.Button();
-            this.savebut = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.sortdescd = new System.Windows.Forms.Button();
+            this.searchtextgpc = new System.Windows.Forms.TextBox();
+            this.dataGridViewGPC = new System.Windows.Forms.DataGridView();
+            this.sortascdgpc = new System.Windows.Forms.Button();
+            this.savebutgpc = new System.Windows.Forms.Button();
+            this.addbutgpc = new System.Windows.Forms.Button();
+            this.sortdescdgpc = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGPC)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // backbutgpc
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button2.Location = new System.Drawing.Point(1306, 602);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 31);
-            this.button2.TabIndex = 59;
-            this.button2.Text = "back";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.backbutgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.backbutgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backbutgpc.FlatAppearance.BorderSize = 2;
+            this.backbutgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.backbutgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.backbutgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbutgpc.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbutgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.backbutgpc.Location = new System.Drawing.Point(1306, 602);
+            this.backbutgpc.Name = "backbutgpc";
+            this.backbutgpc.Size = new System.Drawing.Size(69, 31);
+            this.backbutgpc.TabIndex = 59;
+            this.backbutgpc.Text = "back";
+            this.backbutgpc.UseVisualStyleBackColor = false;
+            this.backbutgpc.Click += new System.EventHandler(this.button2_Click);
             // 
-            // deletebut
+            // deletebutgpc
             // 
-            this.deletebut.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.deletebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.deletebut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deletebut.FlatAppearance.BorderSize = 2;
-            this.deletebut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.deletebut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.deletebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deletebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.deletebut.Location = new System.Drawing.Point(1120, 165);
-            this.deletebut.Name = "deletebut";
-            this.deletebut.Size = new System.Drawing.Size(198, 43);
-            this.deletebut.TabIndex = 58;
-            this.deletebut.Text = "delete";
-            this.deletebut.UseVisualStyleBackColor = false;
+            this.deletebutgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.deletebutgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.deletebutgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deletebutgpc.FlatAppearance.BorderSize = 2;
+            this.deletebutgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.deletebutgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.deletebutgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deletebutgpc.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebutgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.deletebutgpc.Location = new System.Drawing.Point(1120, 165);
+            this.deletebutgpc.Name = "deletebutgpc";
+            this.deletebutgpc.Size = new System.Drawing.Size(198, 43);
+            this.deletebutgpc.TabIndex = 58;
+            this.deletebutgpc.Text = "delete";
+            this.deletebutgpc.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -94,8 +94,8 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.textcomp);
-            this.groupBox1.Controls.Add(this.textid);
+            this.groupBox1.Controls.Add(this.textcompgpc);
+            this.groupBox1.Controls.Add(this.textidgpc);
             this.groupBox1.Controls.Add(this.login);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
@@ -135,29 +135,29 @@
             this.panel3.Size = new System.Drawing.Size(222, 5);
             this.panel3.TabIndex = 12;
             // 
-            // textcomp
+            // textcompgpc
             // 
-            this.textcomp.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textcomp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textcomp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textcomp.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textcomp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcomp.Location = new System.Drawing.Point(283, 167);
-            this.textcomp.Name = "textcomp";
-            this.textcomp.Size = new System.Drawing.Size(221, 26);
-            this.textcomp.TabIndex = 23;
+            this.textcompgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textcompgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textcompgpc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textcompgpc.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcompgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textcompgpc.Location = new System.Drawing.Point(283, 167);
+            this.textcompgpc.Name = "textcompgpc";
+            this.textcompgpc.Size = new System.Drawing.Size(221, 26);
+            this.textcompgpc.TabIndex = 23;
             // 
-            // textid
+            // textidgpc
             // 
-            this.textid.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textid.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textid.Location = new System.Drawing.Point(283, 60);
-            this.textid.Name = "textid";
-            this.textid.Size = new System.Drawing.Size(221, 26);
-            this.textid.TabIndex = 22;
+            this.textidgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textidgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textidgpc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textidgpc.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textidgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textidgpc.Location = new System.Drawing.Point(283, 60);
+            this.textidgpc.Name = "textidgpc";
+            this.textidgpc.Size = new System.Drawing.Size(221, 26);
+            this.textidgpc.TabIndex = 22;
             // 
             // login
             // 
@@ -170,41 +170,41 @@
             this.login.TabIndex = 5;
             this.login.Text = "ID";
             // 
-            // updatebut
+            // updatebutgpc
             // 
-            this.updatebut.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.updatebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.updatebut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updatebut.FlatAppearance.BorderSize = 2;
-            this.updatebut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.updatebut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.updatebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.updatebut.Location = new System.Drawing.Point(1120, 25);
-            this.updatebut.Name = "updatebut";
-            this.updatebut.Size = new System.Drawing.Size(198, 49);
-            this.updatebut.TabIndex = 56;
-            this.updatebut.Text = "Update";
-            this.updatebut.UseVisualStyleBackColor = false;
+            this.updatebutgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.updatebutgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.updatebutgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updatebutgpc.FlatAppearance.BorderSize = 2;
+            this.updatebutgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.updatebutgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.updatebutgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updatebutgpc.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebutgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.updatebutgpc.Location = new System.Drawing.Point(1120, 25);
+            this.updatebutgpc.Name = "updatebutgpc";
+            this.updatebutgpc.Size = new System.Drawing.Size(198, 49);
+            this.updatebutgpc.TabIndex = 56;
+            this.updatebutgpc.Text = "Update";
+            this.updatebutgpc.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // cleargpc
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 2;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button6.Location = new System.Drawing.Point(1120, 89);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(198, 45);
-            this.button6.TabIndex = 55;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = false;
+            this.cleargpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cleargpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.cleargpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cleargpc.FlatAppearance.BorderSize = 2;
+            this.cleargpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.cleargpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.cleargpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cleargpc.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cleargpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.cleargpc.Location = new System.Drawing.Point(1120, 98);
+            this.cleargpc.Name = "cleargpc";
+            this.cleargpc.Size = new System.Drawing.Size(198, 45);
+            this.cleargpc.TabIndex = 55;
+            this.cleargpc.Text = "Clear";
+            this.cleargpc.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -228,105 +228,106 @@
             this.Search.TabIndex = 53;
             this.Search.Text = "Search";
             // 
-            // searchtext
+            // searchtextgpc
             // 
-            this.searchtext.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchtext.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchtext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtext.Location = new System.Drawing.Point(88, 65);
-            this.searchtext.Name = "searchtext";
-            this.searchtext.Size = new System.Drawing.Size(248, 26);
-            this.searchtext.TabIndex = 52;
+            this.searchtextgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchtextgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.searchtextgpc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchtextgpc.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchtextgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.searchtextgpc.Location = new System.Drawing.Point(88, 65);
+            this.searchtextgpc.Name = "searchtextgpc";
+            this.searchtextgpc.Size = new System.Drawing.Size(248, 26);
+            this.searchtextgpc.TabIndex = 52;
             // 
-            // dataGridView1
+            // dataGridViewGPC
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(380, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(691, 378);
-            this.dataGridView1.TabIndex = 51;
+            this.dataGridViewGPC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewGPC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridViewGPC.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.dataGridViewGPC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGPC.Location = new System.Drawing.Point(380, 25);
+            this.dataGridViewGPC.Name = "dataGridViewGPC";
+            this.dataGridViewGPC.Size = new System.Drawing.Size(691, 378);
+            this.dataGridViewGPC.TabIndex = 51;
             // 
-            // sortascd
+            // sortascdgpc
             // 
-            this.sortascd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sortascd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.sortascd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sortascd.FlatAppearance.BorderSize = 2;
-            this.sortascd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.sortascd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.sortascd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sortascd.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sortascd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascd.Location = new System.Drawing.Point(166, 212);
-            this.sortascd.Name = "sortascd";
-            this.sortascd.Size = new System.Drawing.Size(170, 89);
-            this.sortascd.TabIndex = 50;
-            this.sortascd.Text = "sort asc";
-            this.sortascd.UseVisualStyleBackColor = false;
+            this.sortascdgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sortascdgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.sortascdgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sortascdgpc.FlatAppearance.BorderSize = 2;
+            this.sortascdgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.sortascdgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.sortascdgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sortascdgpc.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortascdgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.sortascdgpc.Location = new System.Drawing.Point(166, 212);
+            this.sortascdgpc.Name = "sortascdgpc";
+            this.sortascdgpc.Size = new System.Drawing.Size(170, 89);
+            this.sortascdgpc.TabIndex = 50;
+            this.sortascdgpc.Text = "sort asc";
+            this.sortascdgpc.UseVisualStyleBackColor = false;
             // 
-            // savebut
+            // savebutgpc
             // 
-            this.savebut.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.savebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.savebut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.savebut.FlatAppearance.BorderSize = 2;
-            this.savebut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.savebut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.savebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.savebut.Location = new System.Drawing.Point(1120, 234);
-            this.savebut.Name = "savebut";
-            this.savebut.Size = new System.Drawing.Size(198, 47);
-            this.savebut.TabIndex = 49;
-            this.savebut.Text = "SAVE";
-            this.savebut.UseVisualStyleBackColor = false;
+            this.savebutgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.savebutgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.savebutgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.savebutgpc.FlatAppearance.BorderSize = 2;
+            this.savebutgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.savebutgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.savebutgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.savebutgpc.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebutgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.savebutgpc.Location = new System.Drawing.Point(1120, 234);
+            this.savebutgpc.Name = "savebutgpc";
+            this.savebutgpc.Size = new System.Drawing.Size(198, 47);
+            this.savebutgpc.TabIndex = 49;
+            this.savebutgpc.Text = "SAVE";
+            this.savebutgpc.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // addbutgpc
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button1.Location = new System.Drawing.Point(1120, 309);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 94);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Add record";
-            this.button1.UseVisualStyleBackColor = false;
+            this.addbutgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.addbutgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.addbutgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addbutgpc.FlatAppearance.BorderSize = 2;
+            this.addbutgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.addbutgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.addbutgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addbutgpc.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbutgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.addbutgpc.Location = new System.Drawing.Point(1120, 309);
+            this.addbutgpc.Name = "addbutgpc";
+            this.addbutgpc.Size = new System.Drawing.Size(198, 94);
+            this.addbutgpc.TabIndex = 48;
+            this.addbutgpc.Text = "Add record";
+            this.addbutgpc.UseVisualStyleBackColor = false;
+            this.addbutgpc.Click += new System.EventHandler(this.addbutgpc_Click);
             // 
-            // sortdescd
+            // sortdescdgpc
             // 
-            this.sortdescd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sortdescd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.sortdescd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sortdescd.FlatAppearance.BorderSize = 2;
-            this.sortdescd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.sortdescd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.sortdescd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sortdescd.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sortdescd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortdescd.Location = new System.Drawing.Point(166, 318);
-            this.sortdescd.Name = "sortdescd";
-            this.sortdescd.Size = new System.Drawing.Size(170, 85);
-            this.sortdescd.TabIndex = 47;
-            this.sortdescd.Text = "sort desc";
-            this.sortdescd.UseVisualStyleBackColor = false;
+            this.sortdescdgpc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sortdescdgpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.sortdescdgpc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sortdescdgpc.FlatAppearance.BorderSize = 2;
+            this.sortdescdgpc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.sortdescdgpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.sortdescdgpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sortdescdgpc.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortdescdgpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.sortdescdgpc.Location = new System.Drawing.Point(166, 318);
+            this.sortdescdgpc.Name = "sortdescdgpc";
+            this.sortdescdgpc.Size = new System.Drawing.Size(170, 85);
+            this.sortdescdgpc.TabIndex = 47;
+            this.sortdescdgpc.Text = "sort desc";
+            this.sortdescdgpc.UseVisualStyleBackColor = false;
             // 
             // Get_Polish_Coating
             // 
@@ -334,24 +335,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.deletebut);
+            this.Controls.Add(this.backbutgpc);
+            this.Controls.Add(this.deletebutgpc);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.updatebut);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.updatebutgpc);
+            this.Controls.Add(this.cleargpc);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Search);
-            this.Controls.Add(this.searchtext);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.sortascd);
-            this.Controls.Add(this.savebut);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.sortdescd);
+            this.Controls.Add(this.searchtextgpc);
+            this.Controls.Add(this.dataGridViewGPC);
+            this.Controls.Add(this.sortascdgpc);
+            this.Controls.Add(this.savebutgpc);
+            this.Controls.Add(this.addbutgpc);
+            this.Controls.Add(this.sortdescdgpc);
             this.Name = "Get_Polish_Coating";
             this.Text = "Get_Polish_Coating";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGPC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,24 +360,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button deletebut;
+        private System.Windows.Forms.Button backbutgpc;
+        private System.Windows.Forms.Button deletebutgpc;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textcomp;
-        private System.Windows.Forms.TextBox textid;
+        private System.Windows.Forms.TextBox textcompgpc;
+        private System.Windows.Forms.TextBox textidgpc;
         private System.Windows.Forms.Label login;
-        private System.Windows.Forms.Button updatebut;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button updatebutgpc;
+        private System.Windows.Forms.Button cleargpc;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Search;
-        private System.Windows.Forms.TextBox searchtext;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button sortascd;
-        private System.Windows.Forms.Button savebut;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button sortdescd;
+        private System.Windows.Forms.TextBox searchtextgpc;
+        private System.Windows.Forms.DataGridView dataGridViewGPC;
+        private System.Windows.Forms.Button sortascdgpc;
+        private System.Windows.Forms.Button savebutgpc;
+        private System.Windows.Forms.Button addbutgpc;
+        private System.Windows.Forms.Button sortdescdgpc;
     }
 }
