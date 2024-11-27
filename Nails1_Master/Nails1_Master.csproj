@@ -52,6 +52,12 @@
     <Compile Include="Add_design.Designer.cs">
       <DependentUpon>Add_design.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_gender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_gender.Designer.cs">
+      <DependentUpon>Add_gender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_M.cs">
       <SubType>Form</SubType>
     </Compile>
