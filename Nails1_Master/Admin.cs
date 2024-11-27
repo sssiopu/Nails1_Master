@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 namespace Nails1_Master
 {
     enum RowState
-    { 
+    {
         Execute,
         New,
         Modified,
@@ -25,7 +26,7 @@ namespace Nails1_Master
     public partial class Admin : Form
 
     {
-        
+
 
         DB db = new DB();
         int SelectedRow;
@@ -41,9 +42,9 @@ namespace Nails1_Master
             dataGridView1.Columns.Add("IsNew", String.Empty);
         }
 
-        private void ReadSingleRow (DataGridView pip, IDataRecord record)
+        private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
-            pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew); 
+            pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
         }
         private void RefrestDatarid(DataGridView pip)
         {
@@ -51,7 +52,7 @@ namespace Nails1_Master
             pip.Rows.Clear();
             string qwertyString = $"select * from Design";
             SqlCommand command = new SqlCommand(qwertyString, db.GetSqlConnection());
-            
+
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -72,7 +73,7 @@ namespace Nails1_Master
         {
             SelectedRow = e.RowIndex;
 
-            if(e.RowIndex >= 0)
+            if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[SelectedRow];
 
@@ -103,7 +104,7 @@ namespace Nails1_Master
             SqlCommand com = new SqlCommand(searchString, db.GetSqlConnection());
             db.openConnection();
             SqlDataReader read = com.ExecuteReader();
-            while (read.Read())    
+            while (read.Read())
             {
                 ReadSingleRow(dgw, read);
 
@@ -116,7 +117,7 @@ namespace Nails1_Master
             Search1(dataGridView1);
         }
 
-        
+
 
         private void deleteRow()
         {
@@ -131,7 +132,7 @@ namespace Nails1_Master
             dataGridView1.Rows[index].Cells[2].Value = RowState.Deleted;
         }
 
-      
+
 
         private void Update1()
         {
@@ -162,36 +163,79 @@ namespace Nails1_Master
                     command.ExecuteNonQuery();
                 }
             }
-            db.closeConnection();
-        }
+            f(rowState == RowState.Modified)
+            {
+                var id = dataGridView1.Rows[index].Cells[0].Value.ToString();
+                var id = dataGridView1.Rows[index].Cells[1].Value.ToString();
+
+                var changeQuery = $"update Nails_Master set type complexity = '{type}'";
+                var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
+                command.ExecuteNonQuery();
+
+                private void sortascd_Click(object sender, EventArgs e)
+                {
+                    dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
+                }
+                db.closeConnection();
+            }
 
 
 
-        private void deletebut_Click(object sender, EventArgs e)
-        {
-            deleteRow();
-        }
+            private void deletebut_Click(object sender, EventArgs e)
+            {
+                deleteRow();
+            }
 
-        private void savebut_Click(object sender, EventArgs e)
-        {
-            Update1();
-        }
+            private void savebut_Click(object sender, EventArgs e)
+            {
+                Update1();
+            }
+            private void Change()
+            {
+                var selectedRowIndex = dataGridView1.CurrentCell.RowIndex;
 
-        private void sortascd_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
-        }
+                var id = textid.Text;
+                var type = textcomp.Text;
 
-        private void sortdescd_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
-        }
+                // Проверяем, что строка не пустая
+                if (!string.IsNullOrEmpty(dataGridView1.Rows[selectedRowIndex].Cells[0].Value?.ToString()))
+                {
+                    // Проверяем, что поле type не пустое или не является пробельным
+                    if (!string.IsNullOrWhiteSpace(type))
+                    {
+                        // Обновляем значения в строке
+                        dataGridView1.Rows[selectedRowIndex].SetValues(id, type);
+                        dataGridView1.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please, enter valid text in the type field.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Selected row is empty.");
+                }
+            }
 
-        private void backbutdes_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Admin2 r1 = new Admin2();
-            r1.Show();
+
+            private void sortdescd_Click(object sender, EventArgs e)
+            {
+                dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
+            }
+
+            private void backbutdes_Click(object sender, EventArgs e)
+            {
+                this.Hide();
+                Admin2 r1 = new Admin2();
+                r1.Show();
+            }
+
         }
     }
 }
+
+
+
+
+
