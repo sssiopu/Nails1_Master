@@ -43,7 +43,7 @@ namespace Nails1_Master
             dataGridViewgen.Columns.Add("gender", "gender");
             dataGridViewgen.Columns.Add("IsNew", String.Empty);
         }
-        private void ReadSingleRow1(DataGridView pip, IDataRecord record)
+        private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
             pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
         }
@@ -57,7 +57,7 @@ namespace Nails1_Master
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                ReadSingleRow1(pip, reader);
+                ReadSingleRow(pip, reader);
             }
             reader.Close();
             db.closeConnection();
