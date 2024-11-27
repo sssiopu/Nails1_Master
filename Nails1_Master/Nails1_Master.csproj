@@ -77,11 +77,13 @@
       <DependentUpon>Builiding_Up.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
-    <Compile Include="Gender.cs">
+    <Compile Include="..\..\..\..\Desktop\99\Gender.cs">
       <SubType>Form</SubType>
+      <Link>Gender.cs</Link>
     </Compile>
-    <Compile Include="Gender.Designer.cs">
+    <Compile Include="..\..\..\..\Desktop\99\Gender.Designer.cs">
       <DependentUpon>Gender.cs</DependentUpon>
+      <Link>Gender.Designer.cs</Link>
     </Compile>
     <Compile Include="Get_Polish_Coating.cs">
       <SubType>Form</SubType>
@@ -127,8 +129,9 @@
     <EmbeddedResource Include="Builiding_Up.resx">
       <DependentUpon>Builiding_Up.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gender.resx">
+    <EmbeddedResource Include="..\..\..\..\Desktop\99\Gender.resx">
       <DependentUpon>Gender.cs</DependentUpon>
+      <Link>Gender.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Get_Polish_Coating.resx">
       <DependentUpon>Get_Polish_Coating.cs</DependentUpon>

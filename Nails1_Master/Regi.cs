@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 
 namespace Nails1_Master
 {
+
     public partial class Regi : Form
     {
         public Regi()
