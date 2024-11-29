@@ -32,6 +32,7 @@ namespace Nails1_Master
             InitializeComponent();
         }
 
+
         private void backbutdes_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -63,34 +64,10 @@ namespace Nails1_Master
             reader.Close();
             db.closeConnection();
         }
-        private void Gender_Load(object sender, EventArgs e)
-        {
-            CreateColums();
-            RefrestDatarid1(dataGridViewgen);
-            dataGridViewgen.Columns[2].Visible = false;
-        }
-        private void dataGridViewgen_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            SelectedRow = e.RowIndex;
 
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dataGridViewgen.Rows[SelectedRow];
-
-                textidgen.Text = row.Cells[0].Value?.ToString();
-                textcompgen.Text = row.Cells[1].Value?.ToString();
-
-            }
-        }
-             private void addbutgen_Click(object sender, EventArgs e)
-        {
-            Add_gender addfrm = new Add_gender();
-            addfrm.Show();
-        }
-        private void updatebutgen_Click(object sender, EventArgs e)
-        {
-            RefrestDatarid1(dataGridViewgen);
-        }
+       
+        
+        
         private void Search1(DataGridView dgw)
         {
             dgw.Rows.Clear();
@@ -107,10 +84,6 @@ namespace Nails1_Master
             }
             read.Close();
 
-        }
-        private void searchtextgen_TextChanged(object sender, EventArgs e)
-        {
-            Search1(dataGridViewgen);
         }
         private void deleteRow()
         {
@@ -156,12 +129,52 @@ namespace Nails1_Master
             db.closeConnection();
         }
 
-             private void deletebutgen_Click(object sender, EventArgs e)
+       
+       
+
+        private void Gender_Load_1(object sender, EventArgs e)
+        {
+            CreateColums();
+            RefrestDatarid1(dataGridViewgen);
+            dataGridViewgen.Columns[2].Visible = false;
+        }
+
+        private void addbutgen_Click_1(object sender, EventArgs e)
+        {
+            Add_gender addfrm = new Add_gender();
+            addfrm.Show();
+        }
+
+        private void dataGridViewgen_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            SelectedRow = e.RowIndex;
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridViewgen.Rows[SelectedRow];
+
+                textidgen.Text = row.Cells[0].Value?.ToString();
+                textcompgen.Text = row.Cells[1].Value?.ToString();
+
+            }
+        }
+
+        private void updatebutgwn_Click(object sender, EventArgs e)
+        {
+            RefrestDatarid1(dataGridViewgen);
+        }
+
+        private void searchtextgen_TextChanged_1(object sender, EventArgs e)
+        {
+            Search1(dataGridViewgen);
+        }
+
+        private void deletebutgen_Click(object sender, EventArgs e)
         {
             deleteRow();
         }
 
-        private void savebutgen_Click(object sender, EventArgs e)
+        private void savebutgen_Click_1(object sender, EventArgs e)
         {
             Update1();
         }
@@ -173,9 +186,8 @@ namespace Nails1_Master
 
         private void sortdescdgen_Click(object sender, EventArgs e)
         {
-            dataGridViewgen.Sort(dataGridViewgen.Columns[1], ListSortDirection.Descending);
+             dataGridViewgen.Sort(dataGridViewgen.Columns[1], ListSortDirection.Descending);
         }
-
     }
 }
 

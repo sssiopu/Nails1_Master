@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backbutdeswi = new System.Windows.Forms.Button();
             this.deletebutwi = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -43,13 +43,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Search = new System.Windows.Forms.Label();
             this.searchtextwi = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewW = new System.Windows.Forms.DataGridView();
             this.sortascdwi = new System.Windows.Forms.Button();
             this.savebutwi = new System.Windows.Forms.Button();
             this.addbutwi = new System.Windows.Forms.Button();
             this.sortdescdwi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewW)).BeginInit();
             this.SuspendLayout();
             // 
             // backbutdeswi
@@ -87,6 +87,7 @@
             this.deletebutwi.TabIndex = 56;
             this.deletebutwi.Text = "delete";
             this.deletebutwi.UseVisualStyleBackColor = false;
+            this.deletebutwi.Click += new System.EventHandler(this.deletebutwi_Click);
             // 
             // groupBox1
             // 
@@ -113,9 +114,9 @@
             this.label4.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(80, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 24);
+            this.label4.Size = new System.Drawing.Size(168, 24);
             this.label4.TabIndex = 24;
-            this.label4.Text = "complexity";
+            this.label4.Text = "whos job is it";
             // 
             // panel4
             // 
@@ -187,6 +188,7 @@
             this.updatebutwi.TabIndex = 54;
             this.updatebutwi.Text = "Update";
             this.updatebutwi.UseVisualStyleBackColor = false;
+            this.updatebutwi.Click += new System.EventHandler(this.updatebutwi_Click);
             // 
             // clearbutwi
             // 
@@ -239,22 +241,24 @@
             this.searchtextwi.Name = "searchtextwi";
             this.searchtextwi.Size = new System.Drawing.Size(248, 26);
             this.searchtextwi.TabIndex = 50;
+            this.searchtextwi.TextChanged += new System.EventHandler(this.searchtextwi_TextChanged);
             // 
-            // dataGridView1
+            // dataGridViewW
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(387, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(691, 378);
-            this.dataGridView1.TabIndex = 49;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.dataGridViewW.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewW.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridViewW.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.dataGridViewW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewW.Location = new System.Drawing.Point(387, 22);
+            this.dataGridViewW.Name = "dataGridViewW";
+            this.dataGridViewW.Size = new System.Drawing.Size(691, 378);
+            this.dataGridViewW.TabIndex = 49;
+            this.dataGridViewW.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewW_CellClick);
             // 
             // sortascdwi
             // 
@@ -273,6 +277,7 @@
             this.sortascdwi.TabIndex = 48;
             this.sortascdwi.Text = "sort asc";
             this.sortascdwi.UseVisualStyleBackColor = false;
+            this.sortascdwi.Click += new System.EventHandler(this.sortascdwi_Click);
             // 
             // savebutwi
             // 
@@ -291,6 +296,7 @@
             this.savebutwi.TabIndex = 47;
             this.savebutwi.Text = "SAVE";
             this.savebutwi.UseVisualStyleBackColor = false;
+            this.savebutwi.Click += new System.EventHandler(this.savebutwi_Click);
             // 
             // addbutwi
             // 
@@ -328,6 +334,7 @@
             this.sortdescdwi.TabIndex = 45;
             this.sortdescdwi.Text = "sort desc";
             this.sortdescdwi.UseVisualStyleBackColor = false;
+            this.sortdescdwi.Click += new System.EventHandler(this.sortdescdwi_Click);
             // 
             // Withdrawal
             // 
@@ -343,16 +350,17 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.searchtextwi);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewW);
             this.Controls.Add(this.sortascdwi);
             this.Controls.Add(this.savebutwi);
             this.Controls.Add(this.addbutwi);
             this.Controls.Add(this.sortdescdwi);
             this.Name = "Withdrawal";
             this.Text = "Withdrawal";
+            this.Load += new System.EventHandler(this.Withdrawal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,7 +382,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Search;
         private System.Windows.Forms.TextBox searchtextwi;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewW;
         private System.Windows.Forms.Button sortascdwi;
         private System.Windows.Forms.Button savebutwi;
         private System.Windows.Forms.Button addbutwi;

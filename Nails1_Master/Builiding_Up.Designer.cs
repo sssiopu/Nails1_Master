@@ -30,64 +30,66 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Builiding_Up));
-            this.button2 = new System.Windows.Forms.Button();
-            this.deletebut = new System.Windows.Forms.Button();
+            this.backbutup = new System.Windows.Forms.Button();
+            this.deletebutup = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textcomp = new System.Windows.Forms.TextBox();
-            this.textid = new System.Windows.Forms.TextBox();
+            this.textcompup = new System.Windows.Forms.TextBox();
+            this.textidup = new System.Windows.Forms.TextBox();
             this.login = new System.Windows.Forms.Label();
-            this.updatebut = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.updatebutup = new System.Windows.Forms.Button();
+            this.clearbutup = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Search = new System.Windows.Forms.Label();
-            this.searchtext = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sortascd = new System.Windows.Forms.Button();
-            this.savebut = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.sortdescd = new System.Windows.Forms.Button();
+            this.searchtextup = new System.Windows.Forms.TextBox();
+            this.dataGridViewUP = new System.Windows.Forms.DataGridView();
+            this.sortascdup = new System.Windows.Forms.Button();
+            this.savebutup = new System.Windows.Forms.Button();
+            this.addburup = new System.Windows.Forms.Button();
+            this.sortdescdup = new System.Windows.Forms.Button();
+            this.modifybutup = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUP)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // backbutup
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button2.Location = new System.Drawing.Point(1311, 600);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 31);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "back";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.backbutup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.backbutup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backbutup.FlatAppearance.BorderSize = 2;
+            this.backbutup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.backbutup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.backbutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbutup.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbutup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.backbutup.Location = new System.Drawing.Point(1311, 600);
+            this.backbutup.Name = "backbutup";
+            this.backbutup.Size = new System.Drawing.Size(69, 31);
+            this.backbutup.TabIndex = 46;
+            this.backbutup.Text = "back";
+            this.backbutup.UseVisualStyleBackColor = false;
+            this.backbutup.Click += new System.EventHandler(this.button2_Click);
             // 
-            // deletebut
+            // deletebutup
             // 
-            this.deletebut.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.deletebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.deletebut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deletebut.FlatAppearance.BorderSize = 2;
-            this.deletebut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.deletebut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.deletebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deletebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.deletebut.Location = new System.Drawing.Point(1125, 163);
-            this.deletebut.Name = "deletebut";
-            this.deletebut.Size = new System.Drawing.Size(198, 43);
-            this.deletebut.TabIndex = 45;
-            this.deletebut.Text = "delete";
-            this.deletebut.UseVisualStyleBackColor = false;
+            this.deletebutup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.deletebutup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.deletebutup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deletebutup.FlatAppearance.BorderSize = 2;
+            this.deletebutup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.deletebutup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.deletebutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deletebutup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebutup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.deletebutup.Location = new System.Drawing.Point(1125, 163);
+            this.deletebutup.Name = "deletebutup";
+            this.deletebutup.Size = new System.Drawing.Size(198, 43);
+            this.deletebutup.TabIndex = 45;
+            this.deletebutup.Text = "delete";
+            this.deletebutup.UseVisualStyleBackColor = false;
+            this.deletebutup.Click += new System.EventHandler(this.deletebutup_Click);
             // 
             // groupBox1
             // 
@@ -95,8 +97,8 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.textcomp);
-            this.groupBox1.Controls.Add(this.textid);
+            this.groupBox1.Controls.Add(this.textcompup);
+            this.groupBox1.Controls.Add(this.textidup);
             this.groupBox1.Controls.Add(this.login);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
@@ -116,7 +118,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 24);
             this.label4.TabIndex = 24;
-            this.label4.Text = "complexity";
+            this.label4.Text = "centimetre";
             // 
             // panel4
             // 
@@ -136,29 +138,29 @@
             this.panel3.Size = new System.Drawing.Size(222, 5);
             this.panel3.TabIndex = 12;
             // 
-            // textcomp
+            // textcompup
             // 
-            this.textcomp.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textcomp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textcomp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textcomp.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textcomp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcomp.Location = new System.Drawing.Point(283, 167);
-            this.textcomp.Name = "textcomp";
-            this.textcomp.Size = new System.Drawing.Size(221, 26);
-            this.textcomp.TabIndex = 23;
+            this.textcompup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textcompup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textcompup.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textcompup.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcompup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textcompup.Location = new System.Drawing.Point(283, 167);
+            this.textcompup.Name = "textcompup";
+            this.textcompup.Size = new System.Drawing.Size(221, 26);
+            this.textcompup.TabIndex = 23;
             // 
-            // textid
+            // textidup
             // 
-            this.textid.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textid.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textid.Location = new System.Drawing.Point(283, 60);
-            this.textid.Name = "textid";
-            this.textid.Size = new System.Drawing.Size(221, 26);
-            this.textid.TabIndex = 22;
+            this.textidup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textidup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textidup.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textidup.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textidup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textidup.Location = new System.Drawing.Point(283, 60);
+            this.textidup.Name = "textidup";
+            this.textidup.Size = new System.Drawing.Size(221, 26);
+            this.textidup.TabIndex = 22;
             // 
             // login
             // 
@@ -171,41 +173,42 @@
             this.login.TabIndex = 5;
             this.login.Text = "ID";
             // 
-            // updatebut
+            // updatebutup
             // 
-            this.updatebut.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.updatebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.updatebut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updatebut.FlatAppearance.BorderSize = 2;
-            this.updatebut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.updatebut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.updatebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.updatebut.Location = new System.Drawing.Point(1125, 23);
-            this.updatebut.Name = "updatebut";
-            this.updatebut.Size = new System.Drawing.Size(198, 49);
-            this.updatebut.TabIndex = 42;
-            this.updatebut.Text = "Update";
-            this.updatebut.UseVisualStyleBackColor = false;
+            this.updatebutup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.updatebutup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.updatebutup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updatebutup.FlatAppearance.BorderSize = 2;
+            this.updatebutup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.updatebutup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.updatebutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updatebutup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebutup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.updatebutup.Location = new System.Drawing.Point(1125, 23);
+            this.updatebutup.Name = "updatebutup";
+            this.updatebutup.Size = new System.Drawing.Size(198, 49);
+            this.updatebutup.TabIndex = 42;
+            this.updatebutup.Text = "Update";
+            this.updatebutup.UseVisualStyleBackColor = false;
+            this.updatebutup.Click += new System.EventHandler(this.updatebutup_Click);
             // 
-            // button6
+            // clearbutup
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 2;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button6.Location = new System.Drawing.Point(1125, 87);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(198, 45);
-            this.button6.TabIndex = 41;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = false;
+            this.clearbutup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.clearbutup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.clearbutup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clearbutup.FlatAppearance.BorderSize = 2;
+            this.clearbutup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.clearbutup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.clearbutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearbutup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearbutup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.clearbutup.Location = new System.Drawing.Point(1125, 87);
+            this.clearbutup.Name = "clearbutup";
+            this.clearbutup.Size = new System.Drawing.Size(198, 45);
+            this.clearbutup.TabIndex = 41;
+            this.clearbutup.Text = "Clear";
+            this.clearbutup.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -229,105 +232,129 @@
             this.Search.TabIndex = 39;
             this.Search.Text = "Search";
             // 
-            // searchtext
+            // searchtextup
             // 
-            this.searchtext.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchtext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.searchtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchtext.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchtext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtext.Location = new System.Drawing.Point(93, 63);
-            this.searchtext.Name = "searchtext";
-            this.searchtext.Size = new System.Drawing.Size(248, 26);
-            this.searchtext.TabIndex = 38;
+            this.searchtextup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchtextup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.searchtextup.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchtextup.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchtextup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.searchtextup.Location = new System.Drawing.Point(93, 63);
+            this.searchtextup.Name = "searchtextup";
+            this.searchtextup.Size = new System.Drawing.Size(248, 26);
+            this.searchtextup.TabIndex = 38;
+            this.searchtextup.TextChanged += new System.EventHandler(this.searchtextup_TextChanged);
             // 
-            // dataGridView1
+            // dataGridViewUP
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(385, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(691, 378);
-            this.dataGridView1.TabIndex = 37;
+            this.dataGridViewUP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewUP.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridViewUP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.dataGridViewUP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUP.Location = new System.Drawing.Point(385, 23);
+            this.dataGridViewUP.Name = "dataGridViewUP";
+            this.dataGridViewUP.Size = new System.Drawing.Size(691, 378);
+            this.dataGridViewUP.TabIndex = 37;
+            this.dataGridViewUP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUP_CellClick);
             // 
-            // sortascd
+            // sortascdup
             // 
-            this.sortascd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sortascd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.sortascd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sortascd.FlatAppearance.BorderSize = 2;
-            this.sortascd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.sortascd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.sortascd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sortascd.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sortascd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascd.Location = new System.Drawing.Point(171, 210);
-            this.sortascd.Name = "sortascd";
-            this.sortascd.Size = new System.Drawing.Size(170, 89);
-            this.sortascd.TabIndex = 36;
-            this.sortascd.Text = "sort asc";
-            this.sortascd.UseVisualStyleBackColor = false;
+            this.sortascdup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sortascdup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.sortascdup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sortascdup.FlatAppearance.BorderSize = 2;
+            this.sortascdup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.sortascdup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.sortascdup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sortascdup.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortascdup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.sortascdup.Location = new System.Drawing.Point(171, 210);
+            this.sortascdup.Name = "sortascdup";
+            this.sortascdup.Size = new System.Drawing.Size(170, 89);
+            this.sortascdup.TabIndex = 36;
+            this.sortascdup.Text = "sort asc";
+            this.sortascdup.UseVisualStyleBackColor = false;
+            this.sortascdup.Click += new System.EventHandler(this.sortascdup_Click);
             // 
-            // savebut
+            // savebutup
             // 
-            this.savebut.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.savebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.savebut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.savebut.FlatAppearance.BorderSize = 2;
-            this.savebut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.savebut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.savebut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savebut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savebut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.savebut.Location = new System.Drawing.Point(1125, 232);
-            this.savebut.Name = "savebut";
-            this.savebut.Size = new System.Drawing.Size(198, 47);
-            this.savebut.TabIndex = 35;
-            this.savebut.Text = "SAVE";
-            this.savebut.UseVisualStyleBackColor = false;
+            this.savebutup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.savebutup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.savebutup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.savebutup.FlatAppearance.BorderSize = 2;
+            this.savebutup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.savebutup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.savebutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.savebutup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebutup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.savebutup.Location = new System.Drawing.Point(1125, 232);
+            this.savebutup.Name = "savebutup";
+            this.savebutup.Size = new System.Drawing.Size(198, 47);
+            this.savebutup.TabIndex = 35;
+            this.savebutup.Text = "SAVE";
+            this.savebutup.UseVisualStyleBackColor = false;
+            this.savebutup.Click += new System.EventHandler(this.savebutup_Click);
             // 
-            // button1
+            // addburup
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.button1.Location = new System.Drawing.Point(1125, 307);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 94);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Add record";
-            this.button1.UseVisualStyleBackColor = false;
+            this.addburup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.addburup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.addburup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addburup.FlatAppearance.BorderSize = 2;
+            this.addburup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.addburup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.addburup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addburup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addburup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.addburup.Location = new System.Drawing.Point(1125, 307);
+            this.addburup.Name = "addburup";
+            this.addburup.Size = new System.Drawing.Size(198, 94);
+            this.addburup.TabIndex = 34;
+            this.addburup.Text = "Add record";
+            this.addburup.UseVisualStyleBackColor = false;
+            this.addburup.Click += new System.EventHandler(this.addburup_Click);
             // 
-            // sortdescd
+            // sortdescdup
             // 
-            this.sortdescd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sortdescd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.sortdescd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sortdescd.FlatAppearance.BorderSize = 2;
-            this.sortdescd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.sortdescd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.sortdescd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sortdescd.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sortdescd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortdescd.Location = new System.Drawing.Point(171, 316);
-            this.sortdescd.Name = "sortdescd";
-            this.sortdescd.Size = new System.Drawing.Size(170, 85);
-            this.sortdescd.TabIndex = 33;
-            this.sortdescd.Text = "sort desc";
-            this.sortdescd.UseVisualStyleBackColor = false;
+            this.sortdescdup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sortdescdup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.sortdescdup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sortdescdup.FlatAppearance.BorderSize = 2;
+            this.sortdescdup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.sortdescdup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.sortdescdup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sortdescdup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortdescdup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.sortdescdup.Location = new System.Drawing.Point(171, 316);
+            this.sortdescdup.Name = "sortdescdup";
+            this.sortdescdup.Size = new System.Drawing.Size(170, 85);
+            this.sortdescdup.TabIndex = 33;
+            this.sortdescdup.Text = "sort desc";
+            this.sortdescdup.UseVisualStyleBackColor = false;
+            this.sortdescdup.Click += new System.EventHandler(this.sortdescdup_Click);
+            // 
+            // modifybutup
+            // 
+            this.modifybutup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.modifybutup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.modifybutup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.modifybutup.FlatAppearance.BorderSize = 2;
+            this.modifybutup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.modifybutup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.modifybutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modifybutup.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modifybutup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.modifybutup.Location = new System.Drawing.Point(171, 148);
+            this.modifybutup.Name = "modifybutup";
+            this.modifybutup.Size = new System.Drawing.Size(170, 47);
+            this.modifybutup.TabIndex = 47;
+            this.modifybutup.Text = "modify";
+            this.modifybutup.UseVisualStyleBackColor = false;
             // 
             // Builiding_Up
             // 
@@ -335,25 +362,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.deletebut);
+            this.Controls.Add(this.modifybutup);
+            this.Controls.Add(this.backbutup);
+            this.Controls.Add(this.deletebutup);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.updatebut);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.updatebutup);
+            this.Controls.Add(this.clearbutup);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Search);
-            this.Controls.Add(this.searchtext);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.sortascd);
-            this.Controls.Add(this.savebut);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.sortdescd);
+            this.Controls.Add(this.searchtextup);
+            this.Controls.Add(this.dataGridViewUP);
+            this.Controls.Add(this.sortascdup);
+            this.Controls.Add(this.savebutup);
+            this.Controls.Add(this.addburup);
+            this.Controls.Add(this.sortdescdup);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Builiding_Up";
             this.Text = "Builiding_Up";
+            this.Load += new System.EventHandler(this.Builiding_Up_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,24 +390,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button deletebut;
+        private System.Windows.Forms.Button backbutup;
+        private System.Windows.Forms.Button deletebutup;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textcomp;
-        private System.Windows.Forms.TextBox textid;
+        private System.Windows.Forms.TextBox textcompup;
+        private System.Windows.Forms.TextBox textidup;
         private System.Windows.Forms.Label login;
-        private System.Windows.Forms.Button updatebut;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button updatebutup;
+        private System.Windows.Forms.Button clearbutup;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Search;
-        private System.Windows.Forms.TextBox searchtext;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button sortascd;
-        private System.Windows.Forms.Button savebut;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button sortdescd;
+        private System.Windows.Forms.TextBox searchtextup;
+        private System.Windows.Forms.DataGridView dataGridViewUP;
+        private System.Windows.Forms.Button sortascdup;
+        private System.Windows.Forms.Button savebutup;
+        private System.Windows.Forms.Button addburup;
+        private System.Windows.Forms.Button sortdescdup;
+        private System.Windows.Forms.Button modifybutup;
     }
 }

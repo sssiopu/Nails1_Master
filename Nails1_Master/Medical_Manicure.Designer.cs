@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.medbut = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.backbutm = new System.Windows.Forms.Button();
             this.deletebutm = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,32 +43,32 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Search = new System.Windows.Forms.Label();
             this.searchtextm = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewM = new System.Windows.Forms.DataGridView();
             this.sortascdm = new System.Windows.Forms.Button();
             this.savebutm = new System.Windows.Forms.Button();
             this.addbutm = new System.Windows.Forms.Button();
             this.sortdescdm = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewM)).BeginInit();
             this.SuspendLayout();
             // 
-            // medbut
+            // backbutm
             // 
-            this.medbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.medbut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.medbut.FlatAppearance.BorderSize = 2;
-            this.medbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.medbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.medbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.medbut.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medbut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.medbut.Location = new System.Drawing.Point(1306, 602);
-            this.medbut.Name = "medbut";
-            this.medbut.Size = new System.Drawing.Size(69, 31);
-            this.medbut.TabIndex = 59;
-            this.medbut.Text = "back";
-            this.medbut.UseVisualStyleBackColor = false;
-            this.medbut.Click += new System.EventHandler(this.medbut_Click);
+            this.backbutm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.backbutm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backbutm.FlatAppearance.BorderSize = 2;
+            this.backbutm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.backbutm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.backbutm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbutm.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbutm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.backbutm.Location = new System.Drawing.Point(1306, 602);
+            this.backbutm.Name = "backbutm";
+            this.backbutm.Size = new System.Drawing.Size(69, 31);
+            this.backbutm.TabIndex = 59;
+            this.backbutm.Text = "back";
+            this.backbutm.UseVisualStyleBackColor = false;
+            this.backbutm.Click += new System.EventHandler(this.medbut_Click);
             // 
             // deletebutm
             // 
@@ -87,6 +87,7 @@
             this.deletebutm.TabIndex = 58;
             this.deletebutm.Text = "delete";
             this.deletebutm.UseVisualStyleBackColor = false;
+            this.deletebutm.Click += new System.EventHandler(this.deletebutm_Click);
             // 
             // groupBox1
             // 
@@ -111,11 +112,11 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(82, 173);
+            this.label4.Location = new System.Drawing.Point(40, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 24);
+            this.label4.Size = new System.Drawing.Size(218, 24);
             this.label4.TabIndex = 24;
-            this.label4.Text = "complexity";
+            this.label4.Text = "medical manicure";
             // 
             // panel4
             // 
@@ -164,7 +165,7 @@
             this.login.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.login.AutoSize = true;
             this.login.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(192, 66);
+            this.login.Location = new System.Drawing.Point(227, 66);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(31, 24);
             this.login.TabIndex = 5;
@@ -187,6 +188,7 @@
             this.updatebutm.TabIndex = 56;
             this.updatebutm.Text = "Update";
             this.updatebutm.UseVisualStyleBackColor = false;
+            this.updatebutm.Click += new System.EventHandler(this.updatebutm_Click);
             // 
             // clearbutm
             // 
@@ -241,21 +243,22 @@
             this.searchtextm.TabIndex = 52;
             this.searchtextm.TextChanged += new System.EventHandler(this.searchtextm_TextChanged);
             // 
-            // dataGridView2
+            // dataGridViewM
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(380, 25);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(691, 378);
-            this.dataGridView2.TabIndex = 51;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.dataGridViewM.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewM.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridViewM.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.dataGridViewM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewM.Location = new System.Drawing.Point(380, 25);
+            this.dataGridViewM.Name = "dataGridViewM";
+            this.dataGridViewM.Size = new System.Drawing.Size(691, 378);
+            this.dataGridViewM.TabIndex = 51;
+            this.dataGridViewM.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewM_CellClick);
             // 
             // sortascdm
             // 
@@ -274,6 +277,7 @@
             this.sortascdm.TabIndex = 50;
             this.sortascdm.Text = "sort asc";
             this.sortascdm.UseVisualStyleBackColor = false;
+            this.sortascdm.Click += new System.EventHandler(this.sortascdm_Click);
             // 
             // savebutm
             // 
@@ -292,6 +296,7 @@
             this.savebutm.TabIndex = 49;
             this.savebutm.Text = "SAVE";
             this.savebutm.UseVisualStyleBackColor = false;
+            this.savebutm.Click += new System.EventHandler(this.savebutm_Click);
             // 
             // addbutm
             // 
@@ -329,6 +334,7 @@
             this.sortdescdm.TabIndex = 47;
             this.sortdescdm.Text = "sort desc";
             this.sortdescdm.UseVisualStyleBackColor = false;
+            this.sortdescdm.Click += new System.EventHandler(this.sortdescdm_Click);
             // 
             // Medical_Manicure
             // 
@@ -336,7 +342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
-            this.Controls.Add(this.medbut);
+            this.Controls.Add(this.backbutm);
             this.Controls.Add(this.deletebutm);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.updatebutm);
@@ -344,16 +350,17 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.searchtextm);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridViewM);
             this.Controls.Add(this.sortascdm);
             this.Controls.Add(this.savebutm);
             this.Controls.Add(this.addbutm);
             this.Controls.Add(this.sortdescdm);
             this.Name = "Medical_Manicure";
             this.Text = "Medical_Manicure";
+            this.Load += new System.EventHandler(this.Medical_Manicure_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,10 +368,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button medbut;
+        private System.Windows.Forms.Button backbutm;
         private System.Windows.Forms.Button deletebutm;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textcompm;
@@ -375,10 +381,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Search;
         private System.Windows.Forms.TextBox searchtextm;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewM;
         private System.Windows.Forms.Button sortascdm;
         private System.Windows.Forms.Button savebutm;
         private System.Windows.Forms.Button addbutm;
         private System.Windows.Forms.Button sortdescdm;
+        private System.Windows.Forms.Label label4;
     }
 }

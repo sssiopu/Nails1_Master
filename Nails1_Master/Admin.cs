@@ -162,78 +162,60 @@ namespace Nails1_Master
                     var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
-            }
-            f(rowState == RowState.Modified)
-            {
-                var id = dataGridView1.Rows[index].Cells[0].Value.ToString();
-                var id = dataGridView1.Rows[index].Cells[1].Value.ToString();
 
-                var changeQuery = $"update Nails_Master set type complexity = '{type}'";
-                var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
-                command.ExecuteNonQuery();
-
-                private void sortascd_Click(object sender, EventArgs e)
+                if (rowState == RowState.Modified)
                 {
-                    dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
-                }
-                db.closeConnection();
-            }
+                    var id = dataGridView1.Rows[index].Cells[0].Value.ToString();
+                    var idd = dataGridView1.Rows[index].Cells[1].Value.ToString();
 
-
-
-            private void deletebut_Click(object sender, EventArgs e)
-            {
-                deleteRow();
-            }
-
-            private void savebut_Click(object sender, EventArgs e)
-            {
-                Update1();
-            }
-            private void Change()
-            {
-                var selectedRowIndex = dataGridView1.CurrentCell.RowIndex;
-
-                var id = textid.Text;
-                var type = textcomp.Text;
-
-                // Проверяем, что строка не пустая
-                if (!string.IsNullOrEmpty(dataGridView1.Rows[selectedRowIndex].Cells[0].Value?.ToString()))
-                {
-                    // Проверяем, что поле type не пустое или не является пробельным
-                    if (!string.IsNullOrWhiteSpace(type))
-                    {
-                        // Обновляем значения в строке
-                        dataGridView1.Rows[selectedRowIndex].SetValues(id, type);
-                        dataGridView1.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please, enter valid text in the type field.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Selected row is empty.");
+                    var changeQuery = $"update Nail_Master set type complexity = '{idd}'";
+                    var command = new SqlCommand(changeQuery, db.GetSqlConnection());
+                    command.ExecuteNonQuery();
                 }
             }
+        }
+             
 
 
-            private void sortdescd_Click(object sender, EventArgs e)
-            {
-                dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
-            }
 
-            private void backbutdes_Click(object sender, EventArgs e)
-            {
-                this.Hide();
-                Admin2 r1 = new Admin2();
-                r1.Show();
-            }
+       
 
+
+
+
+
+        private void deletebut_Click(object sender, EventArgs e)
+        {
+            deleteRow();
+        }
+
+        private void savebut_Click(object sender, EventArgs e)
+        {
+            Update1();
+        }
+       
+
+
+        private void sortdescd_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
+        }
+
+        private void backbutdes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin2 r1 = new Admin2();
+            r1.Show();
+        }
+
+        private void sortascd_Click_1(object sender, EventArgs e)
+        {
+            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
+            db.closeConnection();
         }
     }
 }
+
 
 
 

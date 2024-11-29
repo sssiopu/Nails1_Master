@@ -48,5 +48,10 @@ namespace Nails1_Master
             db.closeConnection();
 
         }
+
+        private void Add_design_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

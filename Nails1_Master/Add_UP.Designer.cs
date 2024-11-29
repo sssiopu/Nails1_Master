@@ -1,6 +1,6 @@
 ﻿namespace Nails1_Master
 {
-    partial class Add_M
+    partial class Add_UP
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.savebutm = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_UP));
+            this.savebut1up = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textcompmm = new System.Windows.Forms.TextBox();
+            this.textcomp1up = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // savebutm
+            // savebut1up
             // 
-            this.savebutm.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.savebutm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.savebutm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.savebutm.FlatAppearance.BorderSize = 2;
-            this.savebutm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.savebutm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.savebutm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savebutm.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savebutm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.savebutm.Location = new System.Drawing.Point(308, 333);
-            this.savebutm.Name = "savebutm";
-            this.savebutm.Size = new System.Drawing.Size(111, 47);
-            this.savebutm.TabIndex = 30;
-            this.savebutm.Text = "save";
-            this.savebutm.UseVisualStyleBackColor = false;
-            this.savebutm.Click += new System.EventHandler(this.savebutm_Click);
+            this.savebut1up.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.savebut1up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.savebut1up.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.savebut1up.FlatAppearance.BorderSize = 2;
+            this.savebut1up.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.savebut1up.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.savebut1up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.savebut1up.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebut1up.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.savebut1up.Location = new System.Drawing.Point(308, 333);
+            this.savebut1up.Name = "savebut1up";
+            this.savebut1up.Size = new System.Drawing.Size(111, 47);
+            this.savebut1up.TabIndex = 30;
+            this.savebut1up.Text = "save";
+            this.savebut1up.UseVisualStyleBackColor = false;
+            this.savebut1up.Click += new System.EventHandler(this.savebut1up_Click);
             // 
             // pictureBox2
             // 
@@ -89,7 +90,7 @@
             // 
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.panel4);
-            this.groupBox1.Controls.Add(this.textcompmm);
+            this.groupBox1.Controls.Add(this.textcomp1up);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.groupBox1.Location = new System.Drawing.Point(81, 169);
@@ -104,30 +105,30 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 84);
+            this.label4.Location = new System.Drawing.Point(17, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(201, 21);
+            this.label4.Size = new System.Drawing.Size(132, 21);
             this.label4.TabIndex = 24;
-            this.label4.Text = "medical manicure";
+            this.label4.Text = "centimetre";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel4.Location = new System.Drawing.Point(247, 100);
+            this.panel4.Location = new System.Drawing.Point(196, 97);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(337, 5);
             this.panel4.TabIndex = 13;
             // 
-            // textcompmm
+            // textcomp1up
             // 
-            this.textcompmm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textcompmm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textcompmm.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textcompmm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcompmm.Location = new System.Drawing.Point(248, 76);
-            this.textcompmm.Name = "textcompmm";
-            this.textcompmm.Size = new System.Drawing.Size(336, 26);
-            this.textcompmm.TabIndex = 23;
+            this.textcomp1up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textcomp1up.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textcomp1up.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcomp1up.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textcomp1up.Location = new System.Drawing.Point(197, 73);
+            this.textcomp1up.Name = "textcomp1up";
+            this.textcomp1up.Size = new System.Drawing.Size(336, 26);
+            this.textcomp1up.TabIndex = 23;
             // 
             // label1
             // 
@@ -144,19 +145,20 @@
             this.label1.Text = "Admin panel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Add_M
+            // Add_UP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(762, 402);
-            this.Controls.Add(this.savebutm);
+            this.Controls.Add(this.savebut1up);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Add_M";
-            this.Text = "Add_M";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Add_UP";
+            this.Text = "Add_UP";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -167,13 +169,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button savebutm;
+        private System.Windows.Forms.Button savebut1up;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textcompmm;
+        private System.Windows.Forms.TextBox textcomp1up;
         private System.Windows.Forms.Label label1;
     }
 }

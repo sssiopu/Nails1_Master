@@ -71,7 +71,6 @@
             this.sortdescd.TabIndex = 2;
             this.sortdescd.Text = "sort desc";
             this.sortdescd.UseVisualStyleBackColor = false;
-            
             // 
             // button1
             // 
@@ -109,7 +108,6 @@
             this.savebut.TabIndex = 4;
             this.savebut.Text = "SAVE";
             this.savebut.UseVisualStyleBackColor = false;
-            
             // 
             // sortascd
             // 
@@ -128,7 +126,7 @@
             this.sortascd.TabIndex = 6;
             this.sortascd.Text = "sort asc";
             this.sortascd.UseVisualStyleBackColor = false;
-            
+            this.sortascd.Click += new System.EventHandler(this.sortascd_Click_1);
             // 
             // dataGridView1
             // 
@@ -335,7 +333,6 @@
             this.deletebut.TabIndex = 23;
             this.deletebut.Text = "delete";
             this.deletebut.UseVisualStyleBackColor = false;
-            
             // 
             // backbutdes
             // 
@@ -353,7 +350,6 @@
             this.backbutdes.TabIndex = 31;
             this.backbutdes.Text = "back";
             this.backbutdes.UseVisualStyleBackColor = false;
-            
             // 
             // Admin
             // 

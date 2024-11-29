@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gender));
             this.backbutdes = new System.Windows.Forms.Button();
             this.deletebutgen = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -87,6 +88,7 @@
             this.deletebutgen.TabIndex = 43;
             this.deletebutgen.Text = "delete";
             this.deletebutgen.UseVisualStyleBackColor = false;
+            this.deletebutgen.Click += new System.EventHandler(this.deletebutgen_Click);
             // 
             // groupBox1
             // 
@@ -111,11 +113,11 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(80, 173);
+            this.label4.Location = new System.Drawing.Point(126, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 24);
+            this.label4.Size = new System.Drawing.Size(95, 24);
             this.label4.TabIndex = 24;
-            this.label4.Text = "complexity";
+            this.label4.Text = "gender";
             // 
             // panel4
             // 
@@ -187,6 +189,7 @@
             this.updatebutgwn.TabIndex = 41;
             this.updatebutgwn.Text = "Update";
             this.updatebutgwn.UseVisualStyleBackColor = false;
+            this.updatebutgwn.Click += new System.EventHandler(this.updatebutgwn_Click);
             // 
             // clearbutgen
             // 
@@ -239,6 +242,7 @@
             this.searchtextgen.Name = "searchtextgen";
             this.searchtextgen.Size = new System.Drawing.Size(248, 26);
             this.searchtextgen.TabIndex = 37;
+            this.searchtextgen.TextChanged += new System.EventHandler(this.searchtextgen_TextChanged_1);
             // 
             // dataGridViewgen
             // 
@@ -255,6 +259,7 @@
             this.dataGridViewgen.Name = "dataGridViewgen";
             this.dataGridViewgen.Size = new System.Drawing.Size(691, 378);
             this.dataGridViewgen.TabIndex = 36;
+            this.dataGridViewgen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewgen_CellClick_1);
             // 
             // sortascdgen
             // 
@@ -273,6 +278,7 @@
             this.sortascdgen.TabIndex = 35;
             this.sortascdgen.Text = "sort asc";
             this.sortascdgen.UseVisualStyleBackColor = false;
+            this.sortascdgen.Click += new System.EventHandler(this.sortascdgen_Click);
             // 
             // savebutgen
             // 
@@ -291,6 +297,7 @@
             this.savebutgen.TabIndex = 34;
             this.savebutgen.Text = "SAVE";
             this.savebutgen.UseVisualStyleBackColor = false;
+            this.savebutgen.Click += new System.EventHandler(this.savebutgen_Click_1);
             // 
             // addbutgen
             // 
@@ -309,6 +316,7 @@
             this.addbutgen.TabIndex = 33;
             this.addbutgen.Text = "Add record";
             this.addbutgen.UseVisualStyleBackColor = false;
+            this.addbutgen.Click += new System.EventHandler(this.addbutgen_Click_1);
             // 
             // sortdescdgen
             // 
@@ -327,6 +335,7 @@
             this.sortdescdgen.TabIndex = 32;
             this.sortdescdgen.Text = "sort desc";
             this.sortdescdgen.UseVisualStyleBackColor = false;
+            this.sortdescdgen.Click += new System.EventHandler(this.sortdescdgen_Click);
             // 
             // Gender
             // 
@@ -347,8 +356,10 @@
             this.Controls.Add(this.savebutgen);
             this.Controls.Add(this.addbutgen);
             this.Controls.Add(this.sortdescdgen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Gender";
             this.Text = "Gender";
+            this.Load += new System.EventHandler(this.Gender_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewgen)).EndInit();
