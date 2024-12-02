@@ -19,7 +19,9 @@ namespace Nails1_Master
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
         }
-        private void savebutrep1_Click_1(object sender, EventArgs e)
+       
+
+        private void savebutrep1_Click(object sender, EventArgs e)
         {
             db.openConnection();
 

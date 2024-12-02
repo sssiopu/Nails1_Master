@@ -50,6 +50,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.deletebut = new System.Windows.Forms.Button();
             this.backbutdes = new System.Windows.Forms.Button();
+            this.modybut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +72,7 @@
             this.sortdescd.TabIndex = 2;
             this.sortdescd.Text = "sort desc";
             this.sortdescd.UseVisualStyleBackColor = false;
+            this.sortdescd.Click += new System.EventHandler(this.sortdescd_Click);
             // 
             // button1
             // 
@@ -108,6 +110,7 @@
             this.savebut.TabIndex = 4;
             this.savebut.Text = "SAVE";
             this.savebut.UseVisualStyleBackColor = false;
+            this.savebut.Click += new System.EventHandler(this.savebut_Click_1);
             // 
             // sortascd
             // 
@@ -195,8 +198,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(198, 45);
             this.button6.TabIndex = 14;
-            this.button6.Text = "Changebut";
+            this.button6.Text = "Change";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // updatebut
             // 
@@ -333,6 +337,7 @@
             this.deletebut.TabIndex = 23;
             this.deletebut.Text = "delete";
             this.deletebut.UseVisualStyleBackColor = false;
+            this.deletebut.Click += new System.EventHandler(this.deletebut_Click_1);
             // 
             // backbutdes
             // 
@@ -350,6 +355,26 @@
             this.backbutdes.TabIndex = 31;
             this.backbutdes.Text = "back";
             this.backbutdes.UseVisualStyleBackColor = false;
+            this.backbutdes.Click += new System.EventHandler(this.backbutdes_Click_1);
+            // 
+            // modybut
+            // 
+            this.modybut.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.modybut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.modybut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.modybut.FlatAppearance.BorderSize = 2;
+            this.modybut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.modybut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.modybut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modybut.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modybut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.modybut.Location = new System.Drawing.Point(160, 132);
+            this.modybut.Name = "modybut";
+            this.modybut.Size = new System.Drawing.Size(170, 43);
+            this.modybut.TabIndex = 32;
+            this.modybut.Text = "modify";
+            this.modybut.UseVisualStyleBackColor = false;
+            this.modybut.Click += new System.EventHandler(this.button2_Click);
             // 
             // Admin
             // 
@@ -357,6 +382,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.Controls.Add(this.modybut);
             this.Controls.Add(this.backbutdes);
             this.Controls.Add(this.deletebut);
             this.Controls.Add(this.button8);
@@ -404,5 +430,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button deletebut;
         private System.Windows.Forms.Button backbutdes;
+        private System.Windows.Forms.Button modybut;
     }
 }

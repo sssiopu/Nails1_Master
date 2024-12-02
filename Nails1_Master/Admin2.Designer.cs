@@ -150,7 +150,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(230, 50);
             this.button4.TabIndex = 7;
-            this.button4.Text = "Decign";
+            this.button4.Text = "Role";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -207,6 +207,7 @@
             this.button7.TabIndex = 10;
             this.button7.Text = "Nails";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 

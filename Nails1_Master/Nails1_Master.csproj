@@ -70,6 +70,12 @@
     <Compile Include="Add_M.Designer.cs">
       <DependentUpon>Add_M.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_N.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_N.Designer.cs">
+      <DependentUpon>Add_N.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Rep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     <Compile Include="Medical_Manicure.Designer.cs">
       <DependentUpon>Medical_Manicure.cs</DependentUpon>
     </Compile>
+    <Compile Include="nails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nails.Designer.cs">
+      <DependentUpon>nails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regi.cs">
@@ -144,6 +156,12 @@
     </Compile>
     <Compile Include="Repair.Designer.cs">
       <DependentUpon>Repair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role.Designer.cs">
+      <DependentUpon>Role.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
@@ -165,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_M.resx">
       <DependentUpon>Add_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_N.resx">
+      <DependentUpon>Add_N.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Rep.resx">
       <DependentUpon>Add_Rep.cs</DependentUpon>
@@ -195,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Medical_Manicure.resx">
       <DependentUpon>Medical_Manicure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nails.resx">
+      <DependentUpon>nails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

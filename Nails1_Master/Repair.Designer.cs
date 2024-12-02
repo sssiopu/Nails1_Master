@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Repair));
             this.backbutrep = new System.Windows.Forms.Button();
             this.deletebutrep = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +49,7 @@
             this.savebutrep = new System.Windows.Forms.Button();
             this.addbutrep = new System.Windows.Forms.Button();
             this.sortdescdrep = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewREP)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +89,7 @@
             this.deletebutrep.TabIndex = 43;
             this.deletebutrep.Text = "delete";
             this.deletebutrep.UseVisualStyleBackColor = false;
+            this.deletebutrep.Click += new System.EventHandler(this.deletebutrep_Click);
             // 
             // groupBox1
             // 
@@ -108,14 +111,13 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(80, 173);
+            this.label4.Location = new System.Drawing.Point(22, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 24);
+            this.label4.Size = new System.Drawing.Size(199, 24);
             this.label4.TabIndex = 24;
-            this.label4.Text = "complexity";
+            this.label4.Text = "number of nails";
             // 
             // panel4
             // 
@@ -187,6 +189,7 @@
             this.updatebutrep.TabIndex = 41;
             this.updatebutrep.Text = "Update";
             this.updatebutrep.UseVisualStyleBackColor = false;
+            this.updatebutrep.Click += new System.EventHandler(this.updatebutrep_Click);
             // 
             // clearbutrep
             // 
@@ -239,15 +242,16 @@
             this.searchtextrep.Name = "searchtextrep";
             this.searchtextrep.Size = new System.Drawing.Size(248, 26);
             this.searchtextrep.TabIndex = 37;
+            this.searchtextrep.TextChanged += new System.EventHandler(this.searchtextrep_TextChanged);
             // 
             // dataGridViewREP
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridViewREP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.dataGridViewREP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewREP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewREP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.dataGridViewREP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -255,6 +259,7 @@
             this.dataGridViewREP.Name = "dataGridViewREP";
             this.dataGridViewREP.Size = new System.Drawing.Size(691, 378);
             this.dataGridViewREP.TabIndex = 36;
+            this.dataGridViewREP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewREP_CellContentClick);
             // 
             // sortascdrep
             // 
@@ -267,12 +272,13 @@
             this.sortascdrep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortascdrep.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortascdrep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascdrep.Location = new System.Drawing.Point(161, 192);
+            this.sortascdrep.Location = new System.Drawing.Point(161, 201);
             this.sortascdrep.Name = "sortascdrep";
             this.sortascdrep.Size = new System.Drawing.Size(170, 89);
             this.sortascdrep.TabIndex = 35;
             this.sortascdrep.Text = "sort asc";
             this.sortascdrep.UseVisualStyleBackColor = false;
+            this.sortascdrep.Click += new System.EventHandler(this.sortascdrep_Click);
             // 
             // savebutrep
             // 
@@ -291,6 +297,7 @@
             this.savebutrep.TabIndex = 34;
             this.savebutrep.Text = "SAVE";
             this.savebutrep.UseVisualStyleBackColor = false;
+            this.savebutrep.Click += new System.EventHandler(this.savebutrep_Click);
             // 
             // addbutrep
             // 
@@ -328,6 +335,25 @@
             this.sortdescdrep.TabIndex = 32;
             this.sortdescdrep.Text = "sort desc";
             this.sortdescdrep.UseVisualStyleBackColor = false;
+            this.sortdescdrep.Click += new System.EventHandler(this.sortdescdrep_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.button1.Location = new System.Drawing.Point(161, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 45);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Modify";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Repair
             // 
@@ -335,6 +361,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.backbutrep);
             this.Controls.Add(this.deletebutrep);
             this.Controls.Add(this.groupBox1);
@@ -348,8 +375,10 @@
             this.Controls.Add(this.savebutrep);
             this.Controls.Add(this.addbutrep);
             this.Controls.Add(this.sortdescdrep);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Repair";
             this.Text = "Repair";
+            this.Load += new System.EventHandler(this.Repair_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewREP)).EndInit();
@@ -379,5 +408,6 @@
         private System.Windows.Forms.Button savebutrep;
         private System.Windows.Forms.Button addbutrep;
         private System.Windows.Forms.Button sortdescdrep;
+        private System.Windows.Forms.Button button1;
     }
 }

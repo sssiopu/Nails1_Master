@@ -65,5 +65,12 @@ namespace Nails1_Master
             Withdrawal r1 = new Withdrawal();
             r1.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            nails r1 = new nails();
+            r1.Show();
+        }
     }
 }

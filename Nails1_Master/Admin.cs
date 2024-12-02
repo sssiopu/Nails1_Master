@@ -168,10 +168,24 @@ namespace Nails1_Master
                     var id = dataGridView1.Rows[index].Cells[0].Value.ToString();
                     var idd = dataGridView1.Rows[index].Cells[1].Value.ToString();
 
-                    var changeQuery = $"update Nail_Master set type complexity = '{idd}'";
+                    var changeQuery = $"update Design set complexity = '{idd}' where Id_Design = '{id}'";
                     var command = new SqlCommand(changeQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
+
+            }
+        }
+        private void Change()
+        {
+            var selectedRowIndex = dataGridView1.CurrentCell.RowIndex;
+
+            var id = textid.Text;
+            var type = textcomp.Text;
+
+            if (dataGridView1.Rows[selectedRowIndex].Cells[0].Value.ToString()!= string.Empty)
+            {
+                dataGridView1.Rows[selectedRowIndex].SetValues(id, type);
+                dataGridView1.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
             }
         }
              
@@ -184,35 +198,50 @@ namespace Nails1_Master
 
 
 
-        private void deletebut_Click(object sender, EventArgs e)
-        {
-            deleteRow();
-        }
+      
 
-        private void savebut_Click(object sender, EventArgs e)
-        {
-            Update1();
-        }
+        
        
 
 
-        private void sortdescd_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
-        }
+        
 
-        private void backbutdes_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Admin2 r1 = new Admin2();
-            r1.Show();
-        }
+       
 
         private void sortascd_Click_1(object sender, EventArgs e)
         {
             dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Ascending);
             db.closeConnection();
         }
+
+        private void backbutdes_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin2 r1 = new Admin2();
+            r1.Show();
+        }
+
+        private void deletebut_Click_1(object sender, EventArgs e)
+        {
+            deleteRow();
+        }
+
+        private void savebut_Click_1(object sender, EventArgs e)
+        {
+            Update1();
+        }
+
+        private void sortdescd_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Change();
+        }
+
+        
     }
 }
 
