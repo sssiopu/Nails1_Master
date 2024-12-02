@@ -22,22 +22,6 @@ namespace Nails1_Master
             this.textpas.AutoSize = false;
             this.textpas.Size = new Size(this.textlog.Size.Width, 50);
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -68,13 +52,7 @@ namespace Nails1_Master
             lastPoint = new Point(e.X, e.Y);
         }
 
-        private void MainWin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
+     
         private void LogBut_Click_1(object sender, EventArgs e)
         {
             string loginUser = login.Text;
@@ -129,16 +107,6 @@ namespace Nails1_Master
             this.Hide();
             Regi r1 = new Regi();
             r1.Show();
-        }
-
-        private void password_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        }   
     }
 }

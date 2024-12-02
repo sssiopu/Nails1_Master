@@ -34,6 +34,12 @@ namespace Nails1_Master
             InitializeComponent();
         }
 
+        private void ClearFields()
+        {
+            textidup.Text = "";
+            textcompup.Text = "";
+
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -96,6 +102,7 @@ namespace Nails1_Master
         private void updatebutup_Click(object sender, EventArgs e)
         {
             RefrestDatarid(dataGridViewUP);
+            ClearFields();
         }
         private void Search1(DataGridView dgw)
         {
@@ -154,7 +161,7 @@ namespace Nails1_Master
                         continue;
 
                     var id = Convert.ToInt32(dataGridViewUP.Rows[index].Cells[0].Value);
-                    var deleteQuery = $"delete from builiding_Up where Id_Builiding_Up = {id}";
+                    var deleteQuery = $"delete from Builiding_Up where Id_Builiding_Up = {id}";
 
                     var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
@@ -169,7 +176,29 @@ namespace Nails1_Master
                     var command = new SqlCommand(changeQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
+                if (rowState == RowState.Modified)
+                {
+                    var id = dataGridViewUP.Rows[index].Cells[0].Value.ToString();
+                    var type1 = dataGridViewUP.Rows[index].Cells[1].Value.ToString();
 
+                    var changeQuery = $"update Builiding_Up set centimetre = '{type1}' where Id_Builiding_Up = '{id}'";
+                    var command = new SqlCommand(changeQuery, db.GetSqlConnection());
+                    command.ExecuteNonQuery();
+                }
+
+            }
+        }
+        private void Change()
+        {
+            var selectedRowIndex = dataGridViewUP.CurrentCell.RowIndex;
+
+            var id = textidup.Text;
+            var type = textcompup.Text;
+
+            if (dataGridViewUP.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                dataGridViewUP.Rows[selectedRowIndex].SetValues(id, type);
+                dataGridViewUP.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
             }
         }
 
@@ -182,6 +211,7 @@ namespace Nails1_Master
         private void deletebutup_Click(object sender, EventArgs e)
         {
             deleteRow();
+            ClearFields();
         }
 
         private void savebutup_Click(object sender, EventArgs e)
@@ -194,6 +224,15 @@ namespace Nails1_Master
             dataGridViewUP.Sort(dataGridViewUP.Columns[1], ListSortDirection.Descending);
         }
 
+        private void changebut_Click(object sender, EventArgs e)
+        {
+            Change();
+        }
+
+        private void clearbut_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
     }
 
 }

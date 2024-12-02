@@ -58,7 +58,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nails Master";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // LogBut
             // 
@@ -90,7 +90,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1317, 189);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            
             // 
             // pictureBox1
             // 
@@ -149,7 +149,7 @@
             this.login.Size = new System.Drawing.Size(161, 54);
             this.login.TabIndex = 4;
             this.login.Text = "Login";
-            this.login.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // password
             // 
@@ -162,7 +162,7 @@
             this.password.Size = new System.Drawing.Size(276, 54);
             this.password.TabIndex = 5;
             this.password.Text = "password";
-            this.password.Click += new System.EventHandler(this.password_Click);
+            
             // 
             // textlog
             // 
@@ -188,7 +188,7 @@
             this.textpas.Size = new System.Drawing.Size(464, 47);
             this.textpas.TabIndex = 7;
             this.textpas.UseSystemPasswordChar = true;
-            this.textpas.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            
             // 
             // panel2
             // 
@@ -225,7 +225,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWin";
             this.Text = "MainWin";
-            this.Load += new System.EventHandler(this.MainWin_Load);
+            
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainWin_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainWin_MouseMove);
             this.panel1.ResumeLayout(false);

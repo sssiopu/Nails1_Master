@@ -169,6 +169,18 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Withdrawal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_gender.resx">
       <DependentUpon>Add_gender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_GPC.resx">
+      <DependentUpon>Add_GPC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_M.resx">
       <DependentUpon>Add_M.cs</DependentUpon>
@@ -236,8 +251,17 @@
     <EmbeddedResource Include="Repair.resx">
       <DependentUpon>Repair.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Role.resx">
+      <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Withdrawal.resx">
       <DependentUpon>Withdrawal.cs</DependentUpon>

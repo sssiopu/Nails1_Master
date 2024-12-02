@@ -45,6 +45,12 @@ namespace Nails1_Master
             dataGridViewgen.Columns.Add("gender", "gender");
             dataGridViewgen.Columns.Add("IsNew", String.Empty);
         }
+        private void ClearFields()
+        {
+            textidgen.Text = "";
+            textcompgen.Text = "";
+
+        }
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
             pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
@@ -125,12 +131,33 @@ namespace Nails1_Master
                     var command = new SqlCommand(deleteQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
+                if (rowState == RowState.Modified)
+                {
+                    var id = dataGridViewgen.Rows[index].Cells[0].Value.ToString();
+                    var type1 = dataGridViewgen.Rows[index].Cells[1].Value.ToString();
+
+                    var changeQuery = $"update Gender set gender = '{type1}' where Id_Gender = '{id}'";
+                    var command = new SqlCommand(changeQuery, db.GetSqlConnection());
+                    command.ExecuteNonQuery();
+                }
             }
             db.closeConnection();
         }
+        private void Change()
+        {
+            var selectedRowIndex = dataGridViewgen.CurrentCell.RowIndex;
 
-       
-       
+            var id = textidgen.Text;
+            var type = textcompgen.Text;
+
+            if (dataGridViewgen.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                dataGridViewgen.Rows[selectedRowIndex].SetValues(id, type);
+                dataGridViewgen.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
+            }
+        }
+
+
 
         private void Gender_Load_1(object sender, EventArgs e)
         {
@@ -162,6 +189,7 @@ namespace Nails1_Master
         private void updatebutgwn_Click(object sender, EventArgs e)
         {
             RefrestDatarid1(dataGridViewgen);
+            ClearFields();
         }
 
         private void searchtextgen_TextChanged_1(object sender, EventArgs e)
@@ -172,6 +200,7 @@ namespace Nails1_Master
         private void deletebutgen_Click(object sender, EventArgs e)
         {
             deleteRow();
+            ClearFields();
         }
 
         private void savebutgen_Click_1(object sender, EventArgs e)
@@ -187,6 +216,16 @@ namespace Nails1_Master
         private void sortdescdgen_Click(object sender, EventArgs e)
         {
              dataGridViewgen.Sort(dataGridViewgen.Columns[1], ListSortDirection.Descending);
+        }
+
+        private void cleatbut_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+        private void changebut_Click(object sender, EventArgs e)
+        {
+            Change();
         }
     }
 }

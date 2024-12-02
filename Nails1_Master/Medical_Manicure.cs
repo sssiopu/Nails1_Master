@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Nails1_Master
 {
@@ -44,6 +45,12 @@ namespace Nails1_Master
             dataGridViewM.Columns.Add("Id_Medical_Manicure", "id");
             dataGridViewM.Columns.Add("problem", "problem");
             dataGridViewM.Columns.Add("IsNew", String.Empty);
+        }
+        private void ClearFields()
+        {
+            textidm.Text = "";
+            textcompm.Text = "";
+
         }
 
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
@@ -137,17 +144,38 @@ namespace Nails1_Master
                         command.ExecuteNonQuery();
                     }
                 }
+                if (rowState == RowState.Modified)
+                {
+                    var id = dataGridViewM.Rows[index].Cells[0].Value.ToString();
+                    var type1 = dataGridViewM.Rows[index].Cells[1].Value.ToString();
+
+                    var changeQuery = $"update Medical_Manicure set problem = '{type1}' where Id_Medical_Manicure = '{id}'";
+                    var command = new SqlCommand(changeQuery, db.GetSqlConnection());
+                    command.ExecuteNonQuery();
+                }
             }
             db.closeConnection();
         }
+        private void Change()
+        {
+            var selectedRowIndex = dataGridViewM.CurrentCell.RowIndex;
 
-        
+            var id = textidm.Text;
+            var type = textcompm.Text;
 
-      
+            if (dataGridViewM.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                dataGridViewM.Rows[selectedRowIndex].SetValues(id, type);
+                dataGridViewM.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
+            }
+        }
 
-        
 
-        
+
+
+
+
+
         private void addbutm_Click(object sender, EventArgs e)
         {
 
@@ -177,6 +205,7 @@ namespace Nails1_Master
         private void updatebutm_Click(object sender, EventArgs e)
         {
             RefrestDatarid(dataGridViewM);
+            ClearFields();
         }
 
         private void sortascdm_Click(object sender, EventArgs e)
@@ -187,6 +216,7 @@ namespace Nails1_Master
         private void deletebutm_Click(object sender, EventArgs e)
         {
             deleteRow();
+            ClearFields();
         }
 
         private void savebutm_Click(object sender, EventArgs e)
@@ -197,6 +227,16 @@ namespace Nails1_Master
         private void sortdescdm_Click(object sender, EventArgs e)
         {
             dataGridViewM.Sort(dataGridViewM.Columns[1], ListSortDirection.Descending);
+        }
+
+        private void clearbutm_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+        private void changebut_Click(object sender, EventArgs e)
+        {
+            Change();
         }
     }
 }

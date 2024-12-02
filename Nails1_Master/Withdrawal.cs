@@ -42,6 +42,12 @@ namespace Nails1_Master
             dataGridViewW.Columns.Add("Whos_job_is_it", "Whos_job_is_it");
             dataGridViewW.Columns.Add("IsNew", String.Empty);
         }
+        private void ClearFields()
+        {
+            textidwi.Text = "";
+            textcompwi.Text = "";
+
+        }
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
             pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
@@ -81,6 +87,7 @@ namespace Nails1_Master
         private void updatebutwi_Click(object sender, EventArgs e)
         {
             RefrestDatarid(dataGridViewW);
+            ClearFields();
         }
         private void Search1(DataGridView dgw)
         {
@@ -145,21 +152,36 @@ namespace Nails1_Master
                     command.ExecuteNonQuery();
                 }
 
+               
                 if (rowState == RowState.Modified)
                 {
                     var id = dataGridViewW.Rows[index].Cells[0].Value.ToString();
-                    var idd = dataGridViewW.Rows[index].Cells[1].Value.ToString();
+                    var type1 = dataGridViewW.Rows[index].Cells[1].Value.ToString();
 
-                    var changeQuery = $"update Nail_Master set type Whos_job_is_it = '{idd}'";
+                    var changeQuery = $"update Withdrawal set Whos_job_is_it= '{type1}' where Id_Withdrawal = '{id}'";
                     var command = new SqlCommand(changeQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
+            }
+        }
+        private void Change()
+        {
+            var selectedRowIndex = dataGridViewW.CurrentCell.RowIndex;
+
+            var id = textidwi.Text;
+            var type = textcompwi.Text;
+
+            if (dataGridViewW.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                dataGridViewW.Rows[selectedRowIndex].SetValues(id, type);
+                dataGridViewW.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
             }
         }
 
         private void deletebutwi_Click(object sender, EventArgs e)
         {
             deleteRow();
+            ClearFields();
         }
 
         private void savebutwi_Click(object sender, EventArgs e)
@@ -183,6 +205,16 @@ namespace Nails1_Master
             CreateColums();
             RefrestDatarid(dataGridViewW);
             dataGridViewW.Columns[2].Visible = false;
+        }
+
+        private void clearbut_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+        private void changebut_Click(object sender, EventArgs e)
+        {
+            Change();
         }
     }
 }

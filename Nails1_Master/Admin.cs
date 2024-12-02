@@ -42,6 +42,13 @@ namespace Nails1_Master
             dataGridView1.Columns.Add("IsNew", String.Empty);
         }
 
+        private void ClearFields()
+        {
+            textid.Text = "";
+            textcomp.Text = "";
+            
+        }
+
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
             pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
@@ -93,6 +100,7 @@ namespace Nails1_Master
         private void updatebut_Click(object sender, EventArgs e)
         {
             RefrestDatarid(dataGridView1);
+            ClearFields();
         }
 
         private void Search1(DataGridView dgw)
@@ -166,9 +174,9 @@ namespace Nails1_Master
                 if (rowState == RowState.Modified)
                 {
                     var id = dataGridView1.Rows[index].Cells[0].Value.ToString();
-                    var idd = dataGridView1.Rows[index].Cells[1].Value.ToString();
+                    var type1 = dataGridView1.Rows[index].Cells[1].Value.ToString();
 
-                    var changeQuery = $"update Design set complexity = '{idd}' where Id_Design = '{id}'";
+                    var changeQuery = $"update Design set complexity = '{type1}' where Id_Design = '{id}'";
                     var command = new SqlCommand(changeQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
@@ -188,25 +196,7 @@ namespace Nails1_Master
                 dataGridView1.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
             }
         }
-             
 
-
-
-       
-
-
-
-
-
-      
-
-        
-       
-
-
-        
-
-       
 
         private void sortascd_Click_1(object sender, EventArgs e)
         {
@@ -224,6 +214,7 @@ namespace Nails1_Master
         private void deletebut_Click_1(object sender, EventArgs e)
         {
             deleteRow();
+            ClearFields();
         }
 
         private void savebut_Click_1(object sender, EventArgs e)
@@ -236,12 +227,18 @@ namespace Nails1_Master
             dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
         }
 
+
+        private void clearbut_Click(object sender, EventArgs e)
+        {
+            ClearFields(); 
+        }
+
         private void button6_Click(object sender, EventArgs e)
         {
             Change();
         }
 
-        
+       
     }
 }
 

@@ -40,7 +40,12 @@ namespace Nails1_Master
             dataGridViewREP.Columns.Add("Number_Of_Nails", "Number_Of_Nails");
             dataGridViewREP.Columns.Add("IsNew", String.Empty);
         }
+        private void ClearFields()
+        {
+            textidrep.Text = "";
+            textcomprep.Text = "";
 
+        }
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
             pip.Rows.Add(record.GetInt32(0), record.GetString(1), RowState.ModifiedNew);
@@ -88,6 +93,7 @@ namespace Nails1_Master
         private void updatebutrep_Click(object sender, EventArgs e)
         {
             RefrestDatarid(dataGridViewREP);
+            ClearFields();
         }
 
         private void searchtextrep_TextChanged(object sender, EventArgs e)
@@ -161,6 +167,28 @@ namespace Nails1_Master
                     var command = new SqlCommand(changeQuery, db.GetSqlConnection());
                     command.ExecuteNonQuery();
                 }
+                if (rowState == RowState.Modified)
+                {
+                    var id = dataGridViewREP.Rows[index].Cells[0].Value.ToString();
+                    var type1 = dataGridViewREP.Rows[index].Cells[1].Value.ToString();
+
+                    var changeQuery = $"update Repair set Number_Of_Nails = '{type1}' where Id_Repair = '{id}'";
+                    var command = new SqlCommand(changeQuery, db.GetSqlConnection());
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        private void Change()
+        {
+            var selectedRowIndex = dataGridViewREP.CurrentCell.RowIndex;
+
+            var id = textidrep.Text;
+            var type = textcomprep.Text;
+
+            if (dataGridViewREP.Rows[selectedRowIndex].Cells[0].Value.ToString() != string.Empty)
+            {
+                dataGridViewREP.Rows[selectedRowIndex].SetValues(id, type);
+                dataGridViewREP.Rows[selectedRowIndex].Cells[2].Value = RowState.Modified;
             }
         }
 
@@ -173,6 +201,7 @@ namespace Nails1_Master
         private void deletebutrep_Click(object sender, EventArgs e)
         {
             deleteRow();
+            ClearFields();
         }
 
         private void savebutrep_Click(object sender, EventArgs e)
@@ -185,6 +214,16 @@ namespace Nails1_Master
         private void sortdescdrep_Click(object sender, EventArgs e)
         {
             dataGridViewREP.Sort(dataGridViewREP.Columns[1], ListSortDirection.Descending);
+        }
+
+        private void clearbut_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+        private void changebut_Click(object sender, EventArgs e)
+        {
+            Change();
         }
     }
 }

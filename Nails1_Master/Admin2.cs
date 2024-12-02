@@ -69,8 +69,20 @@ namespace Nails1_Master
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            nails r1 = new nails();
+            Nails r1 = new Nails();
             r1.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Role r1 = new Role();
+            r1.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
