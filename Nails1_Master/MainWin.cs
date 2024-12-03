@@ -57,6 +57,8 @@ namespace Nails1_Master
         {
             string loginUser = login.Text;
             string passwordUser = password.Text;
+            
+
 
 
             DB db = new DB();
@@ -85,7 +87,7 @@ namespace Nails1_Master
                 {
                     reader2.Close();
                     this.Hide();
-                    User us = new User();
+                    UserPanel us = new UserPanel();
                     us.ShowDialog();
                 }
                 else
