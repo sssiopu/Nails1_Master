@@ -32,9 +32,7 @@ namespace Nails1_Master
             dataGridViewN.Columns.Add("Id_Design", "Complexity");
             dataGridViewN.Columns.Add("Id_Repair", "Number of Nails");
             dataGridViewN.Columns.Add("Id_Gender", "Gender");
-           
-            dataGridViewN.Columns.Add("Id_Building_Up", "Centimetre");
-            
+            dataGridViewN.Columns.Add("Id_Builiding_Up", "Centimetre");
             dataGridViewN.Columns.Add("Id_Gel_Polish_Coating", "Thickness");
             dataGridViewN.Columns.Add("Id_Medical_Manicure", "Problem");
             dataGridViewN.Columns.Add("Id_Withdrawal", "Who's Job Is It");
@@ -79,11 +77,14 @@ namespace Nails1_Master
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewN.Rows)
             {
-                string value = row.Cells[4].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                if (row.Cells[4].Value != null) // Проверка на null 
                 {
-                    comboBox1.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = row.Cells[4].Value.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBox1.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }

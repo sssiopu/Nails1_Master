@@ -82,7 +82,9 @@ namespace Nails1_Master
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Users r1 = new Users();
+            r1.Show();
         }
     }
 }

@@ -34,7 +34,19 @@
             this.cleatbutuss = new System.Windows.Forms.Button();
             this.deletebutuss = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.textpassworduss = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.textloginuss = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textlastuss = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.textnameuss = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textcompuss = new System.Windows.Forms.TextBox();
@@ -43,25 +55,13 @@
             this.updatebutuss = new System.Windows.Forms.Button();
             this.changebutuss = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Search = new System.Windows.Forms.Label();
             this.searchtextuss = new System.Windows.Forms.TextBox();
             this.dataGridViewUU = new System.Windows.Forms.DataGridView();
             this.sortascduss = new System.Windows.Forms.Button();
             this.savebutuss = new System.Windows.Forms.Button();
             this.addbutuss = new System.Windows.Forms.Button();
             this.sortdescduss = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textnameuss = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textlastuss = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.textloginuss = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textpassworduss = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxUU = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUU)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +101,7 @@
             this.cleatbutuss.TabIndex = 72;
             this.cleatbutuss.Text = "Clear";
             this.cleatbutuss.UseVisualStyleBackColor = false;
+            this.cleatbutuss.Click += new System.EventHandler(this.cleatbutuss_Click);
             // 
             // deletebutuss
             // 
@@ -119,6 +120,7 @@
             this.deletebutuss.TabIndex = 71;
             this.deletebutuss.Text = "delete";
             this.deletebutuss.UseVisualStyleBackColor = false;
+            this.deletebutuss.Click += new System.EventHandler(this.deletebutuss_Click);
             // 
             // groupBox1
             // 
@@ -150,6 +152,122 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Text";
             // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(797, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 24);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Password";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(851, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 24);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Login";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(397, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 24);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Last Name";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(392, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 24);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "First name";
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.panel7.Location = new System.Drawing.Point(945, 180);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(222, 5);
+            this.panel7.TabIndex = 29;
+            // 
+            // textpassworduss
+            // 
+            this.textpassworduss.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textpassworduss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textpassworduss.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textpassworduss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpassworduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textpassworduss.Location = new System.Drawing.Point(945, 155);
+            this.textpassworduss.Name = "textpassworduss";
+            this.textpassworduss.Size = new System.Drawing.Size(221, 26);
+            this.textpassworduss.TabIndex = 30;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.panel6.Location = new System.Drawing.Point(945, 82);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(222, 5);
+            this.panel6.TabIndex = 27;
+            // 
+            // textloginuss
+            // 
+            this.textloginuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textloginuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textloginuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textloginuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textloginuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textloginuss.Location = new System.Drawing.Point(945, 57);
+            this.textloginuss.Name = "textloginuss";
+            this.textloginuss.Size = new System.Drawing.Size(221, 26);
+            this.textloginuss.TabIndex = 28;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.panel5.Location = new System.Drawing.Point(548, 180);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(222, 5);
+            this.panel5.TabIndex = 25;
+            // 
+            // textlastuss
+            // 
+            this.textlastuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textlastuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textlastuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textlastuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textlastuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textlastuss.Location = new System.Drawing.Point(548, 155);
+            this.textlastuss.Name = "textlastuss";
+            this.textlastuss.Size = new System.Drawing.Size(221, 26);
+            this.textlastuss.TabIndex = 26;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.panel2.Location = new System.Drawing.Point(548, 78);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(222, 5);
+            this.panel2.TabIndex = 23;
+            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -160,6 +278,18 @@
             this.label4.Size = new System.Drawing.Size(64, 24);
             this.label4.TabIndex = 24;
             this.label4.Text = "role";
+            // 
+            // textnameuss
+            // 
+            this.textnameuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textnameuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.textnameuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textnameuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textnameuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            this.textnameuss.Location = new System.Drawing.Point(548, 53);
+            this.textnameuss.Name = "textnameuss";
+            this.textnameuss.Size = new System.Drawing.Size(221, 26);
+            this.textnameuss.TabIndex = 24;
             // 
             // panel4
             // 
@@ -231,7 +361,7 @@
             this.updatebutuss.TabIndex = 69;
             this.updatebutuss.Text = "Update";
             this.updatebutuss.UseVisualStyleBackColor = false;
-            
+            this.updatebutuss.Click += new System.EventHandler(this.updatebutuss_Click);
             // 
             // changebutuss
             // 
@@ -250,6 +380,7 @@
             this.changebutuss.TabIndex = 68;
             this.changebutuss.Text = "Change";
             this.changebutuss.UseVisualStyleBackColor = false;
+            this.changebutuss.Click += new System.EventHandler(this.changebutuss_Click);
             // 
             // panel1
             // 
@@ -259,19 +390,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 5);
             this.panel1.TabIndex = 67;
-            // 
-            // Search
-            // 
-            this.Search.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Search.AutoSize = true;
-            this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.Search.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.Search.Location = new System.Drawing.Point(26, 11);
-            this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(129, 32);
-            this.Search.TabIndex = 66;
-            this.Search.Text = "Search";
             // 
             // searchtextuss
             // 
@@ -284,6 +402,7 @@
             this.searchtextuss.Name = "searchtextuss";
             this.searchtextuss.Size = new System.Drawing.Size(248, 26);
             this.searchtextuss.TabIndex = 65;
+            this.searchtextuss.TextChanged += new System.EventHandler(this.searchtextuss_TextChanged);
             // 
             // dataGridViewUU
             // 
@@ -301,6 +420,7 @@
             this.dataGridViewUU.RowHeadersWidth = 51;
             this.dataGridViewUU.Size = new System.Drawing.Size(691, 378);
             this.dataGridViewUU.TabIndex = 64;
+            this.dataGridViewUU.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUU_CellClick);
             // 
             // sortascduss
             // 
@@ -319,6 +439,7 @@
             this.sortascduss.TabIndex = 63;
             this.sortascduss.Text = "sort asc";
             this.sortascduss.UseVisualStyleBackColor = false;
+            this.sortascduss.Click += new System.EventHandler(this.sortascduss_Click);
             // 
             // savebutuss
             // 
@@ -337,6 +458,7 @@
             this.savebutuss.TabIndex = 62;
             this.savebutuss.Text = "SAVE";
             this.savebutuss.UseVisualStyleBackColor = false;
+            this.savebutuss.Click += new System.EventHandler(this.savebutuss_Click);
             // 
             // addbutuss
             // 
@@ -373,134 +495,16 @@
             this.sortdescduss.TabIndex = 60;
             this.sortdescduss.Text = "sort desc";
             this.sortdescduss.UseVisualStyleBackColor = false;
+            this.sortdescduss.Click += new System.EventHandler(this.sortdescduss_Click);
             // 
-            // panel2
+            // comboBoxUU
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel2.Location = new System.Drawing.Point(548, 78);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(222, 5);
-            this.panel2.TabIndex = 23;
-            // 
-            // textnameuss
-            // 
-            this.textnameuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textnameuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textnameuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textnameuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textnameuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textnameuss.Location = new System.Drawing.Point(548, 53);
-            this.textnameuss.Name = "textnameuss";
-            this.textnameuss.Size = new System.Drawing.Size(221, 26);
-            this.textnameuss.TabIndex = 24;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel5.Location = new System.Drawing.Point(548, 180);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(222, 5);
-            this.panel5.TabIndex = 25;
-            // 
-            // textlastuss
-            // 
-            this.textlastuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textlastuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textlastuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textlastuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textlastuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textlastuss.Location = new System.Drawing.Point(548, 155);
-            this.textlastuss.Name = "textlastuss";
-            this.textlastuss.Size = new System.Drawing.Size(221, 26);
-            this.textlastuss.TabIndex = 26;
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel6.Location = new System.Drawing.Point(945, 82);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(222, 5);
-            this.panel6.TabIndex = 27;
-            // 
-            // textloginuss
-            // 
-            this.textloginuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textloginuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textloginuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textloginuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textloginuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textloginuss.Location = new System.Drawing.Point(945, 57);
-            this.textloginuss.Name = "textloginuss";
-            this.textloginuss.Size = new System.Drawing.Size(221, 26);
-            this.textloginuss.TabIndex = 28;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel7.Location = new System.Drawing.Point(945, 180);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(222, 5);
-            this.panel7.TabIndex = 29;
-            // 
-            // textpassworduss
-            // 
-            this.textpassworduss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textpassworduss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.textpassworduss.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textpassworduss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textpassworduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textpassworduss.Location = new System.Drawing.Point(945, 155);
-            this.textpassworduss.Name = "textpassworduss";
-            this.textpassworduss.Size = new System.Drawing.Size(221, 26);
-            this.textpassworduss.TabIndex = 30;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(392, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 24);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "First name";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(397, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 24);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Last Name";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(851, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 24);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Login";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(797, 161);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 24);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "Password";
+            this.comboBoxUU.FormattingEnabled = true;
+            this.comboBoxUU.Location = new System.Drawing.Point(21, 145);
+            this.comboBoxUU.Name = "comboBoxUU";
+            this.comboBoxUU.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxUU.TabIndex = 74;
+            this.comboBoxUU.SelectedIndexChanged += new System.EventHandler(this.comboBoxUU_SelectedIndexChanged);
             // 
             // Users
             // 
@@ -508,6 +512,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.Controls.Add(this.comboBoxUU);
             this.Controls.Add(this.backbutuss);
             this.Controls.Add(this.cleatbutuss);
             this.Controls.Add(this.deletebutuss);
@@ -515,7 +520,6 @@
             this.Controls.Add(this.updatebutuss);
             this.Controls.Add(this.changebutuss);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Search);
             this.Controls.Add(this.searchtextuss);
             this.Controls.Add(this.dataGridViewUU);
             this.Controls.Add(this.sortascduss);
@@ -523,9 +527,10 @@
             this.Controls.Add(this.addbutuss);
             this.Controls.Add(this.sortdescduss);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Users";
             this.Text = "Users";
+            this.Load += new System.EventHandler(this.Users_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUU)).EndInit();
@@ -549,7 +554,7 @@
         private System.Windows.Forms.Button updatebutuss;
         private System.Windows.Forms.Button changebutuss;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Search;
+        
         private System.Windows.Forms.TextBox searchtextuss;
         private System.Windows.Forms.DataGridView dataGridViewUU;
         private System.Windows.Forms.Button sortascduss;
@@ -568,5 +573,6 @@
         private System.Windows.Forms.TextBox textlastuss;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textnameuss;
+        private System.Windows.Forms.ComboBox comboBoxUU;
     }
 }
