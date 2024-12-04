@@ -91,6 +91,7 @@
             this.backbutn.TabIndex = 44;
             this.backbutn.Text = "back";
             this.backbutn.UseVisualStyleBackColor = false;
+            this.backbutn.Click += new System.EventHandler(this.backbutn_Click_1);
             // 
             // deletebutn
             // 
@@ -109,6 +110,7 @@
             this.deletebutn.TabIndex = 43;
             this.deletebutn.Text = "delete";
             this.deletebutn.UseVisualStyleBackColor = false;
+            this.deletebutn.Click += new System.EventHandler(this.deletebutn_Click_1);
             // 
             // groupBox1
             // 
@@ -454,6 +456,7 @@
             this.updatebutn.TabIndex = 41;
             this.updatebutn.Text = "Update";
             this.updatebutn.UseVisualStyleBackColor = false;
+            this.updatebutn.Click += new System.EventHandler(this.updatebutn_Click_1);
             // 
             // changebutn
             // 
@@ -472,6 +475,7 @@
             this.changebutn.TabIndex = 40;
             this.changebutn.Text = "Change";
             this.changebutn.UseVisualStyleBackColor = false;
+            this.changebutn.Click += new System.EventHandler(this.changebutn_Click_1);
             // 
             // panel1
             // 
@@ -524,6 +528,7 @@
             this.dataGridViewN.RowHeadersWidth = 51;
             this.dataGridViewN.Size = new System.Drawing.Size(917, 334);
             this.dataGridViewN.TabIndex = 36;
+            this.dataGridViewN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewN_CellClick);
             // 
             // sortascdn
             // 

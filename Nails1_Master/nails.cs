@@ -88,27 +88,7 @@ namespace Nails1_Master
                 }
             }
         }
-        private void dataGridViewN_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            selectedRow = e.RowIndex;
-
-            if (selectedRow >= 0)
-            {
-                DataGridViewRow row = dataGridViewN.Rows[selectedRow];
-
-
-                textid.Text = row.Cells[0].Value?.ToString();
-                textcomplexity.Text = row.Cells[1].Value?.ToString();
-                textproblem.Text = row.Cells[2].Value?.ToString();
-                textnumberofnails.Text = row.Cells[3].Value?.ToString();
-                textwhosjobisit.Text = row.Cells[4].Value?.ToString();
-                textcantimetre.Text = row.Cells[5].Value?.ToString();
-                textgender.Text = row.Cells[6].Value?.ToString();
-                textthickness.Text = row.Cells[7].Value?.ToString();
-                textprise.Text = row.Cells[8].Value?.ToString();
-            }
-        }
-
+       
         private void backbutn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -142,28 +122,9 @@ namespace Nails1_Master
             ClearFields();
             
         }
-        private void Search1(DataGridView dgw)
-        {
-            dgw.Rows.Clear();
-            string searchString = $"";
+   
 
-
-            SqlCommand com = new SqlCommand(searchString, db.GetSqlConnection());
-            db.openConnection();
-            SqlDataReader read = com.ExecuteReader();
-            while (read.Read())
-            {
-                ReadSingleRow(dgw, read);
-
-            }
-            read.Close();
-
-        }
-
-        private void searchtextn_TextChanged(object sender, EventArgs e)
-        {
-            Search1(dataGridViewN);
-        }
+       
         private void deleteRow()
         {
             int index = dataGridViewN.CurrentCell.RowIndex;
@@ -475,12 +436,12 @@ namespace Nails1_Master
 
         private void searchtextn_TextChanged_1(object sender, EventArgs e)
         {
-            Search1(dataGridViewN);
+            Search0(dataGridViewN);
         }
-        private void Search1(DataGridView dgv)
+        private void Search0(DataGridView dgv)
         {
             dgv.Rows.Clear();
-            string SearchString = $"select Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price from Nails join Design on Nails.Id_Design = Design.Id_Design join Repair on Nails.Id_Repair = Repair.Id_Repair join Gender on Nails.Id_Gender = Gender.Id_Gender join Builiding_Up on Nails.Id_Building_Up = Builiding_Up.Id_Builiding_Up join Gel_Polish_Coating on Nails.Id_Gel_Polish_Coating = Gel_Polish_Coating.Id_Gel_Polish_Coating join Medical_Manicure on Nails.Id_Medical_Manicure = Medical_Manicure.Id_Medical_Manicure join Withdrawal on Nails.Id_Withdrawal = Withdrawal.Id_Withdrawal where conact (Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price)  like '%" + searchtextn.Text + "%'";
+            string SearchString = $"select Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price from Nails join Design on Nails.Id_Design = Design.Id_Design join Repair on Nails.Id_Repair = Repair.Id_Repair join Gender on Nails.Id_Gender = Gender.Id_Gender join Builiding_Up on Nails.Id_Building_Up = Builiding_Up.Id_Builiding_Up join Gel_Polish_Coating on Nails.Id_Gel_Polish_Coating = Gel_Polish_Coating.Id_Gel_Polish_Coating join Medical_Manicure on Nails.Id_Medical_Manicure = Medical_Manicure.Id_Medical_Manicure join Withdrawal on Nails.Id_Withdrawal = Withdrawal.Id_Withdrawal where concat (Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price)  like '%" + searchtextn.Text + "%'";
             SqlCommand com = new SqlCommand(SearchString, db.GetSqlConnection());
             db.openConnection();
             SqlDataReader read = com.ExecuteReader();
@@ -492,6 +453,51 @@ namespace Nails1_Master
             read.Close();
             db.closeConnection();
 
+        }
+
+        private void backbutn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin2 r1 = new Admin2();
+            r1.Show();
+        }
+
+        private void updatebutn_Click_1(object sender, EventArgs e)
+        {
+            RefrestDatarid(dataGridViewN);
+            ClearFields();
+        }
+
+        private void deletebutn_Click_1(object sender, EventArgs e)
+        {
+            deleteRow();
+            ClearFields();
+        }
+
+        private void changebutn_Click_1(object sender, EventArgs e)
+        {
+            Change();
+        }
+
+        private void dataGridViewN_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedRow = e.RowIndex;
+
+            if (selectedRow >= 0)
+            {
+                DataGridViewRow row = dataGridViewN.Rows[selectedRow];
+
+
+                textid.Text = row.Cells[0].Value?.ToString();
+                textcomplexity.Text = row.Cells[1].Value?.ToString();
+                textproblem.Text = row.Cells[2].Value?.ToString();
+                textnumberofnails.Text = row.Cells[3].Value?.ToString();
+                textwhosjobisit.Text = row.Cells[4].Value?.ToString();
+                textcantimetre.Text = row.Cells[5].Value?.ToString();
+                textgender.Text = row.Cells[6].Value?.ToString();
+                textthickness.Text = row.Cells[7].Value?.ToString();
+                textprise.Text = row.Cells[8].Value?.ToString();
+            }
         }
     }
 }

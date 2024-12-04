@@ -88,6 +88,12 @@
     <Compile Include="Add_UP.Designer.cs">
       <DependentUpon>Add_UP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_US.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_US.Designer.cs">
+      <DependentUpon>Add_US.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Wi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_UP.resx">
       <DependentUpon>Add_UP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_US.resx">
+      <DependentUpon>Add_US.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Wi.resx">
       <DependentUpon>Add_Wi.cs</DependentUpon>

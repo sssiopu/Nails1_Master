@@ -144,7 +144,7 @@ namespace Nails1_Master
         private void Search(DataGridView dgv)
         {
             dgv.Rows.Clear();
-            string SearchString = $"select Users.Id_Users, Users.Login, Users.Password, Users.First_Name, Users.Last_Name, Users.Id_Role from Users join Users ON Users.Id_User = Users.Id_Users where conact (Users.Id_Users, Users.Login, Users.Password, Users.First_Name, Users.Last_Name, User.Id_Role)  like '%" + searchtextuss.Text + "%'";
+            string SearchString = $"select Users.Id_Users, Users.Login, Users.Password, Users.First_Name, Users.Last_Name, Role_Users.name from Users join Role_Users ON Users.Id_Role = Role_Users.ID_Role_Users where concat (Users.Id_Users, Users.Login, Users.Password, Users.First_Name, Users.Last_Name, Role_Users.name)  like '%" + searchtextuss.Text + "%'";
             SqlCommand com = new SqlCommand(SearchString, db.GetSqlConnection());
             db.openConnection();
             SqlDataReader read = com.ExecuteReader();
