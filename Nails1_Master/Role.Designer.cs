@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Role));
             this.cleatbutrl = new System.Windows.Forms.Button();
             this.deletebutrl = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -64,10 +65,9 @@
             this.cleatbutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cleatbutrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cleatbutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.cleatbutrl.Location = new System.Drawing.Point(253, 157);
-            this.cleatbutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.cleatbutrl.Location = new System.Drawing.Point(190, 128);
             this.cleatbutrl.Name = "cleatbutrl";
-            this.cleatbutrl.Size = new System.Drawing.Size(227, 55);
+            this.cleatbutrl.Size = new System.Drawing.Size(170, 45);
             this.cleatbutrl.TabIndex = 58;
             this.cleatbutrl.Text = "Clear";
             this.cleatbutrl.UseVisualStyleBackColor = false;
@@ -84,10 +84,9 @@
             this.deletebutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletebutrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.deletebutrl.Location = new System.Drawing.Point(1539, 190);
-            this.deletebutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.deletebutrl.Location = new System.Drawing.Point(1154, 154);
             this.deletebutrl.Name = "deletebutrl";
-            this.deletebutrl.Size = new System.Drawing.Size(264, 53);
+            this.deletebutrl.Size = new System.Drawing.Size(198, 43);
             this.deletebutrl.TabIndex = 57;
             this.deletebutrl.Text = "delete";
             this.deletebutrl.UseVisualStyleBackColor = false;
@@ -104,11 +103,9 @@
             this.groupBox1.Controls.Add(this.login);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.groupBox1.Location = new System.Drawing.Point(657, 529);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(493, 430);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(704, 265);
+            this.groupBox1.Size = new System.Drawing.Size(528, 215);
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Text";
@@ -118,10 +115,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(209, 212);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(157, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 30);
+            this.label4.Size = new System.Drawing.Size(64, 24);
             this.label4.TabIndex = 24;
             this.label4.Text = "role";
             // 
@@ -129,20 +125,18 @@
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel4.Location = new System.Drawing.Point(375, 236);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(281, 192);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(296, 6);
+            this.panel4.Size = new System.Drawing.Size(222, 5);
             this.panel4.TabIndex = 13;
             // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel3.Location = new System.Drawing.Point(375, 105);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(281, 85);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 6);
+            this.panel3.Size = new System.Drawing.Size(222, 5);
             this.panel3.TabIndex = 12;
             // 
             // textcomprl
@@ -152,10 +146,9 @@
             this.textcomprl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textcomprl.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcomprl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcomprl.Location = new System.Drawing.Point(375, 206);
-            this.textcomprl.Margin = new System.Windows.Forms.Padding(4);
+            this.textcomprl.Location = new System.Drawing.Point(281, 167);
             this.textcomprl.Name = "textcomprl";
-            this.textcomprl.Size = new System.Drawing.Size(295, 32);
+            this.textcomprl.Size = new System.Drawing.Size(221, 26);
             this.textcomprl.TabIndex = 23;
             // 
             // textidrl
@@ -165,10 +158,9 @@
             this.textidrl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textidrl.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textidrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textidrl.Location = new System.Drawing.Point(375, 74);
-            this.textidrl.Margin = new System.Windows.Forms.Padding(4);
+            this.textidrl.Location = new System.Drawing.Point(281, 60);
             this.textidrl.Name = "textidrl";
-            this.textidrl.Size = new System.Drawing.Size(295, 32);
+            this.textidrl.Size = new System.Drawing.Size(221, 26);
             this.textidrl.TabIndex = 22;
             // 
             // login
@@ -176,10 +168,9 @@
             this.login.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.login.AutoSize = true;
             this.login.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(253, 81);
-            this.login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.login.Location = new System.Drawing.Point(190, 66);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(39, 30);
+            this.login.Size = new System.Drawing.Size(31, 24);
             this.login.TabIndex = 5;
             this.login.Text = "ID";
             // 
@@ -194,10 +185,9 @@
             this.updatebutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatebutrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatebutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.updatebutrl.Location = new System.Drawing.Point(1539, 27);
-            this.updatebutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.updatebutrl.Location = new System.Drawing.Point(1154, 22);
             this.updatebutrl.Name = "updatebutrl";
-            this.updatebutrl.Size = new System.Drawing.Size(264, 60);
+            this.updatebutrl.Size = new System.Drawing.Size(198, 49);
             this.updatebutrl.TabIndex = 55;
             this.updatebutrl.Text = "Update";
             this.updatebutrl.UseVisualStyleBackColor = false;
@@ -214,10 +204,9 @@
             this.changebutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changebutrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changebutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.changebutrl.Location = new System.Drawing.Point(1539, 108);
-            this.changebutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.changebutrl.Location = new System.Drawing.Point(1154, 88);
             this.changebutrl.Name = "changebutrl";
-            this.changebutrl.Size = new System.Drawing.Size(264, 55);
+            this.changebutrl.Size = new System.Drawing.Size(198, 45);
             this.changebutrl.TabIndex = 54;
             this.changebutrl.Text = "Change";
             this.changebutrl.UseVisualStyleBackColor = false;
@@ -227,10 +216,9 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel1.Location = new System.Drawing.Point(149, 95);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(112, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(331, 6);
+            this.panel1.Size = new System.Drawing.Size(248, 5);
             this.panel1.TabIndex = 53;
             // 
             // Search
@@ -240,10 +228,9 @@
             this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.Search.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.Search.Location = new System.Drawing.Point(54, 15);
-            this.Search.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Search.Location = new System.Drawing.Point(40, 12);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(165, 41);
+            this.Search.Size = new System.Drawing.Size(129, 32);
             this.Search.TabIndex = 52;
             this.Search.Text = "Search";
             // 
@@ -254,29 +241,27 @@
             this.searchtextrl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchtextrl.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchtextrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtextrl.Location = new System.Drawing.Point(149, 65);
-            this.searchtextrl.Margin = new System.Windows.Forms.Padding(4);
+            this.searchtextrl.Location = new System.Drawing.Point(112, 53);
             this.searchtextrl.Name = "searchtextrl";
-            this.searchtextrl.Size = new System.Drawing.Size(331, 32);
+            this.searchtextrl.Size = new System.Drawing.Size(248, 26);
             this.searchtextrl.TabIndex = 51;
             this.searchtextrl.TextChanged += new System.EventHandler(this.searchtextrl_TextChanged);
             // 
             // dataGridViewRL
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridViewRL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.dataGridViewRL.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewRL.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewRL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.dataGridViewRL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRL.Location = new System.Drawing.Point(554, 27);
-            this.dataGridViewRL.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewRL.Location = new System.Drawing.Point(416, 22);
             this.dataGridViewRL.Name = "dataGridViewRL";
             this.dataGridViewRL.RowHeadersWidth = 51;
-            this.dataGridViewRL.Size = new System.Drawing.Size(921, 465);
+            this.dataGridViewRL.Size = new System.Drawing.Size(691, 378);
             this.dataGridViewRL.TabIndex = 50;
             this.dataGridViewRL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRL_CellClick);
             // 
@@ -291,10 +276,9 @@
             this.sortascdrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortascdrl.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortascdrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascdrl.Location = new System.Drawing.Point(253, 246);
-            this.sortascdrl.Margin = new System.Windows.Forms.Padding(4);
+            this.sortascdrl.Location = new System.Drawing.Point(190, 200);
             this.sortascdrl.Name = "sortascdrl";
-            this.sortascdrl.Size = new System.Drawing.Size(227, 110);
+            this.sortascdrl.Size = new System.Drawing.Size(170, 89);
             this.sortascdrl.TabIndex = 49;
             this.sortascdrl.Text = "sort asc";
             this.sortascdrl.UseVisualStyleBackColor = false;
@@ -311,10 +295,9 @@
             this.savebutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savebutrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.savebutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.savebutrl.Location = new System.Drawing.Point(1539, 274);
-            this.savebutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.savebutrl.Location = new System.Drawing.Point(1154, 223);
             this.savebutrl.Name = "savebutrl";
-            this.savebutrl.Size = new System.Drawing.Size(264, 58);
+            this.savebutrl.Size = new System.Drawing.Size(198, 47);
             this.savebutrl.TabIndex = 48;
             this.savebutrl.Text = "SAVE";
             this.savebutrl.UseVisualStyleBackColor = false;
@@ -331,10 +314,9 @@
             this.addbutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addbutrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.addbutrl.Location = new System.Drawing.Point(1539, 377);
-            this.addbutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.addbutrl.Location = new System.Drawing.Point(1154, 306);
             this.addbutrl.Name = "addbutrl";
-            this.addbutrl.Size = new System.Drawing.Size(264, 116);
+            this.addbutrl.Size = new System.Drawing.Size(198, 94);
             this.addbutrl.TabIndex = 47;
             this.addbutrl.Text = "Add record";
             this.addbutrl.UseVisualStyleBackColor = false;
@@ -350,10 +332,9 @@
             this.sortdescdrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortdescdrl.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortdescdrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortdescdrl.Location = new System.Drawing.Point(253, 388);
-            this.sortdescdrl.Margin = new System.Windows.Forms.Padding(4);
+            this.sortdescdrl.Location = new System.Drawing.Point(190, 315);
             this.sortdescdrl.Name = "sortdescdrl";
-            this.sortdescdrl.Size = new System.Drawing.Size(227, 105);
+            this.sortdescdrl.Size = new System.Drawing.Size(170, 85);
             this.sortdescdrl.TabIndex = 46;
             this.sortdescdrl.Text = "sort desc";
             this.sortdescdrl.UseVisualStyleBackColor = false;
@@ -369,10 +350,9 @@
             this.backbutrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backbutrl.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbutrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.backbutrl.Location = new System.Drawing.Point(1751, 758);
-            this.backbutrl.Margin = new System.Windows.Forms.Padding(4);
+            this.backbutrl.Location = new System.Drawing.Point(1313, 616);
             this.backbutrl.Name = "backbutrl";
-            this.backbutrl.Size = new System.Drawing.Size(92, 38);
+            this.backbutrl.Size = new System.Drawing.Size(69, 31);
             this.backbutrl.TabIndex = 59;
             this.backbutrl.Text = "back";
             this.backbutrl.UseVisualStyleBackColor = false;
@@ -380,10 +360,10 @@
             // 
             // Role
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1856, 809);
+            this.ClientSize = new System.Drawing.Size(1392, 657);
             this.Controls.Add(this.backbutrl);
             this.Controls.Add(this.cleatbutrl);
             this.Controls.Add(this.deletebutrl);
@@ -398,6 +378,8 @@
             this.Controls.Add(this.savebutrl);
             this.Controls.Add(this.addbutrl);
             this.Controls.Add(this.sortdescdrl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Role";
             this.Text = "Role";
             this.Load += new System.EventHandler(this.Role_Load);

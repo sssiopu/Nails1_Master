@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nails));
             this.backbutn = new System.Windows.Forms.Button();
             this.deletebutn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -653,6 +654,7 @@
             this.Controls.Add(this.savebutn);
             this.Controls.Add(this.nailsbut);
             this.Controls.Add(this.sortdescdn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Nails";
             this.Text = "nails";
             this.Load += new System.EventHandler(this.Nails_Load);

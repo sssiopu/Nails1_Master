@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_GPC));
             this.saveb1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,10 +52,9 @@
             this.saveb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveb1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.saveb1.Location = new System.Drawing.Point(411, 410);
-            this.saveb1.Margin = new System.Windows.Forms.Padding(4);
+            this.saveb1.Location = new System.Drawing.Point(308, 333);
             this.saveb1.Name = "saveb1";
-            this.saveb1.Size = new System.Drawing.Size(148, 58);
+            this.saveb1.Size = new System.Drawing.Size(111, 47);
             this.saveb1.TabIndex = 45;
             this.saveb1.Text = "save";
             this.saveb1.UseVisualStyleBackColor = false;
@@ -64,10 +64,9 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Nails1_Master.Properties.Resources.Group_1__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(216, 27);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(162, 22);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(56, 51);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 44;
             this.pictureBox2.TabStop = false;
@@ -80,10 +79,9 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label2.Location = new System.Drawing.Point(328, 153);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(246, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(319, 41);
+            this.label2.Size = new System.Drawing.Size(251, 32);
             this.label2.TabIndex = 43;
             this.label2.Text = "create record";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -95,11 +93,9 @@
             this.groupBox1.Controls.Add(this.textcomp1gpc);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.groupBox1.Location = new System.Drawing.Point(108, 208);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(81, 169);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(800, 161);
+            this.groupBox1.Size = new System.Drawing.Size(600, 131);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "thickness";
@@ -109,20 +105,18 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 100);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(17, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 26);
+            this.label4.Size = new System.Drawing.Size(117, 21);
             this.label4.TabIndex = 24;
             this.label4.Text = "thickness";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel4.Location = new System.Drawing.Point(261, 119);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(196, 97);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(449, 6);
+            this.panel4.Size = new System.Drawing.Size(337, 5);
             this.panel4.TabIndex = 13;
             // 
             // textcomp1gpc
@@ -131,10 +125,9 @@
             this.textcomp1gpc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textcomp1gpc.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcomp1gpc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcomp1gpc.Location = new System.Drawing.Point(263, 90);
-            this.textcomp1gpc.Margin = new System.Windows.Forms.Padding(4);
+            this.textcomp1gpc.Location = new System.Drawing.Point(197, 73);
             this.textcomp1gpc.Name = "textcomp1gpc";
-            this.textcomp1gpc.Size = new System.Drawing.Size(448, 32);
+            this.textcomp1gpc.Size = new System.Drawing.Size(336, 26);
             this.textcomp1gpc.TabIndex = 23;
             // 
             // label1
@@ -145,25 +138,26 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label1.Location = new System.Drawing.Point(315, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(236, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 49);
+            this.label1.Size = new System.Drawing.Size(251, 39);
             this.label1.TabIndex = 41;
             this.label1.Text = "Admin panel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Add_GPC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1016, 495);
+            this.ClientSize = new System.Drawing.Size(762, 402);
             this.Controls.Add(this.saveb1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Add_GPC";
             this.Text = "Add_GPC";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

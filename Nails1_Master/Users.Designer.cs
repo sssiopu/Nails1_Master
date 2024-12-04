@@ -62,6 +62,7 @@
             this.addbutuss = new System.Windows.Forms.Button();
             this.sortdescduss = new System.Windows.Forms.Button();
             this.comboBoxUU = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUU)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +96,7 @@
             this.cleatbutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cleatbutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cleatbutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.cleatbutuss.Location = new System.Drawing.Point(175, 127);
+            this.cleatbutuss.Location = new System.Drawing.Point(47, 104);
             this.cleatbutuss.Name = "cleatbutuss";
             this.cleatbutuss.Size = new System.Drawing.Size(170, 45);
             this.cleatbutuss.TabIndex = 72;
@@ -386,9 +387,9 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel1.Location = new System.Drawing.Point(97, 76);
+            this.panel1.Location = new System.Drawing.Point(139, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 5);
+            this.panel1.Size = new System.Drawing.Size(708, 5);
             this.panel1.TabIndex = 67;
             // 
             // searchtextuss
@@ -398,9 +399,9 @@
             this.searchtextuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchtextuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchtextuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtextuss.Location = new System.Drawing.Point(97, 52);
+            this.searchtextuss.Location = new System.Drawing.Point(139, 29);
             this.searchtextuss.Name = "searchtextuss";
-            this.searchtextuss.Size = new System.Drawing.Size(248, 26);
+            this.searchtextuss.Size = new System.Drawing.Size(708, 26);
             this.searchtextuss.TabIndex = 65;
             this.searchtextuss.TextChanged += new System.EventHandler(this.searchtextuss_TextChanged);
             // 
@@ -415,10 +416,10 @@
             this.dataGridViewUU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewUU.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.dataGridViewUU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUU.Location = new System.Drawing.Point(400, 21);
+            this.dataGridViewUU.Location = new System.Drawing.Point(239, 104);
             this.dataGridViewUU.Name = "dataGridViewUU";
             this.dataGridViewUU.RowHeadersWidth = 51;
-            this.dataGridViewUU.Size = new System.Drawing.Size(691, 378);
+            this.dataGridViewUU.Size = new System.Drawing.Size(877, 326);
             this.dataGridViewUU.TabIndex = 64;
             this.dataGridViewUU.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUU_CellClick);
             // 
@@ -433,7 +434,7 @@
             this.sortascduss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortascduss.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortascduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascduss.Location = new System.Drawing.Point(175, 199);
+            this.sortascduss.Location = new System.Drawing.Point(47, 180);
             this.sortascduss.Name = "sortascduss";
             this.sortascduss.Size = new System.Drawing.Size(170, 89);
             this.sortascduss.TabIndex = 63;
@@ -489,7 +490,7 @@
             this.sortdescduss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortdescduss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortdescduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortdescduss.Location = new System.Drawing.Point(175, 314);
+            this.sortdescduss.Location = new System.Drawing.Point(47, 311);
             this.sortdescduss.Name = "sortdescduss";
             this.sortdescduss.Size = new System.Drawing.Size(170, 85);
             this.sortdescduss.TabIndex = 60;
@@ -500,11 +501,22 @@
             // comboBoxUU
             // 
             this.comboBoxUU.FormattingEnabled = true;
-            this.comboBoxUU.Location = new System.Drawing.Point(12, 127);
+            this.comboBoxUU.Location = new System.Drawing.Point(919, 29);
             this.comboBoxUU.Name = "comboBoxUU";
-            this.comboBoxUU.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxUU.Size = new System.Drawing.Size(170, 21);
             this.comboBoxUU.TabIndex = 74;
             this.comboBoxUU.SelectedIndexChanged += new System.EventHandler(this.comboBoxUU_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Algerian", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            this.label6.Location = new System.Drawing.Point(25, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 26);
+            this.label6.TabIndex = 75;
+            this.label6.Text = "search";
             // 
             // Users
             // 
@@ -512,6 +524,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
             this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxUU);
             this.Controls.Add(this.backbutuss);
             this.Controls.Add(this.cleatbutuss);
@@ -574,5 +587,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textnameuss;
         private System.Windows.Forms.ComboBox comboBoxUU;
+        private System.Windows.Forms.Label label6;
     }
 }
