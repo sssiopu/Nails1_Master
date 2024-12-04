@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backbutn = new System.Windows.Forms.Button();
             this.deletebutn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -506,22 +506,23 @@
             this.searchtextn.Name = "searchtextn";
             this.searchtextn.Size = new System.Drawing.Size(562, 26);
             this.searchtextn.TabIndex = 37;
+            this.searchtextn.TextChanged += new System.EventHandler(this.searchtextn_TextChanged_1);
             // 
             // dataGridViewN
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.dataGridViewN.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Castellar", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.dataGridViewN.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.dataGridViewN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewN.Location = new System.Drawing.Point(237, 77);
+            this.dataGridViewN.Location = new System.Drawing.Point(217, 77);
             this.dataGridViewN.Name = "dataGridViewN";
             this.dataGridViewN.RowHeadersWidth = 51;
-            this.dataGridViewN.Size = new System.Drawing.Size(868, 334);
+            this.dataGridViewN.Size = new System.Drawing.Size(917, 334);
             this.dataGridViewN.TabIndex = 36;
             // 
             // sortascdn
@@ -541,6 +542,7 @@
             this.sortascdn.TabIndex = 35;
             this.sortascdn.Text = "sort asc";
             this.sortascdn.UseVisualStyleBackColor = false;
+            this.sortascdn.Click += new System.EventHandler(this.sortascdn_Click_1);
             // 
             // savebutn
             // 
@@ -595,6 +597,7 @@
             this.sortdescdn.TabIndex = 32;
             this.sortdescdn.Text = "sort desc";
             this.sortdescdn.UseVisualStyleBackColor = false;
+            this.sortdescdn.Click += new System.EventHandler(this.sortdescdn_Click_1);
             // 
             // clearbut
             // 

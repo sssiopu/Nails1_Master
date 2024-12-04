@@ -287,7 +287,7 @@ namespace Nails1_Master
 
             // Лучше использовать параметризованный запрос для предотвращения SQL-инъекций
             var searchString = @"
-        SELECT Users.Id_Users, Users.Login, Users.Password, Users.First_Name, Users.Last_Name, Users.Id_Role
+        SELECT Users.Id_Users, Users.Login, Users.Password, Users.First_Name, Users.Last_Name, Role_Users.Name
         FROM Users 
         JOIN Role_Users ON Users.Id_Role = Role_Users.Id_Role_Users
         WHERE Role_Users.Name = @RoleName";

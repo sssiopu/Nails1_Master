@@ -500,7 +500,7 @@
             // comboBoxUU
             // 
             this.comboBoxUU.FormattingEnabled = true;
-            this.comboBoxUU.Location = new System.Drawing.Point(21, 145);
+            this.comboBoxUU.Location = new System.Drawing.Point(12, 127);
             this.comboBoxUU.Name = "comboBoxUU";
             this.comboBoxUU.Size = new System.Drawing.Size(121, 21);
             this.comboBoxUU.TabIndex = 74;

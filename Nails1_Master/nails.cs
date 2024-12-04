@@ -79,7 +79,7 @@ namespace Nails1_Master
             {
                 if (row.Cells[4].Value != null) // Проверка на null 
                 {
-                    string value = row.Cells[4].Value.ToString();
+                    string value = row.Cells[3].Value.ToString();
                     if (!uniqueValues.Contains(value))
                     {
                         comboBox1.Items.Add(value);
@@ -460,6 +460,38 @@ namespace Nails1_Master
             }
             read.Close();
             db.closeConnection();
+        }
+
+        private void sortascdn_Click_1(object sender, EventArgs e)
+        {
+            dataGridViewN.Sort(dataGridViewN.Columns[8], ListSortDirection.Ascending);
+        }
+
+        private void sortdescdn_Click_1(object sender, EventArgs e)
+        {
+            dataGridViewN.Sort(dataGridViewN.Columns[8], ListSortDirection.Descending);
+        }
+
+
+        private void searchtextn_TextChanged_1(object sender, EventArgs e)
+        {
+            Search1(dataGridViewN);
+        }
+        private void Search1(DataGridView dgv)
+        {
+            dgv.Rows.Clear();
+            string SearchString = $"select Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price from Nails join Design on Nails.Id_Design = Design.Id_Design join Repair on Nails.Id_Repair = Repair.Id_Repair join Gender on Nails.Id_Gender = Gender.Id_Gender join Builiding_Up on Nails.Id_Building_Up = Builiding_Up.Id_Builiding_Up join Gel_Polish_Coating on Nails.Id_Gel_Polish_Coating = Gel_Polish_Coating.Id_Gel_Polish_Coating join Medical_Manicure on Nails.Id_Medical_Manicure = Medical_Manicure.Id_Medical_Manicure join Withdrawal on Nails.Id_Withdrawal = Withdrawal.Id_Withdrawal where conact (Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price)  like '%" + searchtextn.Text + "%'";
+            SqlCommand com = new SqlCommand(SearchString, db.GetSqlConnection());
+            db.openConnection();
+            SqlDataReader read = com.ExecuteReader();
+
+            while (read.Read())
+            {
+                ReadSingleRow(dgv, read);
+            }
+            read.Close();
+            db.closeConnection();
+
         }
     }
 }
