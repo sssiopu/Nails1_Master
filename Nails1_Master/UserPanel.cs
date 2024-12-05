@@ -25,8 +25,21 @@ namespace Nails1_Master
         private void LogBut_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Admin2 r1 = new Admin2();
+            MainWin r1 = new MainWin();
             r1.Show();
+        }
+        private void UserPanel_Load(object sender, EventArgs e)
+        {
+            CreateColumns();
+            RefrestDatarid(dataGridViewUS);
+            dataGridViewUS.Columns[8].Visible = false;
+            CreateFilteDesign();
+            CreateFilterRepair();
+            CreateFilterGender();
+            CreateFilterBuiliding_Up();
+            CreateFilterGel_Polish_Coating();
+            CreateFilterVedical_Manicure();
+            CreateFilterWithdrawal();
         }
         private void CreateColumns()
         {
@@ -34,11 +47,11 @@ namespace Nails1_Master
             dataGridViewUS.Columns.Add("Id_Design", "Complexity");
             dataGridViewUS.Columns.Add("Id_Repair", "Number of Nails");
             dataGridViewUS.Columns.Add("Id_Gender", "Gender");
-            dataGridViewUS.Columns.Add("Id_Building_Up", "Centimetre");
+            dataGridViewUS.Columns.Add("Id_Builiding_Up", "Centimetre");
             dataGridViewUS.Columns.Add("Id_Gel_Polish_Coating", "Thickness");
             dataGridViewUS.Columns.Add("Id_Medical_Manicure", "Problem");
             dataGridViewUS.Columns.Add("Id_Withdrawal", "Who's Job Is It");
-            dataGridViewUS.Columns.Add("IsNew", "Is New");
+            dataGridViewUS.Columns.Add("IsNew", String.Empty);
         }
         private void ClearFields()
         {
@@ -48,9 +61,8 @@ namespace Nails1_Master
             comboBoxbuiliding.Text = "";
             comboBoxgel.Text = "";
             comboBoxmedicine.Text = "";
-            comboBoxwithdrawal  .Text = "";
-            
-
+            comboBoxwithdrawal.Text = "";
+            searchtexus.Text = "";
         }
         private void ReadSingleRow(DataGridView pip, IDataRecord record)
         {
@@ -77,118 +89,134 @@ namespace Nails1_Master
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[1].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[1].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxdesign.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }
+
         private void CreateFilterRepair()
         {
-            comboBoxrepair.Items.Clear();
+            comboBoxdesign.Items.Clear();
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[2].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[2].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxrepair.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }
         private void CreateFilterGender()
         {
-            comboBoxgender.Items.Clear();
+            comboBoxdesign.Items.Clear();
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[3].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[3].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxgender.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }
         private void CreateFilterBuiliding_Up()
         {
-            comboBoxbuiliding.Items.Clear();
+            comboBoxdesign.Items.Clear();
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[4].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[4].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxbuiliding.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }
         private void CreateFilterGel_Polish_Coating()
         {
-            comboBoxgel.Items.Clear();
+            comboBoxdesign.Items.Clear();
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[5].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[5].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxgel.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }
         private void CreateFilterVedical_Manicure()
         {
-            comboBoxmedicine.Items.Clear();
+            comboBoxdesign.Items.Clear();
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[6].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[6].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxmedicine.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
         }
         private void CreateFilterWithdrawal()
         {
-            comboBoxwithdrawal.Items.Clear();
+            comboBoxdesign.Items.Clear();
             HashSet<string> uniqueValues = new HashSet<string>();
             foreach (DataGridViewRow row in dataGridViewUS.Rows)
             {
-                string value = row.Cells[7].Value.ToString();
-                if (!uniqueValues.Contains(value))
+                // Проверка на null и пустоту
+                var cellValue = row.Cells[7].Value;
+                if (cellValue != null && !string.IsNullOrEmpty(cellValue.ToString()))
                 {
-                    comboBoxwithdrawal.Items.Add(value);
-                    uniqueValues.Add(value);
+                    string value = cellValue.ToString();
+                    if (!uniqueValues.Contains(value))
+                    {
+                        comboBoxdesign.Items.Add(value);
+                        uniqueValues.Add(value);
+                    }
                 }
             }
-        }
-
-        private void UserPanel_Load(object sender, EventArgs e)
-        {
-        }
-
-
-        private void Catalog_Load(object sender, EventArgs e)
-        {
-            CreateColumns();
-            RefrestDatarid(dataGridViewUS);
-            dataGridViewUS.Columns[9].Visible = false;
-            CreateFilteDesign();
-            CreateFilterRepair();
-            CreateFilterGender();
-            CreateFilterBuiliding_Up();
-            CreateFilterGel_Polish_Coating();
-            CreateFilterVedical_Manicure();
-            CreateFilterWithdrawal();
-        }
-
+        }   
         private void clearbutus_Click(object sender, EventArgs e)
         {
             RefrestDatarid(dataGridViewUS);
@@ -209,62 +237,86 @@ namespace Nails1_Master
         private void SearchAndFilter(DataGridView dgv)
         {
             dgv.Rows.Clear();
-            string SearchString = $"select Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price from Nails join Design on Nails.Id_Design = Design.Id_Design join Repair on Nails.Id_Repair = Repair.Id_Repair join Gender on Nails.Id_Gender = Gender.Id_Gender join Builiding_Up on Nails.Id_Building_Up = Builiding_Up.Id_Builiding_Up join Gel_Polish_Coating on Nails.Id_Gel_Polish_Coating = Gel_Polish_Coating.Id_Gel_Polish_Coating join Medical_Manicure on Nails.Id_Medical_Manicure = Medical_Manicure.Id_Medical_Manicure join Withdrawal on Nails.Id_Withdrawal = Withdrawal.Id_Withdrawal";
+            string searchSql = "SELECT Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, " +
+                               "Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, " +
+                               "Withdrawal.Whos_job_is_it, Nails.price " +
+                               "FROM Nails " +
+                               "JOIN Design ON Nails.Id_Design = Design.Id_Design " +
+                               "JOIN Repair ON Nails.Id_Repair = Repair.Id_Repair " +
+                               "JOIN Gender ON Nails.Id_Gender = Gender.Id_Gender " +
+                               "JOIN Builiding_Up ON Nails.Id_Building_Up = Builiding_Up.Id_Builiding_Up " +
+                               "JOIN Gel_Polish_Coating ON Nails.Id_Gel_Polish_Coating = Gel_Polish_Coating.Id_Gel_Polish_Coating " +
+                               "JOIN Medical_Manicure ON Nails.Id_Medical_Manicure = Medical_Manicure.Id_Medical_Manicure " +
+                               "JOIN Withdrawal ON Nails.Id_Withdrawal = Withdrawal.Id_Withdrawal";
 
-            bool AddedCondition = false;
-            if (!string.IsNullOrEmpty(searchtexus.Text))
+            List<string> conditions = new List<string>();
+
+            if (!string.IsNullOrWhiteSpace(searchtexus.Text))
             {
-                SearchString += $"where concat (Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price from Nails) like '%{searchtexus.Text}%'";
-                AddedCondition = true;
+                conditions.Add($"CONCAT(Nails.Id_Nails, Design.complexity, Repair.Number_Of_Nails, " +
+                                $"Gender.gender, Builiding_Up.centimetre, Gel_Polish_Coating.thickness, " +
+                                $"Medical_Manicure.problem, Withdrawal.Whos_job_is_it, Nails.price) " +
+                                $"LIKE '%{searchtexus.Text}%'");
             }
 
             if (!string.IsNullOrEmpty(comboBoxdesign.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"=Nails.Id_Design = (select Design.Id_design from Design where complexity = '{comboBoxdesign.Text}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Design IN (SELECT Design.Id_Design FROM Design WHERE complexity = @complexity)");
             }
 
             if (!string.IsNullOrEmpty(comboBoxrepair.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"Nails.Repair = (select Repair_Id_Repair from Repair where Number_Of_Nails = '{comboBoxrepair.Text}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Repair IN (SELECT Repair.Id_Repair FROM Repair WHERE Number_Of_Nails = @numberOfNails)");
             }
+
             if (!string.IsNullOrEmpty(comboBoxgender.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"Nails.Id_Gender = (select Gender.Id_Gender from Gender where gender = '{comboBoxgender.Text}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Gender IN (SELECT Gender.Id_Gender FROM Gender WHERE gender = @gender)");
             }
+
             if (!string.IsNullOrEmpty(comboBoxbuiliding.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"Nails.Id_Builiding_Up = (select Builiding_Up.Id_Builiding_Up from Builiding_Up where centimetre = '{comboBoxbuiliding}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Building_Up IN (SELECT Builiding_Up.Id_Builiding_Up FROM Builiding_Up WHERE centimetre = @centimetre)");
             }
+
             if (!string.IsNullOrEmpty(comboBoxgel.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"Nails.Id_Gel_Polish_Coating = (select Id_Gel_Polish_Coating.Gel_Polish_Coating from Gel_Polish_Coating where thickness = '{comboBoxgel.Text}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Gel_Polish_Coating IN (SELECT Gel_Polish_Coating.Id_Gel_Polish_Coating FROM Gel_Polish_Coating WHERE thickness = @thickness)");
             }
+
             if (!string.IsNullOrEmpty(comboBoxmedicine.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"Nails.Id_Medical_Manicure in (select Id_Medical_Manicure.Medical_Manicure from Medical_Manicure where problem = '{comboBoxmedicine.Text}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Medical_Manicure IN (SELECT Medical_Manicure.Id_Medical_Manicure FROM Medical_Manicure WHERE problem = @problem)");
             }
+
             if (!string.IsNullOrEmpty(comboBoxwithdrawal.Text))
             {
-                SearchString += (AddedCondition ? " AND " : "where ") + $"Nails.Id_Withdrawal in (select Id_Withdrawal.Withdrawal from Withdrawal where Whos_job_is_it = '{comboBoxwithdrawal.Text}')";
-                AddedCondition = true;
+                conditions.Add($"Nails.Id_Withdrawal IN (SELECT Withdrawal.Id_Withdrawal FROM Withdrawal WHERE Whos_job_is_it = @whosJobIsIt)");
             }
 
-
-            SqlCommand com = new SqlCommand(SearchString, db.GetSqlConnection());
-            db.openConnection();
-            SqlDataReader read = com.ExecuteReader();
-
-            while (read.Read())
+            if (conditions.Count > 0)
             {
-                ReadSingleRow(dgv, read);
+                searchSql += " WHERE " + string.Join(" AND ", conditions);
             }
-            read.Close();
+
+            SqlCommand command = new SqlCommand(searchSql, db.GetSqlConnection());
+            command.Parameters.AddWithValue("@complexity", comboBoxdesign.Text);
+            command.Parameters.AddWithValue("@numberOfNails", comboBoxrepair.Text);
+            command.Parameters.AddWithValue("@gender", comboBoxgender.Text);
+            command.Parameters.AddWithValue("@centimetre", comboBoxbuiliding.Text);
+            command.Parameters.AddWithValue("@thickness", comboBoxgel.Text);
+            command.Parameters.AddWithValue("@problem", comboBoxmedicine.Text);
+            command.Parameters.AddWithValue("@whosJobIsIt", comboBoxwithdrawal.Text);
+
+            db.openConnection();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                ReadSingleRow(dgv, reader);
+            }
+
+            reader.Close();
             db.closeConnection();
         }
 

@@ -69,6 +69,8 @@ namespace Nails1_Master
                         com.Parameters.AddWithValue("First_Name", rname.Text);
                         com.Parameters.AddWithValue("Last_Name", rlastname.Text);
                         com.Parameters.AddWithValue("Id_Role", iduser);
+
+                        com.ExecuteNonQuery();
                         MessageBox.Show("Congratulations! Now u have an account.", "WELL DONE!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }

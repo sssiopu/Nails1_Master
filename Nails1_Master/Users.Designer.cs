@@ -53,13 +53,11 @@
             this.textiduss = new System.Windows.Forms.TextBox();
             this.login = new System.Windows.Forms.Label();
             this.updatebutuss = new System.Windows.Forms.Button();
-            this.changebutuss = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.searchtextuss = new System.Windows.Forms.TextBox();
             this.dataGridViewUU = new System.Windows.Forms.DataGridView();
             this.sortascduss = new System.Windows.Forms.Button();
             this.savebutuss = new System.Windows.Forms.Button();
-            this.addbutuss = new System.Windows.Forms.Button();
             this.sortdescduss = new System.Windows.Forms.Button();
             this.comboBoxUU = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -77,9 +75,10 @@
             this.backbutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backbutuss.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.backbutuss.Location = new System.Drawing.Point(1298, 615);
+            this.backbutuss.Location = new System.Drawing.Point(1731, 757);
+            this.backbutuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backbutuss.Name = "backbutuss";
-            this.backbutuss.Size = new System.Drawing.Size(69, 31);
+            this.backbutuss.Size = new System.Drawing.Size(92, 38);
             this.backbutuss.TabIndex = 73;
             this.backbutuss.Text = "back";
             this.backbutuss.UseVisualStyleBackColor = false;
@@ -96,9 +95,10 @@
             this.cleatbutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cleatbutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cleatbutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.cleatbutuss.Location = new System.Drawing.Point(47, 104);
+            this.cleatbutuss.Location = new System.Drawing.Point(1519, 128);
+            this.cleatbutuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cleatbutuss.Name = "cleatbutuss";
-            this.cleatbutuss.Size = new System.Drawing.Size(170, 45);
+            this.cleatbutuss.Size = new System.Drawing.Size(264, 74);
             this.cleatbutuss.TabIndex = 72;
             this.cleatbutuss.Text = "Clear";
             this.cleatbutuss.UseVisualStyleBackColor = false;
@@ -115,9 +115,10 @@
             this.deletebutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletebutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.deletebutuss.Location = new System.Drawing.Point(1139, 154);
+            this.deletebutuss.Location = new System.Drawing.Point(1519, 324);
+            this.deletebutuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deletebutuss.Name = "deletebutuss";
-            this.deletebutuss.Size = new System.Drawing.Size(198, 43);
+            this.deletebutuss.Size = new System.Drawing.Size(264, 85);
             this.deletebutuss.TabIndex = 71;
             this.deletebutuss.Text = "delete";
             this.deletebutuss.UseVisualStyleBackColor = false;
@@ -146,9 +147,11 @@
             this.groupBox1.Controls.Add(this.login);
             this.groupBox1.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.groupBox1.Location = new System.Drawing.Point(92, 429);
+            this.groupBox1.Location = new System.Drawing.Point(123, 528);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1188, 215);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1584, 265);
             this.groupBox1.TabIndex = 70;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Text";
@@ -158,9 +161,10 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(797, 161);
+            this.label5.Location = new System.Drawing.Point(1063, 198);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 24);
+            this.label5.Size = new System.Drawing.Size(158, 30);
             this.label5.TabIndex = 34;
             this.label5.Text = "Password";
             // 
@@ -169,9 +173,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(851, 63);
+            this.label3.Location = new System.Drawing.Point(1135, 78);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 24);
+            this.label3.Size = new System.Drawing.Size(92, 30);
             this.label3.TabIndex = 33;
             this.label3.Text = "Login";
             // 
@@ -180,9 +185,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(397, 158);
+            this.label2.Location = new System.Drawing.Point(529, 194);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 24);
+            this.label2.Size = new System.Drawing.Size(168, 30);
             this.label2.TabIndex = 32;
             this.label2.Text = "Last Name";
             // 
@@ -191,9 +197,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(392, 59);
+            this.label1.Location = new System.Drawing.Point(523, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 24);
+            this.label1.Size = new System.Drawing.Size(174, 30);
             this.label1.TabIndex = 31;
             this.label1.Text = "First name";
             // 
@@ -201,9 +208,10 @@
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel7.Location = new System.Drawing.Point(945, 180);
+            this.panel7.Location = new System.Drawing.Point(1260, 222);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(222, 5);
+            this.panel7.Size = new System.Drawing.Size(296, 6);
             this.panel7.TabIndex = 29;
             // 
             // textpassworduss
@@ -213,18 +221,20 @@
             this.textpassworduss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textpassworduss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textpassworduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textpassworduss.Location = new System.Drawing.Point(945, 155);
+            this.textpassworduss.Location = new System.Drawing.Point(1260, 191);
+            this.textpassworduss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textpassworduss.Name = "textpassworduss";
-            this.textpassworduss.Size = new System.Drawing.Size(221, 26);
+            this.textpassworduss.Size = new System.Drawing.Size(295, 32);
             this.textpassworduss.TabIndex = 30;
             // 
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel6.Location = new System.Drawing.Point(945, 82);
+            this.panel6.Location = new System.Drawing.Point(1260, 101);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(222, 5);
+            this.panel6.Size = new System.Drawing.Size(296, 6);
             this.panel6.TabIndex = 27;
             // 
             // textloginuss
@@ -234,18 +244,20 @@
             this.textloginuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textloginuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textloginuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textloginuss.Location = new System.Drawing.Point(945, 57);
+            this.textloginuss.Location = new System.Drawing.Point(1260, 70);
+            this.textloginuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textloginuss.Name = "textloginuss";
-            this.textloginuss.Size = new System.Drawing.Size(221, 26);
+            this.textloginuss.Size = new System.Drawing.Size(295, 32);
             this.textloginuss.TabIndex = 28;
             // 
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel5.Location = new System.Drawing.Point(548, 180);
+            this.panel5.Location = new System.Drawing.Point(731, 222);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(222, 5);
+            this.panel5.Size = new System.Drawing.Size(296, 6);
             this.panel5.TabIndex = 25;
             // 
             // textlastuss
@@ -255,18 +267,20 @@
             this.textlastuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textlastuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textlastuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textlastuss.Location = new System.Drawing.Point(548, 155);
+            this.textlastuss.Location = new System.Drawing.Point(731, 191);
+            this.textlastuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textlastuss.Name = "textlastuss";
-            this.textlastuss.Size = new System.Drawing.Size(221, 26);
+            this.textlastuss.Size = new System.Drawing.Size(295, 32);
             this.textlastuss.TabIndex = 26;
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel2.Location = new System.Drawing.Point(548, 78);
+            this.panel2.Location = new System.Drawing.Point(731, 96);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(222, 5);
+            this.panel2.Size = new System.Drawing.Size(296, 6);
             this.panel2.TabIndex = 23;
             // 
             // label4
@@ -274,9 +288,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 157);
+            this.label4.Location = new System.Drawing.Point(31, 193);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 24);
+            this.label4.Size = new System.Drawing.Size(83, 30);
             this.label4.TabIndex = 24;
             this.label4.Text = "role";
             // 
@@ -287,27 +302,30 @@
             this.textnameuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textnameuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textnameuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textnameuss.Location = new System.Drawing.Point(548, 53);
+            this.textnameuss.Location = new System.Drawing.Point(731, 65);
+            this.textnameuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textnameuss.Name = "textnameuss";
-            this.textnameuss.Size = new System.Drawing.Size(221, 26);
+            this.textnameuss.Size = new System.Drawing.Size(295, 32);
             this.textnameuss.TabIndex = 24;
             // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel4.Location = new System.Drawing.Point(147, 177);
+            this.panel4.Location = new System.Drawing.Point(196, 218);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(222, 5);
+            this.panel4.Size = new System.Drawing.Size(296, 6);
             this.panel4.TabIndex = 13;
             // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel3.Location = new System.Drawing.Point(147, 78);
+            this.panel3.Location = new System.Drawing.Point(196, 96);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(222, 5);
+            this.panel3.Size = new System.Drawing.Size(296, 6);
             this.panel3.TabIndex = 12;
             // 
             // textcompuss
@@ -317,9 +335,10 @@
             this.textcompuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textcompuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcompuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textcompuss.Location = new System.Drawing.Point(147, 152);
+            this.textcompuss.Location = new System.Drawing.Point(196, 187);
+            this.textcompuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textcompuss.Name = "textcompuss";
-            this.textcompuss.Size = new System.Drawing.Size(221, 26);
+            this.textcompuss.Size = new System.Drawing.Size(295, 32);
             this.textcompuss.TabIndex = 23;
             // 
             // textiduss
@@ -329,9 +348,10 @@
             this.textiduss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textiduss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textiduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.textiduss.Location = new System.Drawing.Point(147, 53);
+            this.textiduss.Location = new System.Drawing.Point(196, 65);
+            this.textiduss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textiduss.Name = "textiduss";
-            this.textiduss.Size = new System.Drawing.Size(221, 26);
+            this.textiduss.Size = new System.Drawing.Size(295, 32);
             this.textiduss.TabIndex = 22;
             // 
             // login
@@ -339,9 +359,10 @@
             this.login.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.login.AutoSize = true;
             this.login.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(56, 51);
+            this.login.Location = new System.Drawing.Point(75, 63);
+            this.login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(31, 24);
+            this.login.Size = new System.Drawing.Size(39, 30);
             this.login.TabIndex = 5;
             this.login.Text = "ID";
             // 
@@ -356,40 +377,23 @@
             this.updatebutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatebutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatebutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.updatebutuss.Location = new System.Drawing.Point(1139, 21);
+            this.updatebutuss.Location = new System.Drawing.Point(1519, 222);
+            this.updatebutuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.updatebutuss.Name = "updatebutuss";
-            this.updatebutuss.Size = new System.Drawing.Size(198, 49);
+            this.updatebutuss.Size = new System.Drawing.Size(264, 76);
             this.updatebutuss.TabIndex = 69;
             this.updatebutuss.Text = "Update";
             this.updatebutuss.UseVisualStyleBackColor = false;
             this.updatebutuss.Click += new System.EventHandler(this.updatebutuss_Click);
             // 
-            // changebutuss
-            // 
-            this.changebutuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.changebutuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.changebutuss.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.changebutuss.FlatAppearance.BorderSize = 2;
-            this.changebutuss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.changebutuss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.changebutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changebutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changebutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.changebutuss.Location = new System.Drawing.Point(1139, 87);
-            this.changebutuss.Name = "changebutuss";
-            this.changebutuss.Size = new System.Drawing.Size(198, 45);
-            this.changebutuss.TabIndex = 68;
-            this.changebutuss.Text = "Change";
-            this.changebutuss.UseVisualStyleBackColor = false;
-            this.changebutuss.Click += new System.EventHandler(this.changebutuss_Click);
-            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.panel1.Location = new System.Drawing.Point(139, 53);
+            this.panel1.Location = new System.Drawing.Point(185, 65);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(708, 5);
+            this.panel1.Size = new System.Drawing.Size(944, 6);
             this.panel1.TabIndex = 67;
             // 
             // searchtextuss
@@ -399,9 +403,10 @@
             this.searchtextuss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchtextuss.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchtextuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtextuss.Location = new System.Drawing.Point(139, 29);
+            this.searchtextuss.Location = new System.Drawing.Point(185, 36);
+            this.searchtextuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchtextuss.Name = "searchtextuss";
-            this.searchtextuss.Size = new System.Drawing.Size(708, 26);
+            this.searchtextuss.Size = new System.Drawing.Size(944, 32);
             this.searchtextuss.TabIndex = 65;
             this.searchtextuss.TextChanged += new System.EventHandler(this.searchtextuss_TextChanged);
             // 
@@ -416,10 +421,11 @@
             this.dataGridViewUU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewUU.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.dataGridViewUU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUU.Location = new System.Drawing.Point(239, 104);
+            this.dataGridViewUU.Location = new System.Drawing.Point(319, 128);
+            this.dataGridViewUU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewUU.Name = "dataGridViewUU";
             this.dataGridViewUU.RowHeadersWidth = 51;
-            this.dataGridViewUU.Size = new System.Drawing.Size(877, 326);
+            this.dataGridViewUU.Size = new System.Drawing.Size(1169, 401);
             this.dataGridViewUU.TabIndex = 64;
             this.dataGridViewUU.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUU_CellClick);
             // 
@@ -434,9 +440,10 @@
             this.sortascduss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortascduss.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortascduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortascduss.Location = new System.Drawing.Point(47, 180);
+            this.sortascduss.Location = new System.Drawing.Point(63, 188);
+            this.sortascduss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sortascduss.Name = "sortascduss";
-            this.sortascduss.Size = new System.Drawing.Size(170, 89);
+            this.sortascduss.Size = new System.Drawing.Size(227, 110);
             this.sortascduss.TabIndex = 63;
             this.sortascduss.Text = "sort asc";
             this.sortascduss.UseVisualStyleBackColor = false;
@@ -453,31 +460,14 @@
             this.savebutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savebutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.savebutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.savebutuss.Location = new System.Drawing.Point(1139, 222);
+            this.savebutuss.Location = new System.Drawing.Point(1519, 440);
+            this.savebutuss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.savebutuss.Name = "savebutuss";
-            this.savebutuss.Size = new System.Drawing.Size(198, 47);
+            this.savebutuss.Size = new System.Drawing.Size(264, 80);
             this.savebutuss.TabIndex = 62;
             this.savebutuss.Text = "SAVE";
             this.savebutuss.UseVisualStyleBackColor = false;
             this.savebutuss.Click += new System.EventHandler(this.savebutuss_Click);
-            // 
-            // addbutuss
-            // 
-            this.addbutuss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.addbutuss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.addbutuss.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addbutuss.FlatAppearance.BorderSize = 2;
-            this.addbutuss.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(137)))), ((int)(((byte)(139)))));
-            this.addbutuss.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(163)))), ((int)(((byte)(161)))));
-            this.addbutuss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addbutuss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addbutuss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.addbutuss.Location = new System.Drawing.Point(1139, 306);
-            this.addbutuss.Name = "addbutuss";
-            this.addbutuss.Size = new System.Drawing.Size(198, 94);
-            this.addbutuss.TabIndex = 61;
-            this.addbutuss.Text = "Add record";
-            this.addbutuss.UseVisualStyleBackColor = false;
             // 
             // sortdescduss
             // 
@@ -490,9 +480,10 @@
             this.sortdescduss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortdescduss.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortdescduss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.sortdescduss.Location = new System.Drawing.Point(47, 311);
+            this.sortdescduss.Location = new System.Drawing.Point(63, 353);
+            this.sortdescduss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sortdescduss.Name = "sortdescduss";
-            this.sortdescduss.Size = new System.Drawing.Size(170, 85);
+            this.sortdescduss.Size = new System.Drawing.Size(227, 105);
             this.sortdescduss.TabIndex = 60;
             this.sortdescduss.Text = "sort desc";
             this.sortdescduss.UseVisualStyleBackColor = false;
@@ -500,10 +491,14 @@
             // 
             // comboBoxUU
             // 
+            this.comboBoxUU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
+            this.comboBoxUU.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxUU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
             this.comboBoxUU.FormattingEnabled = true;
-            this.comboBoxUU.Location = new System.Drawing.Point(919, 29);
+            this.comboBoxUU.Location = new System.Drawing.Point(1203, 47);
+            this.comboBoxUU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxUU.Name = "comboBoxUU";
-            this.comboBoxUU.Size = new System.Drawing.Size(170, 21);
+            this.comboBoxUU.Size = new System.Drawing.Size(285, 38);
             this.comboBoxUU.TabIndex = 74;
             this.comboBoxUU.SelectedIndexChanged += new System.EventHandler(this.comboBoxUU_SelectedIndexChanged);
             // 
@@ -512,18 +507,19 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Algerian", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(220)))), ((int)(((byte)(231)))));
-            this.label6.Location = new System.Drawing.Point(25, 17);
+            this.label6.Location = new System.Drawing.Point(33, 21);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 26);
+            this.label6.Size = new System.Drawing.Size(135, 34);
             this.label6.TabIndex = 75;
             this.label6.Text = "search";
             // 
             // Users
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(34)))), ((int)(((byte)(47)))));
-            this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.ClientSize = new System.Drawing.Size(1856, 809);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxUU);
             this.Controls.Add(this.backbutuss);
@@ -531,16 +527,14 @@
             this.Controls.Add(this.deletebutuss);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.updatebutuss);
-            this.Controls.Add(this.changebutuss);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.searchtextuss);
             this.Controls.Add(this.dataGridViewUU);
             this.Controls.Add(this.sortascduss);
             this.Controls.Add(this.savebutuss);
-            this.Controls.Add(this.addbutuss);
             this.Controls.Add(this.sortdescduss);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Users";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
@@ -565,14 +559,12 @@
         private System.Windows.Forms.TextBox textiduss;
         private System.Windows.Forms.Label login;
         private System.Windows.Forms.Button updatebutuss;
-        private System.Windows.Forms.Button changebutuss;
         private System.Windows.Forms.Panel panel1;
         
         private System.Windows.Forms.TextBox searchtextuss;
         private System.Windows.Forms.DataGridView dataGridViewUU;
         private System.Windows.Forms.Button sortascduss;
         private System.Windows.Forms.Button savebutuss;
-        private System.Windows.Forms.Button addbutuss;
         private System.Windows.Forms.Button sortdescduss;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;

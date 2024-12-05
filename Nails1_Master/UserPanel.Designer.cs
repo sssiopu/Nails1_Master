@@ -60,17 +60,19 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1392, 159);
+            this.panel1.Size = new System.Drawing.Size(1829, 196);
             this.panel1.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Nails1_Master.Properties.Resources.Group_1;
-            this.pictureBox1.Location = new System.Drawing.Point(207, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(262, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(155, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -82,9 +84,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
             this.label1.Font = new System.Drawing.Font("Algerian", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.label1.Location = new System.Drawing.Point(386, 39);
+            this.label1.Location = new System.Drawing.Point(501, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(720, 106);
+            this.label1.Size = new System.Drawing.Size(898, 134);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nails Master";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -93,9 +96,10 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.panel2.Location = new System.Drawing.Point(145, 190);
+            this.panel2.Location = new System.Drawing.Point(179, 234);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(332, 4);
+            this.panel2.Size = new System.Drawing.Size(443, 5);
             this.panel2.TabIndex = 42;
             // 
             // Search
@@ -105,9 +109,10 @@
             this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
             this.Search.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.Search.Location = new System.Drawing.Point(10, 165);
+            this.Search.Location = new System.Drawing.Point(-1, 203);
+            this.Search.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(129, 32);
+            this.Search.Size = new System.Drawing.Size(165, 41);
             this.Search.TabIndex = 41;
             this.Search.Text = "Search";
             // 
@@ -118,9 +123,10 @@
             this.searchtexus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchtexus.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchtexus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(208)))));
-            this.searchtexus.Location = new System.Drawing.Point(145, 165);
+            this.searchtexus.Location = new System.Drawing.Point(179, 203);
+            this.searchtexus.Margin = new System.Windows.Forms.Padding(4);
             this.searchtexus.Name = "searchtexus";
-            this.searchtexus.Size = new System.Drawing.Size(332, 26);
+            this.searchtexus.Size = new System.Drawing.Size(443, 32);
             this.searchtexus.TabIndex = 40;
             this.searchtexus.TextChanged += new System.EventHandler(this.searchtexus_TextChanged);
             // 
@@ -135,79 +141,101 @@
             this.dataGridViewUS.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewUS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.dataGridViewUS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUS.Location = new System.Drawing.Point(16, 225);
+            this.dataGridViewUS.Location = new System.Drawing.Point(7, 277);
+            this.dataGridViewUS.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewUS.Name = "dataGridViewUS";
             this.dataGridViewUS.RowHeadersWidth = 51;
-            this.dataGridViewUS.Size = new System.Drawing.Size(1122, 378);
+            this.dataGridViewUS.Size = new System.Drawing.Size(1496, 465);
             this.dataGridViewUS.TabIndex = 43;
             // 
             // comboBoxdesign
             // 
-            this.comboBoxdesign.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxdesign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxdesign.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxdesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxdesign.FormattingEnabled = true;
-            this.comboBoxdesign.Location = new System.Drawing.Point(509, 165);
+            this.comboBoxdesign.Location = new System.Drawing.Point(644, 210);
+            this.comboBoxdesign.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxdesign.Name = "comboBoxdesign";
-            this.comboBoxdesign.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxdesign.Size = new System.Drawing.Size(160, 38);
             this.comboBoxdesign.TabIndex = 44;
             this.comboBoxdesign.SelectedIndexChanged += new System.EventHandler(this.comboBoxdesign_SelectedIndexChanged);
             // 
             // comboBoxgender
             // 
-            this.comboBoxgender.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxgender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxgender.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxgender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxgender.FormattingEnabled = true;
-            this.comboBoxgender.Location = new System.Drawing.Point(890, 165);
+            this.comboBoxgender.Location = new System.Drawing.Point(1148, 210);
+            this.comboBoxgender.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxgender.Name = "comboBoxgender";
-            this.comboBoxgender.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxgender.Size = new System.Drawing.Size(160, 38);
             this.comboBoxgender.TabIndex = 45;
             this.comboBoxgender.SelectedIndexChanged += new System.EventHandler(this.comboBoxgender_SelectedIndexChanged);
             // 
             // comboBoxmedicine
             // 
-            this.comboBoxmedicine.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxmedicine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxmedicine.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxmedicine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxmedicine.FormattingEnabled = true;
-            this.comboBoxmedicine.Location = new System.Drawing.Point(763, 165);
+            this.comboBoxmedicine.Location = new System.Drawing.Point(980, 210);
+            this.comboBoxmedicine.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxmedicine.Name = "comboBoxmedicine";
-            this.comboBoxmedicine.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxmedicine.Size = new System.Drawing.Size(160, 38);
             this.comboBoxmedicine.TabIndex = 46;
             this.comboBoxmedicine.SelectedIndexChanged += new System.EventHandler(this.comboBoxmedicine_SelectedIndexChanged);
             // 
             // comboBoxrepair
             // 
-            this.comboBoxrepair.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxrepair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxrepair.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxrepair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxrepair.FormattingEnabled = true;
-            this.comboBoxrepair.Location = new System.Drawing.Point(636, 165);
+            this.comboBoxrepair.Location = new System.Drawing.Point(812, 210);
+            this.comboBoxrepair.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxrepair.Name = "comboBoxrepair";
-            this.comboBoxrepair.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxrepair.Size = new System.Drawing.Size(160, 38);
             this.comboBoxrepair.TabIndex = 47;
             this.comboBoxrepair.SelectedIndexChanged += new System.EventHandler(this.comboBoxrepair_SelectedIndexChanged);
             // 
             // comboBoxwithdrawal
             // 
-            this.comboBoxwithdrawal.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxwithdrawal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxwithdrawal.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxwithdrawal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxwithdrawal.FormattingEnabled = true;
-            this.comboBoxwithdrawal.Location = new System.Drawing.Point(1271, 165);
+            this.comboBoxwithdrawal.Location = new System.Drawing.Point(1664, 210);
+            this.comboBoxwithdrawal.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxwithdrawal.Name = "comboBoxwithdrawal";
-            this.comboBoxwithdrawal.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxwithdrawal.Size = new System.Drawing.Size(160, 38);
             this.comboBoxwithdrawal.TabIndex = 48;
             this.comboBoxwithdrawal.SelectedIndexChanged += new System.EventHandler(this.comboBoxwithdrawal_SelectedIndexChanged);
             // 
             // comboBoxbuiliding
             // 
-            this.comboBoxbuiliding.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxbuiliding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxbuiliding.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxbuiliding.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxbuiliding.FormattingEnabled = true;
-            this.comboBoxbuiliding.Location = new System.Drawing.Point(1144, 165);
+            this.comboBoxbuiliding.Location = new System.Drawing.Point(1493, 210);
+            this.comboBoxbuiliding.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxbuiliding.Name = "comboBoxbuiliding";
-            this.comboBoxbuiliding.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxbuiliding.Size = new System.Drawing.Size(160, 38);
             this.comboBoxbuiliding.TabIndex = 49;
             this.comboBoxbuiliding.SelectedIndexChanged += new System.EventHandler(this.comboBoxbuiliding_SelectedIndexChanged);
             // 
             // comboBoxgel
             // 
-            this.comboBoxgel.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxgel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
+            this.comboBoxgel.Font = new System.Drawing.Font("Algerian", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxgel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
             this.comboBoxgel.FormattingEnabled = true;
-            this.comboBoxgel.Location = new System.Drawing.Point(1017, 165);
+            this.comboBoxgel.Location = new System.Drawing.Point(1316, 210);
+            this.comboBoxgel.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxgel.Name = "comboBoxgel";
-            this.comboBoxgel.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxgel.Size = new System.Drawing.Size(160, 38);
             this.comboBoxgel.TabIndex = 50;
             this.comboBoxgel.SelectedIndexChanged += new System.EventHandler(this.comboBoxgel_SelectedIndexChanged);
             // 
@@ -222,9 +250,10 @@
             this.LogBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogBut.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogBut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.LogBut.Location = new System.Drawing.Point(1315, 624);
+            this.LogBut.Location = new System.Drawing.Point(1721, 768);
+            this.LogBut.Margin = new System.Windows.Forms.Padding(4);
             this.LogBut.Name = "LogBut";
-            this.LogBut.Size = new System.Drawing.Size(77, 31);
+            this.LogBut.Size = new System.Drawing.Size(103, 38);
             this.LogBut.TabIndex = 51;
             this.LogBut.Text = "back";
             this.LogBut.UseVisualStyleBackColor = false;
@@ -241,9 +270,10 @@
             this.sortdescus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortdescus.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortdescus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.sortdescus.Location = new System.Drawing.Point(1163, 296);
+            this.sortdescus.Location = new System.Drawing.Point(1537, 453);
+            this.sortdescus.Margin = new System.Windows.Forms.Padding(4);
             this.sortdescus.Name = "sortdescus";
-            this.sortdescus.Size = new System.Drawing.Size(205, 46);
+            this.sortdescus.Size = new System.Drawing.Size(273, 111);
             this.sortdescus.TabIndex = 52;
             this.sortdescus.Text = "sort desc";
             this.sortdescus.UseVisualStyleBackColor = false;
@@ -259,9 +289,10 @@
             this.sortaskus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortaskus.Font = new System.Drawing.Font("Algerian", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortaskus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.sortaskus.Location = new System.Drawing.Point(1163, 225);
+            this.sortaskus.Location = new System.Drawing.Point(1537, 277);
+            this.sortaskus.Margin = new System.Windows.Forms.Padding(4);
             this.sortaskus.Name = "sortaskus";
-            this.sortaskus.Size = new System.Drawing.Size(205, 48);
+            this.sortaskus.Size = new System.Drawing.Size(273, 125);
             this.sortaskus.TabIndex = 53;
             this.sortaskus.Text = "sort asc";
             this.sortaskus.UseVisualStyleBackColor = false;
@@ -277,9 +308,10 @@
             this.clearbutus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearbutus.Font = new System.Drawing.Font("Algerian", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearbutus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(130)))), ((int)(((byte)(117)))));
-            this.clearbutus.Location = new System.Drawing.Point(1163, 370);
+            this.clearbutus.Location = new System.Drawing.Point(1537, 625);
+            this.clearbutus.Margin = new System.Windows.Forms.Padding(4);
             this.clearbutus.Name = "clearbutus";
-            this.clearbutus.Size = new System.Drawing.Size(205, 45);
+            this.clearbutus.Size = new System.Drawing.Size(273, 117);
             this.clearbutus.TabIndex = 54;
             this.clearbutus.Text = "Clear";
             this.clearbutus.UseVisualStyleBackColor = false;
@@ -287,10 +319,10 @@
             // 
             // UserPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(215)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(1392, 657);
+            this.ClientSize = new System.Drawing.Size(1829, 809);
             this.Controls.Add(this.clearbutus);
             this.Controls.Add(this.sortaskus);
             this.Controls.Add(this.sortdescus);
@@ -308,7 +340,7 @@
             this.Controls.Add(this.searchtexus);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserPanel";
             this.Text = "UserPanel";
             this.Load += new System.EventHandler(this.UserPanel_Load);
